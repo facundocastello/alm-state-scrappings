@@ -1,0 +1,6 @@
+node_modules
+output
+dist
+data
+reports
+.DS_Store

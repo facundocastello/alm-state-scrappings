@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+data/*.json
+output/*.csv
+reports/
+package-lock.json
+tmp/
+
