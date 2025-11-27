@@ -5,3 +5,6 @@ data
 reports
 .DS_Store
 .env
+
+data copy
+reports copy

@@ -1,0 +1,132 @@
+curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getFacilityProfile"><param name="CSRFCheck"><\u0021[CDATA[8.0334123865498]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getServices"><param name="CSRFCheck"><\u0021[CDATA[3.2754035801170]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getPaymentInformation"><param name="CSRFCheck"><\u0021[CDATA[8.9285524316219]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getServicesNR"><param name="CSRFCheck"><\u0021[CDATA[0.2732393199593]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getStaffInformation"><param name="CSRFCheck"><\u0021[CDATA[6.6222683819537]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getALWaiverBeds"><param name="CSRFCheck"><\u0021[CDATA[7.9699906251028]]></param></ob_post>'
+
+  curl 'https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: text/xml' \
+  -b 'ASP.NET_SessionId=w4rp0hohek3f11iyhs1jrysb; BIGipServerAGE_prod.hens.age.ohio.gov=74905610.20480.0000; TS0189af0c=01fe990a690924d303b89594dfce70702cf2abb57b2d6f58d69358ef5dc51dc66cc6424d553d2177600a3d63b888a0ba14f7c8610eba4151d43c20e34f79d71aa596a44550361c0bd96918151d67763a695b08f7c7' \
+  -H 'OBPostReq: true' \
+  -H 'OBPostSync: true' \
+  -H 'Origin: https://prod.ltc.age.ohio.gov' \
+  -H 'Referer: https://prod.ltc.age.ohio.gov/FacilityProfile?facId=XmkBHsU855E=&FAC_TYPE=NH' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw $'<ob_post eventname="getQualityMeasures"><param name="CSRFCheck"><\u0021[CDATA[0.5154580680278]]></param></ob_post>'

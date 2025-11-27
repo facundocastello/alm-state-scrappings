@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-11-19T13:06:19.458Z",
+  "count": 2,
+  "facilities": [
+    {
+      "plainId": "OH00826",
+      "name": "ABBYSHIRE PLACE HEALTH AND REHABILITATION CENTER L",
+      "profile": {
+        "FACILITY_ID": "OH00826",
+        "FAMYEAR": "2022",
+        "PHONE": "7404467150",
+        "OS_IMMEDIATE_JEOPARDY": "No",
+        "CITY": "BIDWELL",
+        "CATEGORY": "NURSING HOME",
+        "GLAT": "38.861852",
+        "RESOVERALL": "78.54",
+        "FAMOVERALL": "--",
+        "OS_NUMBER_CITATIONS": "0",
+        "ADDRESS_1": "311 BUCKRIDGE ROAD",
+        "NAME": "ABBYSHIRE PLACE HEALTH AND REHABILITATION CENTER L",
+        "COUNTY": "GALLIA",
+        "RESYEAR": "2023",
+        "RECENT_SURVEY_DATE": "05/29/2025",
+        "GLON": "-82.25113",
+        "OS_SUBSTANDARD": "No"
+      }
+    },
+    {
+      "plainId": "OH00115",
+      "name": "ACCORD CARE COMMUNITY ORRVILLE LLC",
+      "profile": {
+        "FACILITY_ID": "OH00115",
+        "FAMYEAR": "2022",
+        "PHONE": "3306834075",
+        "OS_IMMEDIATE_JEOPARDY": "No",
+        "CITY": "ORRVILLE",
+        "CATEGORY": "NURSING HOME",
+        "GLAT": "40.848237",
+        "RESOVERALL": "80.59",
+        "FAMOVERALL": "Too few respondents",
+        "OS_NUMBER_CITATIONS": "1",
+        "ADDRESS_1": "1980 LYNN DRIVE",
+        "NAME": "ACCORD CARE COMMUNITY ORRVILLE LLC",
+        "COUNTY": "WAYNE",
+        "RESYEAR": "2023",
+        "RECENT_SURVEY_DATE": "03/10/2025",
+        "GLON": "-81.791519",
+        "OS_SUBSTANDARD": "No"
+      }
+    }
+  ]
+}

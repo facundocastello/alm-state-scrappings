@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	New Jersey Long Term Care Facilities Search 
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="../js/main.js" type="text/javascript"></script>
+     <meta name="description" content="New Jersey Long Term Care Facilities Search" /><meta name="keywords" content="New Jersey, Long Term Care Facilities, Nursing Homes, NJ" /> 		<!-- Bootstrap -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- NJDOH CSS -->
+		<link href="/style/styles.css" rel="stylesheet" type="text/css" />
+
+		<!-- LiteAccordion -->
+		<link href="/style/liteAccordion.css" rel="stylesheet" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.js"></script>
+		<script src="/scripts/jquery.cookie.js" type="text/javascript"></script>
+		<script src="/js/jquery.colorbox.js"></script>
+		<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
+		<script>
+		    var polyfilter_scriptpath = "/js/"
+		</script>
+		<script src="/js/bootstrap-menu-fix.js" type="text/javascript"></script>
+
+		<!-- DROPPED FROM WRAPPER
+		<script src="/js/filter.js" type="text/javascript"></script>
+		<script src="/jquery.cslider.js" type="text/javascript"></script>
+		<script src="/js/jquery.fastLiveFilter.js" type="text/javascript"></script>
+		<script src="/js/jquery.cycle2.min.js" type="text/javascript"></script>
+		<script src="/scripts/sliderOIT.js" type="text/javascript"></script>
+		<script src="/scripts/jquery.datepick.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js"></script>
+		<script src="/js/liteaccordion.jquery.min.js"></script>
+		-->
+
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Crimson+Text:400,600);
+		</style>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<link href="/style/ie_fixes.css" rel="stylesheet" />
+		<![endif]-->
+
+		<!-- DROPPED FROM WRAPPER
+		<script>
+			$(function() {
+				$('input').each(function(index, element) {
+					$(this).fastLiveFilter( $(this).parent().children("ul") );
+				});
+			});
+		</script>
+		<script>
+			ua = navigator.userAgent;
+			var re = new RegExp("MSIE ([6-8]{1}[\.0-9]{0,})");
+			if (re.exec(ua) != null) {
+				rv = parseFloat(RegExp.$1);
+				window.bypassOverlay = true;
+			} else {
+				window.bypassOverlay = false;
+			}
+
+			$(document).ready(function(){
+				if ( window.bypassOverlay ) {
+					$(".md-trigger").colorbox({inline:true, scrolling:false, height:580, width:950});
+					window.overlayFlag = false;
+				} else {
+					window.overlayFlag = true;
+				}
+			});
+		</script>
+		-->
+
+		<!--[if !IE 7]>
+			<style type="text/css">
+				#wrap {display:table;height:100%}
+			</style>
+		<![endif]-->
+
+		<script src="/scripts/commonFunctions.js" type="text/javascript"></script>
+<link href="../style/facility.css" rel="stylesheet" type="text/css" /><link href="../style/print_yc.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body  class="landing-page-a">
+		
+    <div class="container" id="centerwrapper">
+		<section id="content">
+			<!-- Header START -->
+<section id="header">
+		<div class="clickable">
+			<!-- Header START -->
+
+						<a href="http://www.nj.gov/health/" id="stateLogoLink">
+				<div id="stateLogo">
+					<img src="/template-images/nj_state_seal.png">
+					<div id="state"><span class="big">S</span>tate of <span class="big">N</span>ew <span class="big">J</span>ersey</div>
+					<div id="dept"><span class="big">D</span>epartment of <span class="big">H</span>ealth</div>
+				</div>
+			</a>
+			<div id="stateLinks">
+
+				<div class="gov">Governor Phil Murphy &middot; Lt. Governor Tahesha Way</div>
+				<div class="links">
+				<a href="https://www.nj.gov/">NJ Home</a> |
+				<a href="https://www.nj.gov/nj/gov/njgov/alphaserv.html">Services A to Z</a> |
+				<a href="https://www.nj.gov/nj/gov/deptserv/">Departments/Agencies</a> |
+				<a href="https://www.nj.gov/faqs/">FAQs</a>
+				</div>
+
+				<form id="seek" name="seek" method="get" action="https://search.state.nj.us/query.html">
+					<label class="" accesskey="s" title="enter keyword here" for="qt">Search</label>
+					<select class="selectbox" id="qp" name="qp">
+						<option selected="selected" value="">All of NJ</option>
+						<option value="+url:www.state.nj.us/health/">This Site</option>
+					</select>
+				    	<label class="hidden" accesskey="c" for="qp">select</label>
+				    	<input type="text" class="searchbox" size="8" id="qt" name="qt">
+					<select class="selectbox" id="qs" name="qs">
+						<option selected="selected" value="&amp;$qs">All File Types</option>
+						<option value="+doctype:text/html">Web Pages Only		</option>
+						<option value="-doctype:text/html"> Documents Only		</option>
+					</select>
+				    	<input type="submit" border="0" class="submit_search green element" alt="submit" id="submit_search" name="submit search" value="submit">
+
+				</form>
+
+			</div>
+			<br clear="all">
+			<a href="https://www.nj.gov/health/">
+				<div id="topLeft">
+					<div><img src="/template-images/njdoh_svgnew.png"/></div>
+				</div>
+			</a>
+
+
+			<!-- Header END -->
+
+		</div>
+	 </section>
+
+			<!-- Header END -->
+		</section>
+    </div>    <div class="container wide darkblue ">
+		<section id="content">
+		    <div class="container" id="masthead">
+		        <h1><a href="https://www.nj.gov/health/healthfacilities/" class="link-back">Health Facilities</a></h1>
+
+		    </div>
+		</section>
+    </div>
+
+    <div class="container clearfix" id="content">
+		<section id="content">
+	 <div id="app-Wrapper" class="">
+    	<form method="post" action="./fsCompDetails.aspx?item=NJ1A006" id="mainpage">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="iPpWzA02vxpFikizjnNS8Coq0ixaTfJxnwxkrdMhQ5bLCeJzR9TflOMTqojpKuOEX6tFUXpLaODtpv5Q9V1RobiGzoHrPiyVtKGa73hCUOpNKE6rQhCTPMX9b/jUrMKfCU+Rd6lvQozBjirmaXW3p/s2ZwYGT5/IHshDCOGTHtjAVGuScFQzOAUcB2OuUtVzxIP3FYhoyQLoFjwQhkGLBpuTpvxoJBuKF8qgKSIB8BgLgUKuYDmT8LXC+cMMxKblEbd2DOi5hmW5+otwGlCqFxGpcByIZxPNm/fD+ZRTXZD7R4kI+mA/YHu7NsP4co6ay8oUX7iNtMBd8rnA+DccHZvn0AUJ4kt102jJcUqs1qUJkpXBITpDSdTnOfegj5QnRk2Cd8YMzHKOZCM96lPJekRbH3UiU3BtZyUdvtGVjoby1SsPWn+NRILkqqQs+ZK2dC16WNzQjS2lztimD6J5iolVKsuw6lqbXvqk4Xlcp4eKsm7D21VPRh6UcQhOOxmOVhKBeyXcXd0id1W9Q+KWD8Bm8W9o4DwLM0U9mb7bYP4V5wtnZ62bLxzhHeZ7G4DpZB1BvAkuxPofc8SX6pDE2h8KiY6jbd4t7P4osfjJSmKPeZy6JReFjtzNB4oNJ8hgT6r9GQ==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EC9E7DA8" />
+</div> 
+    <div>
+<table width="900" border="0" style="background-color:#FFFFFF" cellpadding="3" align="center">
+  <tr>
+    <td valign="top" style="text-align:center; background-color:#FFFFFF">
+      <table id="mainBody" width="95%" border="0" align="center" cellpadding=0 cellspacing=0>
+      <tr><td align="right" class="black13bold" valign="top">
+        <img src="images/arrow_whitebg.gif" alt="arrow" />
+      <a id="hlMainSearch" href="fsSearch.aspx">Search Again</a>&nbsp;&nbsp;&nbsp;<img
+            src="images/arrow_whitebg.gif" />&nbsp;<a id="HyperLink1" href="http://nj.gov/health/healthfacilities/">Health Facilities Home</a>
+    </td></tr>
+		<tr>
+          <td valign="top" style="text-align:left; background-color:#FFFFFF">
+              
+<div id="main_table">
+    <div class="burg13bold" align="center">
+        <br />
+        Complaint Inspection Details for<br />
+        <span id="middleContent_Label1"> HERITAGE ASSISTED LIVING, THE </span>
+    </div>
+    <br />
+    
+<div style="text-align:left">
+ Between <span id="middleContent_PeriodDates1_Label1" class="black13bold">01/01/2015</span> AND 
+ <span id="middleContent_PeriodDates1_Label2" class="black13bold">11/17/2025</span>
+</div>
+    <br />
+    <div align="left">
+        <label id="middleContent_lblMsg"></label>
+    </div>
+    <div id="middleContent_panelComp">
+	
+        
+                <table class="datatable">
+                    <tr>
+                        <td colspan="2">Click on the ID to view the Statement of Deficiencies for the survey and, if applicable, the Plan of Correction.</td>
+                    </tr>
+                    <tr class="header">
+                        <td class="header headerleft">Complaint<br />
+                            Inspection Date</td>
+                        <td class="header headerleft">ID</td>
+                    </tr>
+            
+                <tr>
+                    <td>03/28/2025
+                    </td>
+                    <td><a href="fssurvey.aspx?survey-id=HZZS11.pdf&facid=NJ1A006" target="_blank">HZZS11</a></td>
+                </tr>
+            
+                <tr>
+                    <td>12/13/2024
+                    </td>
+                    <td><a href="fssurvey.aspx?survey-id=BK7111.pdf&facid=NJ1A006" target="_blank">BK7111</a></td>
+                </tr>
+            
+                <tr>
+                    <td>02/14/2023
+                    </td>
+                    <td><a href="fssurvey.aspx?survey-id=W5TR11.pdf&facid=NJ1A006" target="_blank">W5TR11</a></td>
+                </tr>
+            
+                <tr>
+                    <td>07/22/2022
+                    </td>
+                    <td><a href="fssurvey.aspx?survey-id=S79011.pdf&facid=NJ1A006" target="_blank">S79011</a></td>
+                </tr>
+            
+                <tr>
+                    <td>06/10/2022
+                    </td>
+                    <td><a href="fssurvey.aspx?survey-id=ZIT211.pdf&facid=NJ1A006" target="_blank">ZIT211</a></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="6">* <a href="fsSs.htm" onclick="NewWindowNew(this.href,'name','500','300','yes','yes','no','no','no');return false;">Scope & Severity</a> applies only to federally certified (Medicare) nursing homes.</td>
+                </tr>
+                </table>
+    
+</div>
+    <br />
+    <div align="right" class="black10bold">
+        <a id="middleContent_HyperLink1" href="javascript:history.go(-1)">Back to Details</a>
+    </div>
+</div>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+    </div>
+  	  </form>
+		<!--Beginning of Footer table-->
+					</div>
+		</section>
+    </div><!-- /container -->
+
+<!-- Footer START -->
+<div id="footer">
+	<div id="footerContent">
+		<a href="https://www.nj.gov/health/opra/index.html"><img src="/template-images/state/opranj_trans.png" alt="OPRA- Open Public RecordAct" width="75" height="56" border="0" align="left" id="opra"></a>
+		<div id="eweb">
+			<ul class="footerMenu">
+			<li><a href="https://www.nj.gov/health/feedback.shtml" class="stateLinks">Contact Us</a></li> |
+			<li><a href="https://www.nj.gov/nj/privacy.html" class="stateLinks">Privacy Notice</a></li> |
+			<li><a href="https://www.nj.gov/nj/legal.html" class="stateLinks">Legal Statement</a></li> |
+			<li><a href="https://www.nj.gov/nj/accessibility.html" class="stateLinks">Accessibility Statement</a></li> |
+			<li><a href="https://www.nj.gov/"><img src="/template-images/state/footernj.png" alt="nj state elogo" border="0"></a></li>
+			</ul>
+		</div>
+		<div id="state">
+			<span>Statewide: </span>
+			<ul class="footerMenu">
+				<li><a href="https://www.nj.gov/nj/">NJ Home</a></li> |
+				<li><a href="https://www.nj.gov/nj/gov/njgov/alphaserv.html">Services A to Z</a></li> |
+				<li><a href="https://www.nj.gov/nj/deptserv.html">Departments/Agencies</a></li> |
+				<li><a href="https://www.nj.gov/faqs/">FAQs</a></li>
+			</ul>
+		</div>
+		<div id="dept">
+			<span>Department:</span>
+			<ul class="footerMenu">
+				<li><a href="https://www.nj.gov/health/">NJDOH Home</a></li> |
+				<li><a href="https://www.nj.gov/health/about/contact-us/">TTY Relay </a></li> |
+				<li><a href="https://www.nj.gov/health/topics.shtml">Topic A to Z</a></li> |
+				<li><a href="https://www.nj.gov/health/office-programs/">
+Offices & Programs</a></li> |
+				<li><a href="https://www.nj.gov/health/documents/notice_of_privacy_practices.pdf" target="_blank">Notice of Privacy Practices</a></li>
+			</ul>
+		</div>
+		<div id="copyright">
+			Copyright &copy; State of New Jersey,
+			<script type="text/javascript" language="JavaScript">
+			<!--
+			    var begYear = "1996-";
+			    var today = new Date();
+			    document.write(begYear);
+			    document.write(today.getFullYear());
+			//--></script>
+			<noscript>1996-2013</noscript>
+			<br>
+			Department of Health<br>
+
+			P. O. Box 360    <br>Trenton, NJ 08625-0360    <br>
+			<!--Phone: (609) 292-7837    <br />
+			Toll-free in NJ: 1-800-367-6543-->
+		</div>
+
+		<script src="/js/webtrends.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		    var _tag = new WebTrends();
+		    _tag.dcsGetId();
+		</script>
+		<script type="text/javascript">
+		    _tag.dcsCollect();
+		</script>
+		<noscript>
+		<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://sdc.state.nj.us/dcstf1ino000008qls7rr9e92_5q1n/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
+		</noscript>
+
+
+
+	</div> <!-- #footerContent -->
+</div> <!-- #footer -->
+
+<!-- Footer END -->
+<!-- DROPPED FROM WRAPPER
+<script src="/js/overlay.js" type="text/javascript"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3V3PJ6');</script>
+<!-- End Google Tag Manager -->
+
+<script src="/js/modernizr.custom.28468.js" type="text/javascript"></script>
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6291948.js"></script>
+
+
+		<!--End of Footer table-->
+</body>
+</html>

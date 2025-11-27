@@ -1,0 +1,30 @@
+{
+  "name": "ohio-facility-scraper",
+  "version": "1.0.0",
+  "description": "Ohio Long-Term Care Facility Data Scraper",
+  "type": "module",
+  "main": "dist/scraper.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/scraper.js",
+    "dev": "tsx src/scraper.ts",
+    "test": "tsx src/test-scraper.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "ohio",
+    "scraper",
+    "healthcare",
+    "long-term-care"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,5 +1,6 @@
 import { parse } from "csv-parse/sync";
 import { readFile } from "fs/promises";
+import fs from "fs";
 import { createObjectCsvWriter } from "csv-writer";
 import { CSV_OUTPUT_PATH, INPUT_CSV_PATH, OUTPUT_DIR, PROFILE_URL_BASE } from "./config.js";
 import type { FacilityRecord, FacilitySummary, Report } from "./types.js";
@@ -70,18 +71,46 @@ const headers = [
   { id: "reportsSummary", title: "reports" },
 ];
 
+// Read existing CSV data to merge with new data
+export const readExistingCsv = async (): Promise<Map<string, Record<string, string>>> => {
+  const existingData = new Map<string, Record<string, string>>();
+  
+  if (!fs.existsSync(CSV_OUTPUT_PATH)) {
+    return existingData;
+  }
+
+  try {
+    const content = await readFile(CSV_OUTPUT_PATH, "utf8");
+    const records = parse(content, {
+      columns: true,
+      skip_empty_lines: true,
+      trim: true,
+    }) as Array<Record<string, string>>;
+
+    for (const record of records) {
+      const facilityId = record.facility_id || record.license_number || "";
+      if (facilityId) {
+        existingData.set(facilityId, record);
+      }
+    }
+  } catch (err) {
+    console.warn(`Warning: Could not read existing CSV: ${(err as Error).message}`);
+  }
+
+  return existingData;
+};
+
 export const writeFacilitiesCsv = async (
   facilities: FacilityRecord[],
-  silent = false
+  silent = false,
+  mergeWithExisting = true
 ): Promise<void> => {
   await ensureDir(OUTPUT_DIR);
 
-  const csvWriter = createObjectCsvWriter({
-    path: CSV_OUTPUT_PATH,
-    header: headers,
-  });
-
-  const records = facilities.map((facility) => {
+  // Convert new facilities to records format
+  const newRecordsMap = new Map<string, Record<string, string>>();
+  
+  for (const facility of facilities) {
     const reportsSummary = facility.reports
       .map((r: Report) => {
         const parts = [r.reportDate, r.reportType, r.fileName];
@@ -94,18 +123,58 @@ export const writeFacilitiesCsv = async (
       })
       .join(" | ");
 
-    return {
-      ...facility,
+    const record: Record<string, string> = {
       facility_id: facility.fid,
+      licenseNumber: facility.licenseNumber,
+      name: facility.name,
+      licenseType: facility.licenseType,
+      address: facility.address,
+      city: facility.city,
+      county: facility.county,
+      phone: facility.phone,
+      zipCode: facility.zipCode,
+      capacity: facility.capacity?.toString() ?? "",
+      facilityStatus: facility.facilityStatus,
+      licenseStatus: facility.licenseStatus,
+      licenseEffectiveDate: facility.licenseEffectiveDate,
+      licenseExpirationDate: facility.licenseExpirationDate,
+      licenseFacilityType: facility.licenseFacilityType,
       serves: facility.serves.join("; "),
       specialCertification: facility.specialCertification.join("; "),
+      licenseeName: facility.licenseeName,
+      licenseeAddress: facility.licenseeAddress,
+      licenseePhone: facility.licenseePhone,
+      reportsTotal: facility.reportsTotal.toString(),
+      profileUrl: facility.profileUrl,
       reportsSummary,
     };
+
+    newRecordsMap.set(facility.fid, record);
+  }
+
+  // Merge with existing data if requested
+  let allRecords: Record<string, string>[];
+  if (mergeWithExisting) {
+    const existingData = await readExistingCsv();
+    
+    // Update existing data with new data (new data takes precedence)
+    for (const [fid, newRecord] of newRecordsMap.entries()) {
+      existingData.set(fid, newRecord);
+    }
+    
+    allRecords = Array.from(existingData.values());
+  } else {
+    allRecords = Array.from(newRecordsMap.values());
+  }
+
+  const csvWriter = createObjectCsvWriter({
+    path: CSV_OUTPUT_PATH,
+    header: headers,
   });
 
-  await csvWriter.writeRecords(records);
+  await csvWriter.writeRecords(allRecords);
   if (!silent) {
-    console.log(`CSV saved to ${CSV_OUTPUT_PATH} (${facilities.length} facilities)`);
+    console.log(`CSV saved to ${CSV_OUTPUT_PATH} (${allRecords.length} total facilities, ${facilities.length} updated)`);
   }
 };
 
