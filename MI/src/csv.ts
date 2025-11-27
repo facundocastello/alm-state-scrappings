@@ -67,7 +67,7 @@ const headers = [
   { id: "licenseeAddress", title: "licensee_address" },
   { id: "licenseePhone", title: "licensee_phone" },
   { id: "reportsTotal", title: "reports_total" },
-  { id: "profileUrl", title: "profile_url" },
+  { id: "profileUrl", title: "URL_DETAIL" },
   { id: "reportsSummary", title: "reports" },
 ];
 

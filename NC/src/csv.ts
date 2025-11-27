@@ -27,7 +27,7 @@ const headers = [
   { id: "inspectionsWithoutDeficiencies", title: "inspections_without_deficiencies" },
   { id: "statementsWithDocuments", title: "statements_with_documents" },
   { id: "worksheetCount", title: "worksheet_count" },
-  { id: "profileUrl", title: "profile_url" },
+  { id: "profileUrl", title: "URL_DETAIL" },
   { id: "documentsSummary", title: "documents" },
 ];
 

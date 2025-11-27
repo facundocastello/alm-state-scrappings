@@ -1,0 +1,29 @@
+{
+  "name": "ga-healthcare-scraper",
+  "version": "1.0.0",
+  "description": "Georgia Healthcare Facilities Scraper",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "crawl": "npx tsx src/crawl.ts",
+    "scrape": "npx tsx src/scrapeFacility.ts",
+    "download": "npx tsx src/reportDownloader.ts",
+    "csv": "npx tsx src/csv.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "got": "^11.8.6",
+    "p-queue": "^8.1.0",
+    "tough-cookie": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/tough-cookie": "^4.0.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

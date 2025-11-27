@@ -67,23 +67,27 @@ export interface CSVRow {
   license_number: string;
   facility_name: string;
   license_type: string;
-  facility_status: string;
-  license_status: string;
   address: string;
   city: string;
   county: string;
   state: string;
   zip_code: string;
   phone: string;
-  capacity: string;
-  license_effective_date: string;
   license_expiration_date: string;
   licensee_name: string;
-  licensee_address: string;
-  licensee_phone: string;
   administrator: string;
 
-  beds_information: string;
+  // Separate bed count columns
+  beds_total: string;
+  beds_long_term_care: string;
+  beds_assisted_living: string;
+  beds_adult_day: string;
+  beds_pediatric_day: string;
+  beds_pediatric_ltc: string;
+  beds_residential: string;
+  beds_ventilator: string;
+  beds_behavioral_mgmt: string;
+  beds_comprehensive_pc: string;
 
   routine_inspections: string;
   routine_deficiencies: string;
@@ -92,6 +96,8 @@ export interface CSVRow {
   complaint_inspections: string;
   complaint_deficiencies: string;
   complaint_scope_severity: string;
+
+  total_inspections: string;
 
   has_advisory_data: string;
   has_report_card: string;
