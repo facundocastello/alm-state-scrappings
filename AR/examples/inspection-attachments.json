@@ -1,0 +1,137 @@
+{
+    "actions": [
+        {
+            "id": "89;a",
+            "state": "SUCCESS",
+            "returnValue": {
+                "returnValue": [
+                    {
+                        "Id": "05Dcs00000Wi6leEAB",
+                        "Name": "Notice_of_Inspection.pdf",
+                        "ContentVersionId": "068cs00001576BpAAI",
+                        "CreatedById": "005t0000003kxsS",
+                        "PreferencesAllowOriginalDownload": "true",
+                        "PreferencesAllowPDFDownload": "true",
+                        "PreferencesPasswordRequired": "false",
+                        "DistributionPublicUrl": "https://azdhs-licensing.my.salesforce.com/sfc/p/t0000000GzfY/a/cs00000Wi6le/Kcyj3lfmSltsgz25zQpq54N2yeJ.MNUpHaEKdWo1WR0",
+                        "ContentDownloadUrl": "https://azdhs-licensing.my.salesforce.com/sfc/dist/version/download/?oid=00Dt0000000GzfY&ids=068cs00001576Bp&d=%2Fa%2Fcs00000Wi6le%2FKcyj3lfmSltsgz25zQpq54N2yeJ.MNUpHaEKdWo1WR0&asPdf=false"
+                    }
+                ],
+                "cacheable": false
+            },
+            "error": []
+        }
+    ],
+    "context": {
+        "mode": "PROD",
+        "app": "siteforce:communityApp",
+        "contextPath": "/s/sfsites",
+        "pathPrefix": "",
+        "fwuid": "MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA",
+        "mlr": 1,
+        "uad": 1,
+        "coos": 1,
+        "lwrld": 1,
+        "loaded": {
+            "APPLICATION@markup://siteforce:communityApp": "1414_JnVqyfJtnxwn08WU8yKzPg"
+        },
+        "globalValueProviders": [
+            {
+                "type": "$Global",
+                "values": {
+                    "eswConfigDeveloperName": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "isVoiceOver": {
+                        "writable": true,
+                        "defaultValue": false
+                    },
+                    "setupAppContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "density": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "srcdoc": {
+                        "writable": false,
+                        "defaultValue": false
+                    },
+                    "appContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "dynamicTypeSize": {
+                        "writable": true,
+                        "defaultValue": ""
+                    }
+                }
+            }
+        ],
+        "enableAccessChecks": true,
+        "apce": 1,
+        "dns": "c",
+        "ls": 1,
+        "lairn": [],
+        "laerc": [],
+        "lav": "65",
+        "lgef": [
+            "com.salesforce.locker.enableImmediateGlobalObjectPatching",
+            "com.salesforce.locker.enableTrustedTypesScript",
+            "com.salesforce.locker.changesSince.258",
+            "com.salesforce.locker.changesSince.256",
+            "com.salesforce.locker.enabledChangesSince.256",
+            "com.salesforce.locker.temporaryGate",
+            "com.salesforce.locker.enableSfdcLiveObject"
+        ],
+        "mna": {
+            "lightning": "interop"
+        },
+        "arse": 1,
+        "acaf": 1,
+        "services": [
+            "markup://lightning:configProvider",
+            "markup://force:salesforceScopedModuleResolver",
+            "markup://force:ldsEngineCreator",
+            "markup://instrumentation:locatorService"
+        ]
+    },
+    "perfSummary": {
+        "version": "core",
+        "request": 117,
+        "actions": {
+            "89;a": {
+                "total": 98,
+                "db": 52
+            }
+        },
+        "actionsTotal": 98,
+        "overhead": 0
+    }
+}
+
+curl 'https://azcarecheck.azdhs.gov/s/sfsites/aura?r=5&aura.ApexAction.execute=1' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -b 'renderCtx=%7B%22pageId%22%3A%22012744ae-1d05-46ef-b5cd-0b3067a409f7%22%2C%22schema%22%3A%22Published%22%2C%22viewType%22%3A%22Published%22%2C%22brandingSetId%22%3A%2290687ae0-c051-4900-87c4-a0940c830b59%22%2C%22audienceIds%22%3A%22%22%7D; __cf_bm=NWkXZ5f4Z.mVVq37BwbP17DzYLVInnRbH3WT6Xke5vQ-1764261001.4815094-1.0.1.1-UHH1nTEj9SHlWAAdev_Hq9oyyb38iH4R8fYIgrkdGo0A8i3zqq7vwPf9PWO6vw7cCSxwyVTCbBCz85b5BEDdezBMhzKJj_OmJSm4VCHti7jWhajw4vS5NtIRNczYpOJv; _gid=GA1.2.1106199150.1764261003; CookieConsentPolicy=0:1; LSKey-c$CookieConsentPolicy=0:1; _ga=GA1.1.1707684886.1763564714; _ga_KPBR0SR9M2=GS2.1.s1764261002$o3$g1$t1764261117$j51$l0$h0; pctrk=9591d6cd-7276-4d36-9c9c-360c7156d12d; _ga_825BFTNV1Q=GS2.1.s1764261039$o1$g1$t1764262296$j5$l0$h0' \
+  -H 'Origin: https://azcarecheck.azdhs.gov' \
+  -H 'Referer: https://azcarecheck.azdhs.gov/s/inspection-details?inspectionId=a1Ics00000QsqibEAB&facilityId=0018y000008f99LAAQ' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'X-B3-Sampled: 0' \
+  -H 'X-B3-SpanId: 5c42765275e03efe' \
+  -H 'X-B3-TraceId: 522d638c36c50fe4' \
+  -H 'X-SFDC-LDS-Endpoints: ApexActionController.execute:AttachFilesModalController.getFilesFromRecordPublicSite' \
+  -H 'X-SFDC-Page-Cache: c2a69bb3d4b12aed' \
+  -H 'X-SFDC-Page-Scope-Id: bb832281-0390-440a-b312-bd63c0eaf580' \
+  -H 'X-SFDC-Request-Id: 2581900000a5da1ea0' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw 'message=%7B%22actions%22%3A%5B%7B%22id%22%3A%2289%3Ba%22%2C%22descriptor%22%3A%22aura%3A%2F%2FApexActionController%2FACTION%24execute%22%2C%22callingDescriptor%22%3A%22UNKNOWN%22%2C%22params%22%3A%7B%22namespace%22%3A%22%22%2C%22classname%22%3A%22AttachFilesModalController%22%2C%22method%22%3A%22getFilesFromRecordPublicSite%22%2C%22params%22%3A%7B%22recordId%22%3A%22a1Ics00000QsqibEAB%22%2C%22titlePrefix%22%3A%22%22%7D%2C%22cacheable%22%3Afalse%2C%22isContinuation%22%3Afalse%7D%7D%5D%7D&aura.context=%7B%22mode%22%3A%22PROD%22%2C%22fwuid%22%3A%22MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22app%22%3A%22siteforce%3AcommunityApp%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fsiteforce%3AcommunityApp%22%3A%221414_JnVqyfJtnxwn08WU8yKzPg%22%7D%2C%22dn%22%3A%5B%5D%2C%22globals%22%3A%7B%7D%2C%22uad%22%3Atrue%7D&aura.pageURI=%2Fs%2Finspection-details%3FinspectionId%3Da1Ics00000QsqibEAB%26facilityId%3D0018y000008f99LAAQ&aura.token=null'

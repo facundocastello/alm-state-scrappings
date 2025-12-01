@@ -1,0 +1,23 @@
+{
+  "name": "az-healthcare-scraper",
+  "version": "1.0.0",
+  "description": "Arizona healthcare facility data scraper from AZ CareCheck (AZDHS)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "got": "^11.8.6",
+    "p-queue": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  }
+}

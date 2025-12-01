@@ -1,0 +1,170 @@
+{
+    "actions": [
+        {
+            "id": "91;a",
+            "state": "SUCCESS",
+            "returnValue": {
+                "returnValue": [
+                    {
+                        "bureau": "Assisted Living",
+                        "certificateNumber": "AL12914H",
+                        "Id": "a1Ics00000G5OzOEAV",
+                        "initialComments": "The following deficiencies were found during the on-site compliance inspection and investigation of complaint AZ00222341 conducted on January 22, 2025:",
+                        "inspectionDates": "1/22/2025",
+                        "inspectionId": "a1Ics00000G5OzOEAV",
+                        "inspectionName": "INSP-0056318",
+                        "inspectionSODSentDate": "2025-02-05",
+                        "inspectionStartDate": "2025-01-22",
+                        "inspectionStatus": "Complete",
+                        "inspectionType": "Complaint;Compliance (Annual)",
+                        "licenseManagedBy": "113 NORTH SENIOR CARE CENTER LLC",
+                        "worksheetType": "Assisted Living Home"
+                    },
+                    {
+                        "bureau": "Assisted Living",
+                        "certificateNumber": "AL12914H",
+                        "Id": "a1Ics00000G5OzNEAV",
+                        "initialComments": "An on-site investigation of complaint AZ00215145 was conducted on September 4, 2024, and no deficiencies were cited.",
+                        "inspectionDates": "9/4/2024",
+                        "inspectionId": "a1Ics00000G5OzNEAV",
+                        "inspectionName": "INSP-0056317",
+                        "inspectionSODSentDate": "2024-09-10",
+                        "inspectionStartDate": "2024-09-04",
+                        "inspectionStatus": "Complete",
+                        "inspectionType": "Complaint",
+                        "licenseManagedBy": "113 NORTH SENIOR CARE CENTER LLC",
+                        "worksheetType": "Assisted Living Home"
+                    },
+                    {
+                        "bureau": "Assisted Living",
+                        "certificateNumber": "AL12914H",
+                        "Id": "a1Ics00000I3XL9EAN",
+                        "initialComments": "No deficiencies were found during the off-site initial inspection for a change of ownership conducted on March 4, 2024.",
+                        "inspectionDates": "3/4/2024",
+                        "inspectionId": "a1Ics00000I3XL9EAN",
+                        "inspectionName": "INSP-0103431",
+                        "inspectionStartDate": "2024-03-04",
+                        "inspectionStatus": "Complete",
+                        "inspectionType": "Compliance (Initial)",
+                        "licenseManagedBy": "113 NORTH SENIOR CARE CENTER LLC",
+                        "worksheetType": "Assisted Living Home"
+                    }
+                ],
+                "cacheable": true
+            },
+            "error": [],
+            "storable": true
+        }
+    ],
+    "context": {
+        "mode": "PROD",
+        "app": "siteforce:communityApp",
+        "contextPath": "/s/sfsites",
+        "pathPrefix": "",
+        "fwuid": "MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA",
+        "mlr": 1,
+        "uad": 1,
+        "coos": 1,
+        "lwrld": 1,
+        "loaded": {
+            "APPLICATION@markup://siteforce:communityApp": "1414_JnVqyfJtnxwn08WU8yKzPg"
+        },
+        "globalValueProviders": [
+            {
+                "type": "$Global",
+                "values": {
+                    "eswConfigDeveloperName": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "isVoiceOver": {
+                        "writable": true,
+                        "defaultValue": false
+                    },
+                    "setupAppContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "density": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "srcdoc": {
+                        "writable": false,
+                        "defaultValue": false
+                    },
+                    "appContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "dynamicTypeSize": {
+                        "writable": true,
+                        "defaultValue": ""
+                    }
+                }
+            }
+        ],
+        "enableAccessChecks": true,
+        "apce": 1,
+        "dns": "c",
+        "ls": 1,
+        "lairn": [],
+        "laerc": [],
+        "lav": "65",
+        "lgef": [
+            "com.salesforce.locker.enableImmediateGlobalObjectPatching",
+            "com.salesforce.locker.enableTrustedTypesScript",
+            "com.salesforce.locker.changesSince.258",
+            "com.salesforce.locker.changesSince.256",
+            "com.salesforce.locker.enabledChangesSince.256",
+            "com.salesforce.locker.temporaryGate",
+            "com.salesforce.locker.enableSfdcLiveObject"
+        ],
+        "mna": {
+            "lightning": "interop"
+        },
+        "arse": 1,
+        "acaf": 1,
+        "services": [
+            "markup://lightning:configProvider",
+            "markup://force:salesforceScopedModuleResolver",
+            "markup://force:ldsEngineCreator",
+            "markup://instrumentation:locatorService"
+        ]
+    },
+    "perfSummary": {
+        "version": "core",
+        "request": 63,
+        "actions": {
+            "91;a": {
+                "total": 43,
+                "db": 8
+            }
+        },
+        "actionsTotal": 43,
+        "overhead": 0
+    }
+}
+
+curl 'https://azcarecheck.azdhs.gov/s/sfsites/aura?r=7&aura.ApexAction.execute=1' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -b 'renderCtx=%7B%22pageId%22%3A%22012744ae-1d05-46ef-b5cd-0b3067a409f7%22%2C%22schema%22%3A%22Published%22%2C%22viewType%22%3A%22Published%22%2C%22brandingSetId%22%3A%2290687ae0-c051-4900-87c4-a0940c830b59%22%2C%22audienceIds%22%3A%22%22%7D; __cf_bm=NWkXZ5f4Z.mVVq37BwbP17DzYLVInnRbH3WT6Xke5vQ-1764261001.4815094-1.0.1.1-UHH1nTEj9SHlWAAdev_Hq9oyyb38iH4R8fYIgrkdGo0A8i3zqq7vwPf9PWO6vw7cCSxwyVTCbBCz85b5BEDdezBMhzKJj_OmJSm4VCHti7jWhajw4vS5NtIRNczYpOJv; _gid=GA1.2.1106199150.1764261003; CookieConsentPolicy=0:1; LSKey-c$CookieConsentPolicy=0:1; _ga=GA1.1.1707684886.1763564714; _ga_KPBR0SR9M2=GS2.1.s1764261002$o3$g1$t1764261117$j51$l0$h0; pctrk=9591d6cd-7276-4d36-9c9c-360c7156d12d; _ga_825BFTNV1Q=GS2.1.s1764261039$o1$g1$t1764261556$j42$l0$h0' \
+  -H 'Origin: https://azcarecheck.azdhs.gov' \
+  -H 'Referer: https://azcarecheck.azdhs.gov/s/facility-details?facilityId=001cs00000Wo4UdAAJ&activeTab=Inspections&licenseType=All&programType=Health+Care+Facilities&facilityStatus=Active&licenseStatus=Active' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'X-B3-Sampled: 0' \
+  -H 'X-B3-SpanId: afaf02985619a653' \
+  -H 'X-B3-TraceId: debc6dd094584e54' \
+  -H 'X-SFDC-LDS-Endpoints: ApexActionController.execute:AZCCInspectionHistoryController.getFacilityOrLicenseInspections' \
+  -H 'X-SFDC-Page-Scope-Id: 9194a5ef-60ef-4582-81f4-09db4ef256a8' \
+  -H 'X-SFDC-Request-Id: 947690000065585989' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw 'message=%7B%22actions%22%3A%5B%7B%22id%22%3A%2291%3Ba%22%2C%22descriptor%22%3A%22aura%3A%2F%2FApexActionController%2FACTION%24execute%22%2C%22callingDescriptor%22%3A%22UNKNOWN%22%2C%22params%22%3A%7B%22namespace%22%3A%22%22%2C%22classname%22%3A%22AZCCInspectionHistoryController%22%2C%22method%22%3A%22getFacilityOrLicenseInspections%22%2C%22params%22%3A%7B%22facilityId%22%3A%22001cs00000Wo4UdAAJ%22%2C%22licenseId%22%3Anull%7D%2C%22cacheable%22%3Atrue%2C%22isContinuation%22%3Afalse%7D%7D%5D%7D&aura.context=%7B%22mode%22%3A%22PROD%22%2C%22fwuid%22%3A%22MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22app%22%3A%22siteforce%3AcommunityApp%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fsiteforce%3AcommunityApp%22%3A%221414_JnVqyfJtnxwn08WU8yKzPg%22%7D%2C%22dn%22%3A%5B%5D%2C%22globals%22%3A%7B%7D%2C%22uad%22%3Atrue%7D&aura.pageURI=%2Fs%2Ffacility-details%3FfacilityId%3D001cs00000Wo4UdAAJ%26activeTab%3DInspections%26licenseType%3DAll%26programType%3DHealth%2BCare%2BFacilities%26facilityStatus%3DActive%26licenseStatus%3DActive&aura.token=null'

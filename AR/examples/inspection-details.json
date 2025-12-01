@@ -1,0 +1,261 @@
+{
+    "actions": [
+        {
+            "id": "97;a",
+            "state": "SUCCESS",
+            "returnValue": {
+                "returnValue": {
+                    "bureau": "Assisted Living",
+                    "certificateNumber": "AL12914H",
+                    "facilityLicenseEffectiveDate": "2025-03-26",
+                    "facilityLicenseExpirationDate": "2026-03-25",
+                    "facilityLicenseNumber": "AL12914H",
+                    "facilityMailingAddress": "7605 Blanton Road , Spotsyvania, VA 22551",
+                    "facilityName": "113 NORTH SENIOR CARE CENTER LLC",
+                    "facilityPhoneNumber": "7575671150",
+                    "facilityPhysicalAddress": "113 North Avenida De San Ramon , Tucson, AZ 85710",
+                    "facilityServices": "",
+                    "facilityType": "Assisted Living Home",
+                    "facilityWebsite": "",
+                    "fridayHours": "CLOSED",
+                    "initialComments": "The following deficiencies were found during the on-site compliance inspection and investigation of complaint AZ00222341 conducted on January 22, 2025:",
+                    "inspectionDates": "1/22/2025",
+                    "inspectionItems": [
+                        {
+                            "evidence": "Based on documentation review, record review, and interview, the manager failed to implement policies and procedures to protect the health and safety of a resident to cover cardiopulmonary resuscitation (CPR) training for applicable employees to include the method and content of cardiopulmonary resuscitation training, to include a demonstration of the employee&#39;s ability to perform cardiopulmonary resuscitation, for one of three personnel records reviewed. The deficient practice posed a risk if the employee was unable to meet a resident&#39;s needs during an emergency. \n\nFindings include:\n\n1. A review of the facility&#39;s policies and procedures revealed a policy titled, &quot;CPR and First Aid Policy and Procedure.&quot;  This policy stated, &quot;A manager of this facility: Shall ensure upon hiring that an employee or volunteer has undertaken a cardiopulmonary and first aid training for applicable employees and volunteers and must be able to demonstrate the ability to perform cardiopulmonary resuscitation...CPR and 1st Aid Training shall not be completed on the Internet as this is not hands on.&quot;\n\n2. A review of E3&#39;s personnel record revealed E3 had been hired in May of 2024 as a caregiver.\n\n3. A review of E3&#39;s personnel record revealed a CPR and First Aid training certification card from &quot;NationalCPRFoundation,&quot; an online only provider for which the training had not included a hands on demonstration of E3&#39;s ability to perform CPR.\n\n4. In an interview, E1 acknowledged E3&#39;s CPR training had not included a demonstration of E3&#39;s ability to perform CPR.",
+                            "hasAttachments": false,
+                            "monitoring": "",
+                            "permanentSolution": "",
+                            "personResponsible": "",
+                            "rule": "C. A manager shall ensure that policies and procedures are: \n\t1. Established, documented, and implemented to protect the health and safety of a resident that: \n\t\te. Except as provided in subsection (M), cover cardiopulmonary resuscitation training for applicable employees and volunteers, including: \n\t\t\ti. The method and content of cardiopulmonary resuscitation training, which includes a demonstration of the employee&#39;s or volunteer&#39;s ability to perform cardiopulmonary resuscitation; \n\t\t\tii. The qualifications for an individual to provide cardiopulmonary resuscitation training; \n\t\t\tiii. The time-frame for renewal of cardiopulmonary resuscitation training; and \n\t\t\tiv. The documentation that verifies that the employee or volunteer has received cardiopulmonary resuscitation training;",
+                            "temporarySolution": ""
+                        },
+                        {
+                            "evidence": "Based on observation, record review, and interview, the manager failed to ensure that medication was stored in a separate locked room, closet, cabinet, or self-contained unit used only for medication storage.\n\nFindings include:\n\n1. During an environmental inspection of the facility, the Compliance Officer observed a cabinet located in the kitchen was used to store medication for all residents.  The cabinet had a lock, however, the lock had been left open.\n\n2. During an environmental inspection of the facility, the Compliance Officer observed a bottle of antacid in R3&#39;s bedroom on a table next to the bed.\n\n3. A review of R3&#39;s medical record revealed a service plan for personal care services including medication administration.  However, R3&#39;s service plan did not state R3 would store any medication in R3&#39;s room.\n\n4. In an interview, E1 acknowledged medication required to be stored by the assisted living facility had not been stored in a locked area.",
+                            "hasAttachments": false,
+                            "monitoring": "",
+                            "permanentSolution": "",
+                            "personResponsible": "",
+                            "rule": "F. When medication is stored by an assisted living facility, a manager shall ensure that: \n\t1. Medication is stored in a separate locked room, closet, cabinet, or self-contained unit used only for medication storage;",
+                            "temporarySolution": ""
+                        },
+                        {
+                            "evidence": "Based on observation and interview, the manager failed to ensure poisonous or toxic materials were maintained in labeled containers in a locked area and inaccessible to residents.\n\nFindings include:\n\n1.  During an environmental inspection of the facility, the Compliance Officer observed a cabinet below the kitchen sink had magnetic locks, however, the locks had been switched open and the Compliance Officer was able to access the cabinet without a magnet.  Inside the cabinet, the Compliance Officer observed multiple household cleaning chemicals including the following:\n- &quot;Clorox&quot; toilet bowl cleaner;\n- glass cleaner; and\n- &quot;OdoBan&quot; disinfectant.\n\n2.  In an interview, E1 acknowledged poisonous or toxic materials had not been maintained in a locked area and inaccessible to residents.",
+                            "hasAttachments": false,
+                            "monitoring": "",
+                            "permanentSolution": "",
+                            "personResponsible": "",
+                            "rule": "A. A manager shall ensure that: \n\t11. Poisonous or toxic materials stored by the assisted living facility are maintained in labeled containers in a locked area separate from food preparation and storage, dining areas, and medications and are inaccessible to residents;",
+                            "temporarySolution": ""
+                        }
+                    ],
+                    "inspectionNumber": "INSP-0056318",
+                    "inspectionStatus": "Complete",
+                    "inspectionType": "Complaint;Compliance (Annual)",
+                    "manufactureAddress": "",
+                    "mondayHours": "CLOSED",
+                    "offsiteCultivationAddress": "",
+                    "program": "Health Care",
+                    "saturdayHours": "CLOSED",
+                    "sundayHours": "CLOSED",
+                    "thursdayHours": "CLOSED",
+                    "tuesdayHours": "CLOSED",
+                    "wednesdayHours": "CLOSED",
+                    "worksheetType": "Assisted Living Home"
+                },
+                "cacheable": false
+            },
+            "error": []
+        },
+        {
+            "id": "98;a",
+            "state": "SUCCESS",
+            "returnValue": {
+                "returnValue": {
+                    "address": "113 North Avenida De San Ramon, Tucson, AZ 85710",
+                    "affiliation": "",
+                    "affiliationEndDate": "",
+                    "affiliationStartDate": "",
+                    "billingLatitude": "32.223551",
+                    "billingLongitude": "-110.854275",
+                    "bureau": "Assisted Living",
+                    "certificatePublicURL": "https://azdhs-licensing.my.salesforce.com/sfc/p/t0000000GzfY/a/cs00000NAFrl/Z_ovFIaNM07PkjNAxribqg.GGwfB_ScNaare1y2X2OA",
+                    "chiefAdministrativeOfficer": "WILLIAM WOODRING",
+                    "cultivationAddress": " ",
+                    "effectiveDate": "3/26/2025",
+                    "exempt": false,
+                    "expirationDate": "3/25/2026",
+                    "externalFacilitySearchId": "AL12914",
+                    "facilityId": "001cs00000Wo4UdAAJ",
+                    "facilityServices": [
+                        {
+                            "Id": "a4ocs0000007vW6AAI",
+                            "Service_Type__c": "Directed care services",
+                            "Capacity__c": 10
+                        },
+                        {
+                            "Id": "a4ocs0000007vW7AAI",
+                            "Service_Type__c": "Personal care services"
+                        },
+                        {
+                            "Id": "a4ocs0000007vW8AAI",
+                            "Service_Type__c": "Supervisory care services"
+                        }
+                    ],
+                    "facilityStatus": "Active",
+                    "facilityType": "Assisted Living Home",
+                    "hasRelatedFacilities": false,
+                    "isMothershipFacility": true,
+                    "legalName": "113 NORTH SENIOR CARE CENTER LLC",
+                    "license": "AL12914H",
+                    "licenseOwner": "113 N SENIOR CARE CENTER LLC",
+                    "licenses": [
+                        {
+                            "certificatePublicURL": "https://azdhs-licensing.my.salesforce.com/sfc/p/t0000000GzfY/a/cs00000NAFrl/Z_ovFIaNM07PkjNAxribqg.GGwfB_ScNaare1y2X2OA",
+                            "effectiveDate": "3/26/2025",
+                            "expirationDate": "3/25/2026",
+                            "license": "AL12914H",
+                            "licenseStatus": "Active",
+                            "licenseType": "Assisted Living Home",
+                            "originalLicensedDate": "3/25/2024",
+                            "services": ""
+                        }
+                    ],
+                    "licenseStatus": "Active",
+                    "mailingAddress": "7605 Blanton Road, Spotsyvania, VA 22551",
+                    "manufactureAddress": " ",
+                    "originalLicensedDate": "3/25/2024",
+                    "phone": "7575671150",
+                    "physicalCity": "Tucson",
+                    "physicalState": "AZ",
+                    "physicalZip": "85710",
+                    "program": "Health Care",
+                    "shippingLatitude": "-77.594800944251",
+                    "subType": "Assisted Living Home-Directed",
+                    "totalCapacity": "10",
+                    "type": "Assisted Living Home"
+                },
+                "cacheable": true
+            },
+            "error": []
+        }
+    ],
+    "context": {
+        "mode": "PROD",
+        "app": "siteforce:communityApp",
+        "contextPath": "/s/sfsites",
+        "pathPrefix": "",
+        "fwuid": "MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA",
+        "mlr": 1,
+        "uad": 1,
+        "coos": 1,
+        "lwrld": 1,
+        "loaded": {
+            "APPLICATION@markup://siteforce:communityApp": "1414_JnVqyfJtnxwn08WU8yKzPg"
+        },
+        "globalValueProviders": [
+            {
+                "type": "$Global",
+                "values": {
+                    "eswConfigDeveloperName": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "isVoiceOver": {
+                        "writable": true,
+                        "defaultValue": false
+                    },
+                    "setupAppContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "density": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "srcdoc": {
+                        "writable": false,
+                        "defaultValue": false
+                    },
+                    "appContextId": {
+                        "writable": true,
+                        "defaultValue": ""
+                    },
+                    "dynamicTypeSize": {
+                        "writable": true,
+                        "defaultValue": ""
+                    }
+                }
+            }
+        ],
+        "enableAccessChecks": true,
+        "apce": 1,
+        "dns": "c",
+        "ls": 1,
+        "lairn": [],
+        "laerc": [],
+        "lav": "65",
+        "lgef": [
+            "com.salesforce.locker.enableImmediateGlobalObjectPatching",
+            "com.salesforce.locker.enableTrustedTypesScript",
+            "com.salesforce.locker.changesSince.258",
+            "com.salesforce.locker.changesSince.256",
+            "com.salesforce.locker.enabledChangesSince.256",
+            "com.salesforce.locker.temporaryGate",
+            "com.salesforce.locker.enableSfdcLiveObject"
+        ],
+        "mna": {
+            "lightning": "interop"
+        },
+        "arse": 1,
+        "acaf": 1,
+        "services": [
+            "markup://lightning:configProvider",
+            "markup://force:salesforceScopedModuleResolver",
+            "markup://force:ldsEngineCreator",
+            "markup://instrumentation:locatorService"
+        ]
+    },
+    "perfSummary": {
+        "version": "core",
+        "request": 385,
+        "actions": {
+            "97;a": {
+                "total": 135,
+                "db": 32
+            },
+            "98;a": {
+                "total": 227,
+                "db": 126
+            }
+        },
+        "actionsTotal": 362,
+        "overhead": 0
+    }
+}
+
+
+curl 'https://azcarecheck.azdhs.gov/s/sfsites/aura?r=3&aura.ApexAction.execute=2' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,es-US;q=0.8,es-AR;q=0.7,es;q=0.6' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -b 'renderCtx=%7B%22pageId%22%3A%22012744ae-1d05-46ef-b5cd-0b3067a409f7%22%2C%22schema%22%3A%22Published%22%2C%22viewType%22%3A%22Published%22%2C%22brandingSetId%22%3A%2290687ae0-c051-4900-87c4-a0940c830b59%22%2C%22audienceIds%22%3A%22%22%7D; __cf_bm=NWkXZ5f4Z.mVVq37BwbP17DzYLVInnRbH3WT6Xke5vQ-1764261001.4815094-1.0.1.1-UHH1nTEj9SHlWAAdev_Hq9oyyb38iH4R8fYIgrkdGo0A8i3zqq7vwPf9PWO6vw7cCSxwyVTCbBCz85b5BEDdezBMhzKJj_OmJSm4VCHti7jWhajw4vS5NtIRNczYpOJv; _gid=GA1.2.1106199150.1764261003; CookieConsentPolicy=0:1; LSKey-c$CookieConsentPolicy=0:1; _ga=GA1.1.1707684886.1763564714; _ga_KPBR0SR9M2=GS2.1.s1764261002$o3$g1$t1764261117$j51$l0$h0; pctrk=9591d6cd-7276-4d36-9c9c-360c7156d12d; _ga_825BFTNV1Q=GS2.1.s1764261039$o1$g1$t1764261664$j18$l0$h0' \
+  -H 'Origin: https://azcarecheck.azdhs.gov' \
+  -H 'Referer: https://azcarecheck.azdhs.gov/s/inspection-print-view?facilityId=001cs00000Wo4UdAAJ&inspectionId=a1Ics00000G5OzOEAV' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36' \
+  -H 'X-B3-Sampled: 0' \
+  -H 'X-B3-SpanId: 9953c64ed622f053' \
+  -H 'X-B3-TraceId: 52c0c5be833db603' \
+  -H 'X-SFDC-LDS-Endpoints: ApexActionController.execute:AZCCInspectionHistoryController.getInspectionAndFacilityDetailsForPrintView, ApexActionController.execute:AZCCFacilityDetailsTabController.getFacilityDetails' \
+  -H 'X-SFDC-Page-Cache: ccbd084c21effc89' \
+  -H 'X-SFDC-Page-Scope-Id: b27b054b-0d1c-4070-82d2-9a0d73668e2b' \
+  -H 'X-SFDC-Request-Id: 16766900000a46689f' \
+  -H 'sec-ch-ua: "Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw 'message=%7B%22actions%22%3A%5B%7B%22id%22%3A%2297%3Ba%22%2C%22descriptor%22%3A%22aura%3A%2F%2FApexActionController%2FACTION%24execute%22%2C%22callingDescriptor%22%3A%22UNKNOWN%22%2C%22params%22%3A%7B%22namespace%22%3A%22%22%2C%22classname%22%3A%22AZCCInspectionHistoryController%22%2C%22method%22%3A%22getInspectionAndFacilityDetailsForPrintView%22%2C%22params%22%3A%7B%22facilityId%22%3A%22001cs00000Wo4UdAAJ%22%2C%22inspectionId%22%3A%22a1Ics00000G5OzOEAV%22%2C%22licenseId%22%3Anull%7D%2C%22cacheable%22%3Afalse%2C%22isContinuation%22%3Afalse%7D%7D%2C%7B%22id%22%3A%2298%3Ba%22%2C%22descriptor%22%3A%22aura%3A%2F%2FApexActionController%2FACTION%24execute%22%2C%22callingDescriptor%22%3A%22UNKNOWN%22%2C%22params%22%3A%7B%22namespace%22%3A%22%22%2C%22classname%22%3A%22AZCCFacilityDetailsTabController%22%2C%22method%22%3A%22getFacilityDetails%22%2C%22params%22%3A%7B%22facilityId%22%3A%22001cs00000Wo4UdAAJ%22%7D%2C%22cacheable%22%3Afalse%2C%22isContinuation%22%3Afalse%7D%7D%5D%7D&aura.context=%7B%22mode%22%3A%22PROD%22%2C%22fwuid%22%3A%22MXg4UmtXaFlzZ0JoYTJBejdMZEtWdzFLcUUxeUY3ZVB6dE9hR0VheDVpb2cxMy4zMzU1NDQzMi41MDMzMTY0OA%22%2C%22app%22%3A%22siteforce%3AcommunityApp%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fsiteforce%3AcommunityApp%22%3A%221414_JnVqyfJtnxwn08WU8yKzPg%22%7D%2C%22dn%22%3A%5B%5D%2C%22globals%22%3A%7B%7D%2C%22uad%22%3Atrue%7D&aura.pageURI=%2Fs%2Finspection-print-view%3FfacilityId%3D001cs00000Wo4UdAAJ%26inspectionId%3Da1Ics00000G5OzOEAV&aura.token=null'
+

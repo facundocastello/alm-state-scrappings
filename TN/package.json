@@ -1,0 +1,25 @@
+{
+  "name": "tn-state-scrapping",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --pretty false",
+    "start": "npm run build && node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "lint": "tsc --noEmit --pretty false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Tennessee healthcare facility data extractor from local HTML",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "ts-node": "^10.9.2",
+    "typescript": "5.4"
+  }
+}
