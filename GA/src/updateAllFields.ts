@@ -170,11 +170,11 @@ async function fetchReportFields(reportEntryId: number): Promise<ReportFields | 
 
     return {
       facilityType: getField('Facility Type'),
-      violationFound: getField('Violation Found?'),
+      violationFound: getField('Violation Found?') || getField('Violation Found'),
       administrator: getField('Administrator'),
-      licensedBeds: getField('Licensed Beds #'),
+      licensedBeds: getField('Licensed Beds #') || getField('Licensed Beds'),
       licenseEffectiveDate: getField('License Effective Date'),
-      phone: getField('Phone') || getField('Phone Number') || getField('Telephone'),
+      phone: getField('Phone #') || getField('Phone') || getField('Phone Number') || getField('Telephone'),
       email: getField('Email') || getField('E-mail') || getField('Email Address'),
       address: getField('Address'),
       city: getField('City'),

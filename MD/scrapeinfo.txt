@@ -1,0 +1,331 @@
+From here you can get ALL the facilities in Maryland.
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/Home/Search/Facilities
+
+From here you can get ALL the assisted living facilities in Maryland with more details.
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Search?includeLessThan10Beds=true&maxDistance=&fromZip=&countyCode=&name=
+e.g. 
+{
+    "assistedLivings": [
+      {
+        "assistedLivingId": 1,
+        "providerId": "16AL0340",
+        "name": "Collington Episcopal Life Care Community",
+        "location": "Mitchellville,MD",
+        "address1": "10450 Lottsford Road",
+        "address2": null,
+        "city": "Mitchellville",
+        "state": "MD",
+        "zipCode": "20721",
+        "countyCode": "033",
+        "county": "Prince George's",
+        "phone": "3015415020",
+        "website": "https://collington.kendal.org/",
+        "websiteDisplayText": "www.collington.kendal.org",
+        "privateRoomMinCostPerDay": 222.0,
+        "privateRoomMaxCostPerDay": 285.0,
+        "semiPrivateRoomMinCostPerDay": 208.0,
+        "semiPrivateRoomMaxCostPerDay": 239.0,
+        "tripleRoomMinCostPerDay": 0.0,
+        "tripleRoomMaxCostPerDay": 0.0,
+        "apartmentMinCostPerDay": 0.0,
+        "apartmentMaxCostPerDay": 0.0,
+        "hasSecureAlzheimersUnit": true,
+        "hasTransportationServices": true,
+        "distance": null,
+        "totalLicensedBeds": 77,
+        "hasLessThan10Beds": false,
+        "hasProfile": true,
+        "participatinginMedicaidWaiver": false,
+        "isCcrc": false
+      },
+      ....
+
+and for each profile you can get
+
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1
+{
+    "assistedLivingId": 1,
+    "facilityId": "16AL0340",
+    "providerName": "Collington Episcopal Life Care Community",
+    "facDbaPriorName": null,
+    "facNameChangeDt": null,
+    "facNameAbbrev": "CE",
+    "facLastUpdated": "2025-10-21T00:00:00",
+    "address1": "10450 Lottsford Road",
+    "address2": null,
+    "city": "Mitchellville",
+    "state": "MD",
+    "zipCode": "20721",
+    "county": "Prince George's",
+    "phone": "3015415020",
+    "website": "https://collington.kendal.org/",
+    "websiteDisplayText": "www.collington.kendal.org",
+    "imageUrl": "https://p6-mhcc-public.s3.us-east-1.amazonaws.com/assisted-living/facility-photos/16AL0340.png",
+    "imageUrlDefault": "https://p6-mhcc-public.s3.us-east-1.amazonaws.com/assisted-living/facility-photos/default.png",
+    "overview": {
+        "privateRoomMinCostPerDay": 222.000000,
+        "privateRoomMaxCostPerDay": 285.000000,
+        "semiPrivateRoomMinCostPerDay": 208.000000,
+        "semiPrivateRoomMaxCostPerDay": 239.000000,
+        "tripleRoomMinCostPerDay": 0.000000,
+        "tripleRoomMaxCostPerDay": 0.000000,
+        "apartmentMinCostPerDay": 0.000000,
+        "apartmentMaxCostPerDay": 0.000000,
+        "dateFacilityFirstOpened": "1988-10-01T00:00:00",
+        "isForProfit": false,
+        "typeOfBusinessOrg": "Corporation",
+        "owner": "Kendal Corporation",
+        "levelofCare": "3",
+        "totalLicensedBeds": 77,
+        "participatinginMedicaidWaiver": false,
+        "influenzaGoldStar": null,
+        "influenzaMandatory": null,
+        "isCcrc": false,
+        "hasAlzheimerLevelMild": false,
+        "hasAlzheimerLevelMod": true,
+        "hasAlzheimerLevelSev": true,
+        "hasCnaTrainingProgram": false,
+        "hospiceAffiliations": null
+    }
+}
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1/Overview
+{
+    "privateRoomMinCostPerDay": 222.000000,
+    "privateRoomMaxCostPerDay": 285.000000,
+    "semiPrivateRoomMinCostPerDay": 208.000000,
+    "semiPrivateRoomMaxCostPerDay": 239.000000,
+    "tripleRoomMinCostPerDay": 0.000000,
+    "tripleRoomMaxCostPerDay": 0.000000,
+    "apartmentMinCostPerDay": 0.000000,
+    "apartmentMaxCostPerDay": 0.000000,
+    "dateFacilityFirstOpened": "1988-10-01T00:00:00",
+    "isForProfit": false,
+    "typeOfBusinessOrg": "Corporation",
+    "owner": "Kendal Corporation",
+    "levelofCare": "3",
+    "totalLicensedBeds": 77,
+    "participatinginMedicaidWaiver": false,
+    "influenzaGoldStar": null,
+    "influenzaMandatory": null,
+    "isCcrc": false,
+    "hasAlzheimerLevelMild": false,
+    "hasAlzheimerLevelMod": true,
+    "hasAlzheimerLevelSev": true,
+    "hasCnaTrainingProgram": false,
+    "hospiceAffiliations": [
+        {
+            "hospiceAffiliationName": "Montgomery Hospice & Prince George's Hospice"
+        }
+    ]
+}
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1/StaffFluVacc
+
+{
+    "isGoldStar": false,
+    "mandatoryPolicy": true,
+    "mandatoryCovidPolicy": true,
+    "mdVacRateAvg": 48.000000,
+    "vacRates": [
+        {
+            "timeframe": "2023-2024",
+            "facVaccRate": 41.050000
+        },
+        {
+            "timeframe": "2022-2023",
+            "facVaccRate": 73.420000
+        }
+    ]
+}
+
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1/Inspect
+{
+    "latestDefCountSurvey": null,
+    "latestDefCountComplaint": null,
+    "latestStaffInfluenzaVaccMd": 48.000000,
+    "latestDefDateSurvey": null,
+    "latestDefDateComplaint": null,
+    "latestDefCountSurveyMd": 7,
+    "latestDefCountComplaintMd": 3,
+    "latestDefSurveyScopeLevel": null,
+    "latestDefComplaintScopeLevel": null,
+    "surveyInspections": [],
+    "complaintInspections": [],
+    "noDeficiencies": []
+}
+
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1/PatientChar
+
+
+{
+    "femalePct": 84.210530,
+    "malePct": 15.789470,
+    "genderUnknownPct": 0.000000,
+    "ageChart": [
+        {
+            "label": "AGE_65-74_YEARS_%",
+            "valuePct": 1.754390
+        },
+        {
+            "label": "AGE_75-84_YEARS_%",
+            "valuePct": 8.771930
+        },
+        {
+            "label": "AGE_85-94_YEARS_%",
+            "valuePct": 52.631580
+        },
+        {
+            "label": "AGE_GTE95_YEARS_%",
+            "valuePct": 36.842110
+        },
+        {
+            "label": "AGE_LTE64_YEARS_%",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "AGE_UNKNOWN_%",
+            "valuePct": 0.000000
+        }
+    ],
+    "raceChart": [
+        {
+            "label": "African",
+            "valuePct": 24.561400
+        },
+        {
+            "label": "AmericanIndian",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "Asian",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "Hawaiian",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "Hispanic",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "Mixed",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "Other",
+            "valuePct": 0.000000
+        },
+        {
+            "label": "White",
+            "valuePct": 75.438600
+        }
+    ],
+    "mdFemalePct": 70.055380,
+    "mdMalePct": 29.184230,
+    "mdGenderUnknownPct": 0.760390,
+    "mdAgeChart": [
+        {
+            "label": "AGE_65-74_YEARS_%_ST",
+            "valuePct": 9.281760
+        },
+        {
+            "label": "AGE_75-84_YEARS_%_ST",
+            "valuePct": 30.068600
+        },
+        {
+            "label": "AGE_85-94_YEARS_%_ST",
+            "valuePct": 42.284490
+        },
+        {
+            "label": "AGE_GTE95_YEARS_%_ST",
+            "valuePct": 14.116870
+        },
+        {
+            "label": "AGE_LTE64_YEARS_%_ST",
+            "valuePct": 2.603520
+        },
+        {
+            "label": "AGE_UNKNOWN_%_ST",
+            "valuePct": 1.644760
+        }
+    ],
+    "mdRaceChart": [
+        {
+            "label": "African_st",
+            "valuePct": 10.744690
+        },
+        {
+            "label": "AmericanIndian_st",
+            "valuePct": 0.049590
+        },
+        {
+            "label": "Asian_st",
+            "valuePct": 1.305890
+        },
+        {
+            "label": "Hawaiian_st",
+            "valuePct": 0.165300
+        },
+        {
+            "label": "Hispanic_st",
+            "valuePct": 0.950490
+        },
+        {
+            "label": "Mixed_st",
+            "valuePct": 0.429790
+        },
+        {
+            "label": "Other_st",
+            "valuePct": 2.917600
+        },
+        {
+            "label": "White_st",
+            "valuePct": 83.436650
+        }
+    ],
+    "ethHispanicPct": 0.000000,
+    "ethNonHispanicPct": 100.000000,
+    "ethUnknownPct": 0.000000,
+    "mdEthHispanicPct": 0.950490,
+    "mdEthNonHispanicPct": 94.181340,
+    "mdEthUnknownPct": 4.868170
+}
+
+https://healthcarequality.mhcc.maryland.gov/MHCCV2_API_PROD/api/AssistedLiving/Profile/1/AvailableServices
+// when this are null we should ignore
+{
+    "hasSecureAlzheimersUnit": true,
+    "has24HourAwakeStaff": true,
+    "hasAlzheimersCare": true,
+    "hasBarberCare": false,
+    "hasBeautyCare": true,
+    "hasBehavioralManagement": true,
+    "hasCatheterCare": true,
+    "hasCentralIvTherapy": false,
+    "hasColostomyCare": false,
+    "hasDecubitusCare": true,
+    "hasDementiaCare": true,
+    "hasDialysis": false,
+    "hasDispenseMedications": true,
+    "hasHomeHealthAngencyServices": false,
+    "hasHospicecare": true,
+    "hasIncontinenceCare": true,
+    "hasLaundryServices": true,
+    "hasMeals": true,
+    "hasOccupationalTherapy": true,
+    "hasPeripheralIvTherapy": false,
+    "hasPeritonealDialysis": true,
+    "hasPersonalCare": true,
+    "hasPhysicalTherapy": true,
+    "hasPortableOxygenCare": true,
+    "hasRehabilitationCare": true,
+    "hasRespiteCare": true,
+    "hasSpeechLanguageTherapy": true,
+    "hasSuctioningCare": true,
+    "hasTotalParenteralNutrition": false,
+    "hasTracheostomyCare": false,
+    "hasTransportationServices": true,
+    "hasTubeFeeding": true,
+    "hasVentilatorCare": false,
+    "hasWanderGuard": true
+}
