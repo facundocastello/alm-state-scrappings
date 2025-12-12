@@ -19,40 +19,39 @@ export { ScrapingError } from "./http.js";
 
 /**
  * Parse surveys/inspections from the web portal
+ * Throws on HTTP errors so the facility can be retried later
  */
 export async function scrapeSurveys(facilityId: string): Promise<Survey[]> {
   const url = ENDPOINTS.surveys(facilityId);
   const surveys: Survey[] = [];
 
-  try {
-    const response = await httpClient.get(url);
-    const $ = cheerio.load(response.body);
+  // Let HTTP errors propagate - the client will retry, and if all retries fail,
+  // the error bubbles up so the facility is not marked as completed
+  const response = await httpClient.get(url);
+  const $ = cheerio.load(response.body);
 
-    // Find the survey table rows
-    $("table tbody tr").each((_, row) => {
-      const cells = $(row).find("td");
-      if (cells.length >= 4) {
-        const date = $(cells[0]).text().trim();
-        const reportNumber = $(cells[1]).text().trim();
-        const categoryTypesText = $(cells[2]).text().trim();
-        const deficiencyCountText = $(cells[3]).text().trim();
+  // Find the survey table rows
+  $("table tbody tr").each((_, row) => {
+    const cells = $(row).find("td");
+    if (cells.length >= 4) {
+      const date = $(cells[0]).text().trim();
+      const reportNumber = $(cells[1]).text().trim();
+      const categoryTypesText = $(cells[2]).text().trim();
+      const deficiencyCountText = $(cells[3]).text().trim();
 
-        if (reportNumber) {
-          surveys.push({
-            date,
-            reportNumber,
-            categoryTypes: categoryTypesText
-              .split(",")
-              .map((t) => t.trim())
-              .filter(Boolean),
-            deficiencyCount: parseInt(deficiencyCountText, 10) || 0,
-          });
-        }
+      if (reportNumber) {
+        surveys.push({
+          date,
+          reportNumber,
+          categoryTypes: categoryTypesText
+            .split(",")
+            .map((t) => t.trim())
+            .filter(Boolean),
+          deficiencyCount: parseInt(deficiencyCountText, 10) || 0,
+        });
       }
-    });
-  } catch (error) {
-    console.error(`  Error scraping surveys for ${facilityId}:`, error);
-  }
+    }
+  });
 
   return surveys;
 }
@@ -207,126 +206,122 @@ export async function scrapeCitationDetails(
 
 /**
  * Parse violations from the web portal
+ * Throws on HTTP errors so the facility can be retried later
  */
 export async function scrapeViolations(facilityId: string): Promise<Violation[]> {
   const url = ENDPOINTS.violations(facilityId);
   const violations: Violation[] = [];
 
-  try {
-    const response = await httpClient.get(url);
-    const $ = cheerio.load(response.body);
+  // Let HTTP errors propagate for retry
+  const response = await httpClient.get(url);
+  const $ = cheerio.load(response.body);
 
-    // Check for abuse violations
-    const abuseSection = $('h2:contains("Abuse"), h3:contains("Abuse")').next();
-    if (abuseSection.length) {
-      // Look for violation entries in abuse section
-      abuseSection.find("table tbody tr, li, p").each((_, el) => {
-        const text = $(el).text().trim();
-        if (text && !text.includes("No abuse history")) {
-          violations.push({
-            type: "abuse",
-            description: text,
-          });
-        }
-      });
-    }
-
-    // Check for licensing violations
-    const licensingSection = $(
-      'h2:contains("Licensing"), h3:contains("Licensing")'
-    ).next();
-    if (licensingSection.length) {
-      licensingSection.find("table tbody tr, li, p").each((_, el) => {
-        const text = $(el).text().trim();
-        if (text && !text.includes("No licensing violations")) {
-          violations.push({
-            type: "licensing",
-            description: text,
-          });
-        }
-      });
-    }
-
-    // Alternative: check for any table with violation data
-    $("table").each((_, table) => {
-      const tableText = $(table).text().toLowerCase();
-      if (
-        tableText.includes("violation") ||
-        tableText.includes("abuse") ||
-        tableText.includes("licensing")
-      ) {
-        $(table)
-          .find("tbody tr")
-          .each((_, row) => {
-            const cells = $(row).find("td");
-            if (cells.length >= 2) {
-              const type = $(cells[0]).text().trim().toLowerCase();
-              const description = $(cells[1]).text().trim();
-
-              if (description && !description.includes("No ")) {
-                violations.push({
-                  type: type.includes("abuse") ? "abuse" : "licensing",
-                  description,
-                });
-              }
-            }
-          });
+  // Check for abuse violations
+  const abuseSection = $('h2:contains("Abuse"), h3:contains("Abuse")').next();
+  if (abuseSection.length) {
+    // Look for violation entries in abuse section
+    abuseSection.find("table tbody tr, li, p").each((_, el) => {
+      const text = $(el).text().trim();
+      if (text && !text.includes("No abuse history")) {
+        violations.push({
+          type: "abuse",
+          description: text,
+        });
       }
     });
-  } catch (error) {
-    console.error(`  Error scraping violations for ${facilityId}:`, error);
   }
+
+  // Check for licensing violations
+  const licensingSection = $(
+    'h2:contains("Licensing"), h3:contains("Licensing")'
+  ).next();
+  if (licensingSection.length) {
+    licensingSection.find("table tbody tr, li, p").each((_, el) => {
+      const text = $(el).text().trim();
+      if (text && !text.includes("No licensing violations")) {
+        violations.push({
+          type: "licensing",
+          description: text,
+        });
+      }
+    });
+  }
+
+  // Alternative: check for any table with violation data
+  $("table").each((_, table) => {
+    const tableText = $(table).text().toLowerCase();
+    if (
+      tableText.includes("violation") ||
+      tableText.includes("abuse") ||
+      tableText.includes("licensing")
+    ) {
+      $(table)
+        .find("tbody tr")
+        .each((_, row) => {
+          const cells = $(row).find("td");
+          if (cells.length >= 2) {
+            const type = $(cells[0]).text().trim().toLowerCase();
+            const description = $(cells[1]).text().trim();
+
+            if (description && !description.includes("No ")) {
+              violations.push({
+                type: type.includes("abuse") ? "abuse" : "licensing",
+                description,
+              });
+            }
+          }
+        });
+    }
+  });
 
   return violations;
 }
 
 /**
  * Parse notices from the web portal
+ * Throws on HTTP errors so the facility can be retried later
  */
 export async function scrapeNotices(facilityId: string): Promise<Notice[]> {
   const url = ENDPOINTS.notices(facilityId);
   const notices: Notice[] = [];
 
-  try {
-    const response = await httpClient.get(url);
-    const $ = cheerio.load(response.body);
+  // Let HTTP errors propagate for retry
+  const response = await httpClient.get(url);
+  const $ = cheerio.load(response.body);
 
-    // Look for notice entries in tables or lists
-    $("table tbody tr").each((_, row) => {
-      const cells = $(row).find("td");
-      if (cells.length >= 2) {
-        const type = $(cells[0]).text().trim();
-        const description = $(cells[1]).text().trim();
+  // Look for notice entries in tables or lists
+  $("table tbody tr").each((_, row) => {
+    const cells = $(row).find("td");
+    if (cells.length >= 2) {
+      const type = $(cells[0]).text().trim();
+      const description = $(cells[1]).text().trim();
 
-        if (type && !description.includes("No condition notices")) {
-          notices.push({
-            type,
-            description,
-          });
-        }
-      }
-    });
-
-    // Also check for list items
-    $("ul li, ol li").each((_, el) => {
-      const text = $(el).text().trim();
-      if (text && !text.includes("No condition") && !text.includes("No notice")) {
+      if (type && !description.includes("No condition notices")) {
         notices.push({
-          type: "notice",
-          description: text,
+          type,
+          description,
         });
       }
-    });
-  } catch (error) {
-    console.error(`  Error scraping notices for ${facilityId}:`, error);
-  }
+    }
+  });
+
+  // Also check for list items
+  $("ul li, ol li").each((_, el) => {
+    const text = $(el).text().trim();
+    if (text && !text.includes("No condition") && !text.includes("No notice")) {
+      notices.push({
+        type: "notice",
+        description: text,
+      });
+    }
+  });
 
   return notices;
 }
 
 /**
  * Scrape all data for a single facility (parallelized)
- * Throws ScrapingError if critical data fails to fetch
+ * Throws on HTTP errors so the facility can be retried later
  */
 export async function scrapeFacility(
   facility: FacilityFromAPI
@@ -334,43 +329,13 @@ export async function scrapeFacility(
   const facilityId = facility.FacilityID;
   console.log(`  Scraping ${facilityId}: ${facility.FacilityName}`);
 
-  // Track errors
-  const errors: string[] = [];
-
   // Parallel: fetch surveys, violations, and notices simultaneously
-  const [surveysResult, violationsResult, noticesResult] = await Promise.allSettled([
+  // Promise.all will throw if ANY request fails (after retries)
+  const [surveys, violations, notices] = await Promise.all([
     scrapeSurveys(facilityId),
     scrapeViolations(facilityId),
     scrapeNotices(facilityId),
   ]);
-
-  // Extract results or track errors
-  let surveys: Survey[] = [];
-  let violations: Violation[] = [];
-  let notices: Notice[] = [];
-
-  if (surveysResult.status === "fulfilled") {
-    surveys = surveysResult.value;
-  } else {
-    errors.push(`surveys: ${surveysResult.reason}`);
-  }
-
-  if (violationsResult.status === "fulfilled") {
-    violations = violationsResult.value;
-  } else {
-    errors.push(`violations: ${violationsResult.reason}`);
-  }
-
-  if (noticesResult.status === "fulfilled") {
-    notices = noticesResult.value;
-  } else {
-    errors.push(`notices: ${noticesResult.reason}`);
-  }
-
-  // If surveys failed, this is critical - throw to retry later
-  if (surveysResult.status === "rejected") {
-    throw new ScrapingError(`Failed to fetch surveys: ${surveysResult.reason}`, facilityId);
-  }
 
   // Scrape survey citations for each survey (parallel per survey)
   const surveyCitations = new Map<string, SurveyCitation[]>();
@@ -405,11 +370,6 @@ export async function scrapeFacility(
     if (result) {
       surveyCitations.set(result.reportNumber, result.citations);
     }
-  }
-
-  // Log non-critical errors but continue
-  if (errors.length > 0) {
-    console.log(`    ⚠ Non-critical errors for ${facilityId}: ${errors.join("; ")}`);
   }
 
   return {

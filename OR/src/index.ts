@@ -5,7 +5,7 @@
 import "dotenv/config";
 import PQueue from "p-queue";
 import { loadFacilities } from "./api.js";
-import { scrapeFacility, ScrapingError } from "./scraper.js";
+import { scrapeFacility } from "./scraper.js";
 import { saveFacilityReport } from "./report.js";
 import { initCSV, appendToCSV } from "./csv.js";
 import { ProgressTracker } from "./progress.js";
@@ -41,16 +41,8 @@ async function processFacility(
     );
   } catch (error) {
     const errorMsg = error instanceof Error ? error.message : String(error);
-
-    if (error instanceof ScrapingError) {
-      // Critical error - don't mark as completed so we can retry later
-      console.error(`    ✗ RETRY LATER ${facilityId}: ${errorMsg}`);
-      // Don't call markCompleted or markError - leave it pending
-    } else {
-      // Other errors - mark as error but still track
-      console.error(`    ✗ Error processing ${facilityId}: ${errorMsg}`);
-      await progress.markError(facilityId, errorMsg);
-    }
+    // Don't mark as completed - leave pending for retry on next run
+    console.error(`    ✗ RETRY LATER ${facilityId}: ${errorMsg}`);
   }
 }
 
