@@ -37,8 +37,8 @@ export const FACILITIES_JSON = path.join(DATA_DIR, "facilities.json");
 export const PROGRESS_CSV = path.join(DATA_DIR, "progress.csv");
 export const OUTPUT_CSV = path.join(OUTPUT_DIR, "facilities.csv");
 
-// Concurrency settings (increased since we parallelize within each facility)
-export const CONCURRENCY = parseInt(process.env.OR_CONCURRENCY || "5", 10);
+// Concurrency settings (keep low to avoid 500 errors from server)
+export const CONCURRENCY = parseInt(process.env.OR_CONCURRENCY || "2", 10);
 
 // Request settings
 export const USER_AGENT =

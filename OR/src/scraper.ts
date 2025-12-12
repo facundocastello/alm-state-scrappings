@@ -320,7 +320,7 @@ export async function scrapeNotices(facilityId: string): Promise<Notice[]> {
 }
 
 /**
- * Scrape all data for a single facility (parallelized)
+ * Scrape all data for a single facility (sequential to avoid overwhelming server)
  * Throws on HTTP errors so the facility can be retried later
  */
 export async function scrapeFacility(
@@ -329,46 +329,29 @@ export async function scrapeFacility(
   const facilityId = facility.FacilityID;
   console.log(`  Scraping ${facilityId}: ${facility.FacilityName}`);
 
-  // Parallel: fetch surveys, violations, and notices simultaneously
-  // Promise.all will throw if ANY request fails (after retries)
-  const [surveys, violations, notices] = await Promise.all([
-    scrapeSurveys(facilityId),
-    scrapeViolations(facilityId),
-    scrapeNotices(facilityId),
-  ]);
+  // Sequential: fetch one at a time to avoid 500 errors from server
+  const surveys = await scrapeSurveys(facilityId);
+  await delay(100);
+  const violations = await scrapeViolations(facilityId);
+  await delay(100);
+  const notices = await scrapeNotices(facilityId);
 
-  // Scrape survey citations for each survey (parallel per survey)
+  // Scrape survey citations for each survey (sequential to avoid 500 errors)
   const surveyCitations = new Map<string, SurveyCitation[]>();
 
-  const surveyPromises = surveys
-    .filter(s => s.reportNumber)
-    .map(async (survey) => {
-      const citations = await scrapeSurveyCitations(survey.reportNumber);
-      if (citations.length > 0) {
-        // Fetch all citation details in parallel (batch of 5 to avoid overwhelming server)
-        const BATCH_SIZE = 5;
-        for (let i = 0; i < citations.length; i += BATCH_SIZE) {
-          const batch = citations.slice(i, i + BATCH_SIZE);
-          const detailsPromises = batch.map(async (citation) => {
-            const details = await scrapeCitationDetails(survey.reportNumber, citation.tagId);
-            if (details) {
-              citation.details = details;
-            }
-          });
-          await Promise.all(detailsPromises);
-          if (i + BATCH_SIZE < citations.length) {
-            await delay(100); // Small delay between batches
-          }
+  for (const survey of surveys.filter(s => s.reportNumber)) {
+    await delay(100);
+    const citations = await scrapeSurveyCitations(survey.reportNumber);
+    if (citations.length > 0) {
+      // Fetch citation details sequentially
+      for (const citation of citations) {
+        await delay(100);
+        const details = await scrapeCitationDetails(survey.reportNumber, citation.tagId);
+        if (details) {
+          citation.details = details;
         }
-        return { reportNumber: survey.reportNumber, citations };
       }
-      return null;
-    });
-
-  const results = await Promise.all(surveyPromises);
-  for (const result of results) {
-    if (result) {
-      surveyCitations.set(result.reportNumber, result.citations);
+      surveyCitations.set(survey.reportNumber, citations);
     }
   }
 
