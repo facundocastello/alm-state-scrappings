@@ -15,6 +15,27 @@ export const httpClient = got.extend({
     request: 30000,
   },
   throwHttpErrors: true,
+  hooks: {
+    beforeRetry: [
+      (options: any) => {
+        const url = options?.url?.toString() || "unknown";
+        const retryCount = options?.retryCount || 0;
+        console.log(`    ⚠ Retry ${retryCount}/5 for ${url}`);
+      },
+    ],
+    beforeError: [
+      (error: any) => {
+        const url = error?.options?.url?.toString() || error?.request?.requestUrl?.toString() || "unknown";
+        const status = error?.response?.statusCode || "N/A";
+        const body = typeof error?.response?.body === 'string' ? error.response.body.substring(0, 200) : "";
+        console.error(`    ❌ HTTP Error: ${status} for ${url}`);
+        if (body) {
+          console.error(`    Response body: ${body}`);
+        }
+        return error;
+      },
+    ],
+  },
 });
 
 /**
