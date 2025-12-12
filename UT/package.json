@@ -1,0 +1,27 @@
+{
+  "name": "ut-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --pretty false",
+    "start": "npm run build && node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "lint": "tsc --noEmit --pretty false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Utah CCL facility scraper",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.2.3",
+    "got": "^11.8.6",
+    "p-queue": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

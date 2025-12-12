@@ -1,0 +1,2312 @@
+
+> or-healthcare-scraper@1.0.0 start
+> npm run build && node dist/index.js
+
+
+> or-healthcare-scraper@1.0.0 build
+> tsc
+
+╔══════════════════════════════════════════════════════════╗
+║         Oregon Healthcare Facility Scraper               ║
+╚══════════════════════════════════════════════════════════╝
+
+Loaded 84 completed facilities from progress file
+Appending to existing CSV: /Users/facundo/projects/jobs/state-scrapping/OR/output/facilities.csv
+Loaded 4484 facilities from cache
+
+Total facilities: 4484
+Already completed: 84
+Pending: 4400
+Concurrency: 5
+
+  Scraping 0000000206: Fetenech Chage
+  Scraping 0000000211: Zaweria Kiere
+  Scraping 0000000212: Lawrence Tamooh
+  Scraping 0000000213: Michelle Ballesteros
+  Scraping 0000000216: Kimberly Anne Petersen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000216/report.html
+    ✓ Completed 0000000216 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000217: Demeti Gelgelu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000217/report.html
+    ✓ Completed 0000000217 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000219: Phoebe Ochieng And Irene Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000213/report.html
+    ✓ Completed 0000000213 (1 surveys, 0 violations, 0 notices)
+  Scraping 0000000220: Fayera Midekisa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000219/report.html
+    ✓ Completed 0000000219 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000221: Paul Karanja
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000211/report.html
+    ✓ Completed 0000000211 (1 surveys, 0 violations, 0 notices)
+  Scraping 0000000222: Iveth An And Ruth Garcia Montiel
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000212/report.html
+    ✓ Completed 0000000212 (1 surveys, 0 violations, 0 notices)
+  Scraping 0000000223: Mandarina Salih Hussein
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000222/report.html
+    ✓ Completed 0000000222 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000224: Jemberu Abera Woldeyohannes
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000223/report.html
+    ✓ Completed 0000000223 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000225: Cornel Bahnean
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000224/report.html
+    ✓ Completed 0000000224 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000226: Andy Foster
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000220/report.html
+    ✓ Completed 0000000220 (1 surveys, 1 violations, 0 notices)
+
+[Progress] 10/4400 (0.2%) - 1.2/sec - ETA: 60 min
+
+  Scraping 0000000229: Hlina Yoseph Dechaso
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000225/report.html
+    ✓ Completed 0000000225 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000231: Cornelia A Luca
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000226/report.html
+    ✓ Completed 0000000226 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000233: Selbe Wolde
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000229/report.html
+    ✓ Completed 0000000229 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000235: Elias Ketema
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000221/report.html
+    ✓ Completed 0000000221 (1 surveys, 0 violations, 0 notices)
+  Scraping 0000000236: Catherine Wangui
+  Error scraping violations for 0000000206: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472214146,
+    socket: 1765472214146,
+    lookup: 1765472214147,
+    connect: 1765472214405,
+    secureConnect: 1765472214664,
+    upload: 1765472214664,
+    response: 1765472214945,
+    end: 1765472214945,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 258,
+      tls: 259,
+      request: 0,
+      firstByte: 281,
+      download: 0,
+      total: 799
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000233/report.html
+    ✓ Completed 0000000233 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000237: Elias Bory
+  Error scraping notices for 0000000206: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472215318,
+    socket: 1765472215318,
+    lookup: 1765472215319,
+    connect: 1765472215580,
+    secureConnect: 1765472215842,
+    upload: 1765472215842,
+    response: 1765472216148,
+    end: 1765472216148,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 261,
+      tls: 262,
+      request: 0,
+      firstByte: 306,
+      download: 0,
+      total: 830
+    }
+  }
+}
+  Error scraping surveys for 0000000206: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472215621,
+    socket: 1765472215621,
+    lookup: 1765472215622,
+    connect: 1765472215878,
+    secureConnect: 1765472216141,
+    upload: 1765472216141,
+    response: 1765472216620,
+    end: 1765472216620,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 256,
+      tls: 263,
+      request: 0,
+      firstByte: 479,
+      download: 0,
+      total: 999
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000206/report.html
+    ✓ Completed 0000000206 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000238: Oleg Buzhduga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000231/report.html
+    ✓ Completed 0000000231 (1 surveys, 0 violations, 0 notices)
+  Scraping 0000000239: Daisy Chelashaw Soimo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000237/report.html
+    ✓ Completed 0000000237 (0 surveys, 0 violations, 0 notices)
+  Scraping 0000000240: Maria Gurau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000236/report.html
+    ✓ Completed 0000000236 (2 surveys, 0 violations, 0 notices)
+  Scraping 11316: Mariamawit Mekonnen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000235/report.html
+    ✓ Completed 0000000235 (1 surveys, 0 violations, 0 notices)
+
+[Progress] 20/4400 (0.5%) - 1.5/sec - ETA: 50 min
+
+  Scraping 11327: Jason Daniel Anchidin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000238/report.html
+    ✓ Completed 0000000238 (0 surveys, 0 violations, 0 notices)
+  Scraping 11364: Evelia Ayala Magana
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000239/report.html
+    ✓ Completed 0000000239 (0 surveys, 0 violations, 0 notices)
+  Scraping 11369: Evelia Ayala Magana
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/0000000240/report.html
+    ✓ Completed 0000000240 (0 surveys, 0 violations, 0 notices)
+  Scraping 11396: Caroline Wangui Maina
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11327/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11316/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11364/report.html
+    ✓ Completed 11327 (0 surveys, 0 violations, 0 notices)
+  Scraping 11403: Princess Lynn Bawi In Hall
+    ✓ Completed 11364 (0 surveys, 0 violations, 0 notices)
+  Scraping 11419: Candy Wambui Mugo
+    ✓ Completed 11316 (0 surveys, 0 violations, 0 notices)
+  Scraping 11443: Grace Nyambura Karware
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11369/report.html
+    ✓ Completed 11369 (0 surveys, 0 violations, 0 notices)
+  Scraping 11482: Maria Anchidin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11396/report.html
+    ✓ Completed 11396 (0 surveys, 0 violations, 0 notices)
+  Scraping 11487: Rhonda Ellen Richardson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11419/report.html
+    ✓ Completed 11419 (0 surveys, 0 violations, 0 notices)
+  Scraping 11489: Allan Mendoza Manaois
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11443/report.html
+    ✓ Completed 11443 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 30/4400 (0.7%) - 1.6/sec - ETA: 46 min
+
+  Scraping 11490: Stella Gong
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11482/report.html
+    ✓ Completed 11482 (0 surveys, 0 violations, 0 notices)
+  Scraping 11491: Lucy Muhungi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11403/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11487/report.html
+    ✓ Completed 11403 (0 surveys, 0 violations, 0 notices)
+  Scraping 11492: John Kamau Kimani
+    ✓ Completed 11487 (0 surveys, 0 violations, 0 notices)
+  Scraping 11493: Dinah Anyango Noyst
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11489/report.html
+    ✓ Completed 11489 (0 surveys, 0 violations, 0 notices)
+  Scraping 11494: Ermias Abebe Asfaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11491/report.html
+    ✓ Completed 11491 (0 surveys, 0 violations, 0 notices)
+  Scraping 11495: Jane Muthoni Campbell
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11492/report.html
+    ✓ Completed 11492 (0 surveys, 0 violations, 0 notices)
+  Scraping 11497: Zeldah Muthoni Kigotho
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11490/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11493/report.html
+    ✓ Completed 11493 (0 surveys, 0 violations, 0 notices)
+  Scraping 11498: Dame Desalegn Hinkosa
+    ✓ Completed 11490 (0 surveys, 0 violations, 0 notices)
+  Scraping 11499: Sifen Abebe Birue
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11494/report.html
+    ✓ Completed 11494 (0 surveys, 0 violations, 0 notices)
+  Scraping 11501: Kennedy Rodrick Siyame
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11495/report.html
+    ✓ Completed 11495 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 40/4400 (0.9%) - 1.7/sec - ETA: 43 min
+
+  Scraping 11502: Perida Hellen Derocher
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11497/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11499/report.html
+    ✓ Completed 11497 (0 surveys, 0 violations, 0 notices)
+  Scraping 11504: Carolyn Richu Njoki
+    ✓ Completed 11499 (0 surveys, 0 violations, 0 notices)
+  Scraping 11507: Socia  Jo-Queen Tria
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11498/report.html
+    ✓ Completed 11498 (0 surveys, 0 violations, 0 notices)
+  Scraping 11509: Sadie Irene Noffsinger
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11501/report.html
+    ✓ Completed 11501 (0 surveys, 0 violations, 0 notices)
+  Scraping 11510: David Nicholas Thomas
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11504/report.html
+    ✓ Completed 11504 (0 surveys, 0 violations, 0 notices)
+  Scraping 11511: Moses Karienye Njeri
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11502/report.html
+    ✓ Completed 11502 (0 surveys, 0 violations, 0 notices)
+  Scraping 11512: Peter Mwangi Kimani
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11507/report.html
+    ✓ Completed 11507 (0 surveys, 0 violations, 0 notices)
+  Scraping 11513: Samson Mesghna Mehreteab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11509/report.html
+    ✓ Completed 11509 (0 surveys, 0 violations, 0 notices)
+  Scraping 11514: Gladys Njuka Rie
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11510/report.html
+    ✓ Completed 11510 (0 surveys, 0 violations, 0 notices)
+  Scraping 11515: Helen Wanjiku Nganga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11511/report.html
+    ✓ Completed 11511 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 50/4400 (1.1%) - 1.8/sec - ETA: 40 min
+
+  Scraping 11516: Zipporah Wanjiku
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11513/report.html
+    ✓ Completed 11513 (0 surveys, 0 violations, 0 notices)
+  Scraping 11517: Layton Adela Sanchez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11514/report.html
+    ✓ Completed 11514 (0 surveys, 0 violations, 0 notices)
+  Scraping 11521: Susan Wanjiku Sonnier
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11512/report.html
+    ✓ Completed 11512 (0 surveys, 0 violations, 0 notices)
+  Scraping 11522: Mervin Mangalindan Padua
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11516/report.html
+    ✓ Completed 11516 (0 surveys, 0 violations, 0 notices)
+  Scraping 11523: Solomon Kelilew Jemaneh
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11517/report.html
+    ✓ Completed 11517 (0 surveys, 0 violations, 0 notices)
+  Scraping 11524: Bethelehem Aytenfisu Mekonnen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11522/report.html
+    ✓ Completed 11522 (0 surveys, 0 violations, 0 notices)
+  Scraping 11526: Elizabeth Wanjiru Kiruthu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11524/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11523/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11526/report.html
+    ✓ Completed 11524 (0 surveys, 0 violations, 0 notices)
+  Scraping 11527: Fatuma Salumu Kinga
+    ✓ Completed 11523 (0 surveys, 0 violations, 0 notices)
+  Scraping 11528: Olayemi Oluwatoyin Ogunlaja
+    ✓ Completed 11526 (0 surveys, 0 violations, 0 notices)
+  Scraping 11529: Joseph Gitahi Wachira
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11521/report.html
+    ✓ Completed 11521 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 60/4400 (1.4%) - 1.9/sec - ETA: 39 min
+
+  Scraping 11530: Kanittha Caballero
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11529/report.html
+    ✓ Completed 11529 (0 surveys, 0 violations, 0 notices)
+  Scraping 11531: Hawi Saba Kusso
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11528/report.html
+    ✓ Completed 11528 (0 surveys, 0 violations, 0 notices)
+  Scraping 11532: Shewaye Lengiso Faye
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11527/report.html
+    ✓ Completed 11527 (0 surveys, 0 violations, 0 notices)
+  Scraping 11534: Henok Alula Demissie
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11530/report.html
+    ✓ Completed 11530 (0 surveys, 0 violations, 0 notices)
+  Scraping 11536: Martha Waithira Mugo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11534/report.html
+    ✓ Completed 11534 (0 surveys, 0 violations, 0 notices)
+  Scraping 11537: Getachew Mulat Addis
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11536/report.html
+    ✓ Completed 11536 (0 surveys, 0 violations, 0 notices)
+  Scraping 11538: Meseret Teka Debala
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11531/report.html
+    ✓ Completed 11531 (0 surveys, 0 violations, 0 notices)
+  Scraping 11539: Dorcas Andisi Wambua
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11532/report.html
+    ✓ Completed 11532 (0 surveys, 0 violations, 0 notices)
+  Scraping 11540: Sara Loredana Posteuca
+  Error scraping violations for 11515: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472240849,
+    socket: 1765472240849,
+    lookup: 1765472240850,
+    connect: 1765472241116,
+    secureConnect: 1765472241377,
+    upload: 1765472241378,
+    response: 1765472241639,
+    end: 1765472241640,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 266,
+      tls: 261,
+      request: 1,
+      firstByte: 261,
+      download: 1,
+      total: 791
+    }
+  }
+}
+  Error scraping notices for 11515: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472240940,
+    socket: 1765472240940,
+    lookup: 1765472240941,
+    connect: 1765472241198,
+    secureConnect: 1765472241461,
+    upload: 1765472241461,
+    response: 1765472241776,
+    end: 1765472241776,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 257,
+      tls: 263,
+      request: 0,
+      firstByte: 315,
+      download: 0,
+      total: 836
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11537/report.html
+    ✓ Completed 11537 (0 surveys, 0 violations, 0 notices)
+  Scraping 11541: Lilian Mbathe Mbau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11538/report.html
+    ✓ Completed 11538 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 70/4400 (1.6%) - 1.8/sec - ETA: 40 min
+
+  Scraping 11542: Brigida Pioquinto Resner
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11540/report.html
+    ✓ Completed 11540 (0 surveys, 0 violations, 0 notices)
+  Scraping 11544: Margaret Kagiri
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11539/report.html
+    ✓ Completed 11539 (0 surveys, 0 violations, 0 notices)
+  Scraping 11545: Geleta Badhanee Waaqee
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11541/report.html
+    ✓ Completed 11541 (0 surveys, 0 violations, 0 notices)
+  Scraping 11546: Martija  Dennis Joseph Lojo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11544/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11545/report.html
+    ✓ Completed 11544 (0 surveys, 0 violations, 0 notices)
+  Scraping 11547: Milkesso Kolbi Kurfessa
+    ✓ Completed 11545 (0 surveys, 0 violations, 0 notices)
+  Scraping 11548: Mistrawit Getachew Tadesse
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11542/report.html
+    ✓ Completed 11542 (0 surveys, 0 violations, 0 notices)
+  Scraping 11550: Nardous Kibatu Bahru
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11547/report.html
+    ✓ Completed 11547 (0 surveys, 0 violations, 0 notices)
+  Scraping 11551: Mary Wangui Ndururi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11548/report.html
+    ✓ Completed 11548 (0 surveys, 0 violations, 0 notices)
+  Scraping 11552: Walter Makworo
+  Error scraping surveys for 11515: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472244722,
+    socket: 1765472244722,
+    lookup: 1765472244722,
+    connect: 1765472244973,
+    secureConnect: 1765472245218,
+    upload: 1765472245218,
+    response: 1765472246493,
+    end: 1765472246494,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 0,
+      tcp: 251,
+      tls: 245,
+      request: 0,
+      firstByte: 1275,
+      download: 1,
+      total: 1772
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11515/report.html
+    ✓ Completed 11515 (0 surveys, 0 violations, 0 notices)
+  Scraping 11553: David  Jorel Jade Cunanan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11546/report.html
+    ✓ Completed 11546 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 80/4400 (1.8%) - 1.9/sec - ETA: 39 min
+
+  Scraping 11554: Tigist Kebede Sewoya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11551/report.html
+    ✓ Completed 11551 (0 surveys, 0 violations, 0 notices)
+  Scraping 11555: Maame Serwaa Tawiah
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11554/report.html
+    ✓ Completed 11554 (0 surveys, 0 violations, 0 notices)
+  Scraping 11556: Naomi Diane Rasmussen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11553/report.html
+    ✓ Completed 11553 (0 surveys, 0 violations, 0 notices)
+  Scraping 11557: Jecinta Wambui Waweru
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11552/report.html
+    ✓ Completed 11552 (0 surveys, 0 violations, 0 notices)
+  Scraping 11559: Gianna Nicole Johnson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11550/report.html
+    ✓ Completed 11550 (0 surveys, 0 violations, 0 notices)
+  Scraping 11560: Laura Lechinteanu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11555/report.html
+    ✓ Completed 11555 (0 surveys, 0 violations, 0 notices)
+  Scraping 11561: Ishmael Obegi Okemwa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11560/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11556/report.html
+    ✓ Completed 11560 (0 surveys, 0 violations, 0 notices)
+  Scraping 11562: Edget Yohannes Lagano
+    ✓ Completed 11556 (0 surveys, 0 violations, 0 notices)
+  Scraping 11563: Mathewos Mahe Mandoye
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11557/report.html
+    ✓ Completed 11557 (0 surveys, 0 violations, 0 notices)
+  Scraping 11564: Lucy Mukuhi Ngugi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11559/report.html
+    ✓ Completed 11559 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 90/4400 (2.0%) - 1.9/sec - ETA: 38 min
+
+  Scraping 11565: Urgessa Jaldo Kurfessa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11562/report.html
+    ✓ Completed 11562 (0 surveys, 0 violations, 0 notices)
+  Scraping 11567: Peter Njuru Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11561/report.html
+    ✓ Completed 11561 (0 surveys, 0 violations, 0 notices)
+  Scraping 11568: Dorcas Njuguna
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11564/report.html
+    ✓ Completed 11564 (0 surveys, 0 violations, 0 notices)
+  Scraping 11569: Alemtshay Abebe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11563/report.html
+    ✓ Completed 11563 (0 surveys, 0 violations, 0 notices)
+  Scraping 11570: Grethel Yadira Ponce
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11565/report.html
+    ✓ Completed 11565 (0 surveys, 0 violations, 0 notices)
+  Scraping 11571: Edna Bosibori Karisa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11567/report.html
+    ✓ Completed 11567 (0 surveys, 0 violations, 0 notices)
+  Scraping 11573: Lemlem Aboye Gedamu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11569/report.html
+    ✓ Completed 11569 (0 surveys, 0 violations, 0 notices)
+  Scraping 11574: Daniela Nitu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11571/report.html
+    ✓ Completed 11571 (0 surveys, 0 violations, 0 notices)
+  Scraping 11575: Socia  Jo Queen Tria
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11568/report.html
+    ✓ Completed 11568 (0 surveys, 0 violations, 0 notices)
+  Scraping 11576: Tsige Walga Mhiretu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11570/report.html
+    ✓ Completed 11570 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 100/4400 (2.3%) - 1.9/sec - ETA: 38 min
+
+  Scraping 11577: Yuliya Neagu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11573/report.html
+    ✓ Completed 11573 (0 surveys, 0 violations, 0 notices)
+  Scraping 11578: Alan Muteru Kangethe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11574/report.html
+    ✓ Completed 11574 (0 surveys, 0 violations, 0 notices)
+  Scraping 11579: Bona Urgessa Jaldo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11575/report.html
+    ✓ Completed 11575 (0 surveys, 0 violations, 0 notices)
+  Scraping 11580: Aloise Njenga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11577/report.html
+    ✓ Completed 11577 (0 surveys, 0 violations, 0 notices)
+  Scraping 11581: Antonine Atieno Oluoch
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11576/report.html
+    ✓ Completed 11576 (0 surveys, 0 violations, 0 notices)
+  Scraping 11582: Fetene Safawo Butiye
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11578/report.html
+    ✓ Completed 11578 (0 surveys, 0 violations, 0 notices)
+  Scraping 11584: Lucy Nyambura Ndirangu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11579/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11580/report.html
+    ✓ Completed 11579 (0 surveys, 0 violations, 0 notices)
+  Scraping 11585: Etenesh Hadush Amare
+    ✓ Completed 11580 (0 surveys, 0 violations, 0 notices)
+  Scraping 11586: Samuel F Mugo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11582/report.html
+    ✓ Completed 11582 (0 surveys, 0 violations, 0 notices)
+  Scraping 11587: Rowena Rivera Soliman
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11581/report.html
+    ✓ Completed 11581 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 110/4400 (2.5%) - 2.0/sec - ETA: 37 min
+
+  Scraping 11588: Miriam Njeri Njenga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11584/report.html
+    ✓ Completed 11584 (0 surveys, 0 violations, 0 notices)
+  Scraping 11589: Freweini Gebrmedhin Welehans
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11586/report.html
+    ✓ Completed 11586 (0 surveys, 0 violations, 0 notices)
+  Scraping 11590: Solomon Geleto Bino
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11587/report.html
+    ✓ Completed 11587 (0 surveys, 0 violations, 0 notices)
+  Scraping 11591: Reuben Kariuki Njoroge
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11585/report.html
+    ✓ Completed 11585 (0 surveys, 0 violations, 0 notices)
+  Scraping 11592: Wubalem Belay Asrate
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11588/report.html
+    ✓ Completed 11588 (0 surveys, 0 violations, 0 notices)
+  Scraping 11593: Margaret Wambui Gitau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11589/report.html
+    ✓ Completed 11589 (0 surveys, 0 violations, 0 notices)
+  Scraping 11594: Michael Kimita Kareithi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11594/report.html
+    ✓ Completed 11594 (0 surveys, 0 violations, 0 notices)
+  Scraping 11595: Mulatu Bino
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11590/report.html
+    ✓ Completed 11590 (0 surveys, 0 violations, 0 notices)
+  Scraping 11596: Sadie Irene Noffsinger
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11593/report.html
+    ✓ Completed 11593 (0 surveys, 0 violations, 0 notices)
+  Scraping 11598: Genet Nigusie Asfaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11592/report.html
+    ✓ Completed 11592 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 120/4400 (2.7%) - 1.9/sec - ETA: 37 min
+
+  Scraping 11599: Eunice Panaite
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11591/report.html
+    ✓ Completed 11591 (0 surveys, 0 violations, 0 notices)
+  Scraping 11600: Gobena Dube Jibo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11600/report.html
+    ✓ Completed 11600 (0 surveys, 0 violations, 0 notices)
+  Scraping 11602: Luan Man Lun
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11599/report.html
+    ✓ Completed 11599 (0 surveys, 0 violations, 0 notices)
+  Scraping 11603: Wossene Hailemariam Habtemariam
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11595/report.html
+    ✓ Completed 11595 (0 surveys, 0 violations, 0 notices)
+  Scraping 11604: Celestine Efuetbezah Nkemzi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11598/report.html
+    ✓ Completed 11598 (0 surveys, 0 violations, 0 notices)
+  Scraping 11605: Meseret Dagnew Belay
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11596/report.html
+    ✓ Completed 11596 (0 surveys, 0 violations, 0 notices)
+  Scraping 11606: Kevin Gitau Kamwaro
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11602/report.html
+    ✓ Completed 11602 (0 surveys, 0 violations, 0 notices)
+  Scraping 11607: Raymond Njuguna
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11603/report.html
+    ✓ Completed 11603 (0 surveys, 0 violations, 0 notices)
+  Scraping 11608: Petre Emanuel Gurau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11604/report.html
+    ✓ Completed 11604 (0 surveys, 0 violations, 0 notices)
+  Scraping 11609: Luam Gebredingle Gebrehiwot
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11606/report.html
+    ✓ Completed 11606 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 130/4400 (3.0%) - 2.0/sec - ETA: 36 min
+
+  Scraping 11611: Jason Horatiu Cinpean
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11605/report.html
+    ✓ Completed 11605 (0 surveys, 0 violations, 0 notices)
+  Scraping 11612: Lewis And Grace Elaine Aminata
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11612/report.html
+    ✓ Completed 11612 (0 surveys, 0 violations, 0 notices)
+  Scraping 2357618566: Tracy Larimer
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11609/report.html
+    ✓ Completed 11609 (0 surveys, 0 violations, 0 notices)
+  Scraping 2387416748: Roel Catabay
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11611/report.html
+    ✓ Completed 11611 (0 surveys, 0 violations, 0 notices)
+  Scraping 2388635834: Ezekiel Kamonjo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11607/report.html
+    ✓ Completed 11607 (0 surveys, 0 violations, 0 notices)
+  Scraping 2406721182: Paradise Adult Care Home, LLC
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/11608/report.html
+    ✓ Completed 11608 (0 surveys, 0 violations, 0 notices)
+  Scraping 2409686381: Alma Whitehead-Billick
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2357618566/report.html
+    ✓ Completed 2357618566 (0 surveys, 1 violations, 0 notices)
+  Scraping 2413501835: Antony Leroka And Caroline Njagi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2406721182/report.html
+    ✓ Completed 2406721182 (0 surveys, 0 violations, 0 notices)
+  Scraping 2417271290: Chi Tu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2417271290/report.html
+    ✓ Completed 2417271290 (0 surveys, 0 violations, 0 notices)
+  Scraping 2429789068: Fekerte Aimro
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2388635834/report.html
+    ✓ Completed 2388635834 (1 surveys, 0 violations, 0 notices)
+
+[Progress] 140/4400 (3.2%) - 1.9/sec - ETA: 37 min
+
+  Scraping 2430023584: Kedja Nure Tuha
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2409686381/report.html
+    ✓ Completed 2409686381 (6 surveys, 0 violations, 0 notices)
+  Scraping 2437669459: Cleo Costigan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2429789068/report.html
+    ✓ Completed 2429789068 (0 surveys, 0 violations, 0 notices)
+  Scraping 2438114765: Azure Care at Lake Oswego
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2437669459/report.html
+    ✓ Completed 2437669459 (0 surveys, 0 violations, 0 notices)
+  Scraping 2446838558: Christopher Adima
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2413501835/report.html
+    ✓ Completed 2413501835 (8 surveys, 7 violations, 0 notices)
+  Scraping 2452096077: Wilson Njenga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2430023584/report.html
+    ✓ Completed 2430023584 (1 surveys, 0 violations, 0 notices)
+  Scraping 2474596499: Aileen Barallas Barsaga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2387416748/report.html
+    ✓ Completed 2387416748 (6 surveys, 10 violations, 0 notices)
+  Scraping 2475178752: Cecile Mukandekwe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2474596499/report.html
+    ✓ Completed 2474596499 (4 surveys, 0 violations, 0 notices)
+  Scraping 2479851517: Judy Vickery
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2438114765/report.html
+    ✓ Completed 2438114765 (4 surveys, 3 violations, 0 notices)
+  Scraping 2488080570: Vicki Morris and Scott Morris
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2446838558/report.html
+    ✓ Completed 2446838558 (7 surveys, 4 violations, 0 notices)
+  Scraping 2489933596: Debra Carey
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2479851517/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2452096077/report.html
+    ✓ Completed 2479851517 (0 surveys, 1 violations, 0 notices)
+
+[Progress] 150/4400 (3.4%) - 1.8/sec - ETA: 39 min
+
+  Scraping 2525828323: Karen Torres
+    ✓ Completed 2452096077 (7 surveys, 2 violations, 0 notices)
+  Scraping 2526047093: Iudita Leahu And Cassandra Aguilar
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2475178752/report.html
+    ✓ Completed 2475178752 (2 surveys, 0 violations, 0 notices)
+  Scraping 2531559944: Melanie Pop
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2526047093/report.html
+    ✓ Completed 2526047093 (3 surveys, 0 violations, 0 notices)
+  Scraping 2542397799: Meti Tolesa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2531559944/report.html
+    ✓ Completed 2531559944 (4 surveys, 2 violations, 0 notices)
+  Scraping 2567421795: Oana Bordea
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2488080570/report.html
+    ✓ Completed 2488080570 (5 surveys, 3 violations, 0 notices)
+  Scraping 2569461401: Angela Ghitea
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2525828323/report.html
+    ✓ Completed 2525828323 (9 surveys, 1 violations, 0 notices)
+  Scraping 2582151879: Janina Copaciu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2567421795/report.html
+    ✓ Completed 2567421795 (2 surveys, 0 violations, 0 notices)
+  Scraping 2627115035: Maria Villa Tellez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2489933596/report.html
+    ✓ Completed 2489933596 (10 surveys, 2 violations, 0 notices)
+  Scraping 2628932651: Feyruza A Indissa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2569461401/report.html
+    ✓ Completed 2569461401 (2 surveys, 0 violations, 0 notices)
+  Scraping 2645797449: Ingrid Gevers
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2542397799/report.html
+    ✓ Completed 2542397799 (3 surveys, 1 violations, 0 notices)
+
+[Progress] 160/4400 (3.6%) - 1.7/sec - ETA: 42 min
+
+  Scraping 2647328602: Leyenda Lloyd
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2582151879/report.html
+    ✓ Completed 2582151879 (4 surveys, 0 violations, 0 notices)
+  Scraping 2651999199: Angela Fitt
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2651999199/report.html
+    ✓ Completed 2651999199 (0 surveys, 0 violations, 0 notices)
+  Scraping 2673391376: Lovena Flaherty
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2628932651/report.html
+    ✓ Completed 2628932651 (3 surveys, 1 violations, 0 notices)
+  Scraping 2673916174: Aaron Cain
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2645797449/report.html
+    ✓ Completed 2645797449 (3 surveys, 1 violations, 0 notices)
+  Scraping 2679378118: Shalo Sado
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2627115035/report.html
+    ✓ Completed 2627115035 (5 surveys, 4 violations, 0 notices)
+  Scraping 2692625699: Bekalu Abebe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2673391376/report.html
+    ✓ Completed 2673391376 (2 surveys, 0 violations, 0 notices)
+  Scraping 2702513917: Thomas Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2647328602/report.html
+    ✓ Completed 2647328602 (10 surveys, 5 violations, 0 notices)
+  Scraping 2709575022: Nadina And Adina Moga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2673916174/report.html
+    ✓ Completed 2673916174 (1 surveys, 0 violations, 0 notices)
+  Scraping 2713766607: Abraham Gintamo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2692625699/report.html
+    ✓ Completed 2692625699 (6 surveys, 2 violations, 0 notices)
+  Scraping 2715781786: Erlinda Mones-Rabang
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2679378118/report.html
+    ✓ Completed 2679378118 (5 surveys, 1 violations, 0 notices)
+
+[Progress] 170/4400 (3.9%) - 1.6/sec - ETA: 44 min
+
+  Scraping 2716328591: John Chege
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2702513917/report.html
+    ✓ Completed 2702513917 (1 surveys, 0 violations, 0 notices)
+  Scraping 2717975930: Stacey Smith
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2709575022/report.html
+    ✓ Completed 2709575022 (4 surveys, 1 violations, 0 notices)
+  Scraping 2758096871: Brenda Hux
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2758096871/report.html
+    ✓ Completed 2758096871 (0 surveys, 4 violations, 0 notices)
+  Scraping 2773118019: Margaret Dorzin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2713766607/report.html
+    ✓ Completed 2713766607 (5 surveys, 1 violations, 0 notices)
+  Scraping 2790533674: Maria Gonzalez Hernandez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2717975930/report.html
+    ✓ Completed 2717975930 (2 surveys, 0 violations, 0 notices)
+  Scraping 2791306229: Valerie Napier
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2715781786/report.html
+    ✓ Completed 2715781786 (3 surveys, 0 violations, 0 notices)
+  Scraping 2795227197: Gayle M Hansen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2791306229/report.html
+    ✓ Completed 2791306229 (0 surveys, 1 violations, 0 notices)
+  Scraping 2797702614: Corneliu Spiridon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2795227197/report.html
+    ✓ Completed 2795227197 (0 surveys, 0 violations, 0 notices)
+  Scraping 2799577636: Colby Korte
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2773118019/report.html
+    ✓ Completed 2773118019 (2 surveys, 0 violations, 0 notices)
+  Scraping 2807388946: Bilisuma Achamyeleh
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2799577636/report.html
+    ✓ Completed 2799577636 (0 surveys, 1 violations, 0 notices)
+
+[Progress] 180/4400 (4.1%) - 1.6/sec - ETA: 44 min
+
+  Scraping 2810430653: Cassandra Aguilar
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2790533674/report.html
+    ✓ Completed 2790533674 (1 surveys, 0 violations, 0 notices)
+  Scraping 2815339171: Zaida Santillan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2797702614/report.html
+    ✓ Completed 2797702614 (5 surveys, 0 violations, 0 notices)
+  Scraping 2815739917: Delia Lemos-Silva
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2716328591/report.html
+    ✓ Completed 2716328591 (3 surveys, 6 violations, 0 notices)
+  Scraping 2820070357: Madalyn Price
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2820070357/report.html
+    ✓ Completed 2820070357 (0 surveys, 0 violations, 0 notices)
+  Scraping 2829122986: Martina Chavez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2810430653/report.html
+    ✓ Completed 2810430653 (2 surveys, 1 violations, 0 notices)
+  Scraping 2830890322: Kathy Dixon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2815339171/report.html
+    ✓ Completed 2815339171 (2 surveys, 1 violations, 0 notices)
+  Scraping 2846651651: Suheyla Toker
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2830890322/report.html
+    ✓ Completed 2830890322 (0 surveys, 0 violations, 0 notices)
+  Scraping 2861550527: Audrey Giltner
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2807388946/report.html
+    ✓ Completed 2807388946 (10 surveys, 4 violations, 0 notices)
+  Scraping 2864427585: James Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2815739917/report.html
+    ✓ Completed 2815739917 (3 surveys, 1 violations, 0 notices)
+  Scraping 2870550495: Steven Miller
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2846651651/report.html
+    ✓ Completed 2846651651 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 190/4400 (4.3%) - 1.6/sec - ETA: 44 min
+
+  Scraping 2872515962: Jennifer Bustamante
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2870550495/report.html
+    ✓ Completed 2870550495 (6 surveys, 0 violations, 0 notices)
+  Scraping 2883629629: Maria Soto
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2864427585/report.html
+    ✓ Completed 2864427585 (3 surveys, 0 violations, 0 notices)
+  Scraping 2908880883: Naomi Burnett
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2883629629/report.html
+    ✓ Completed 2883629629 (0 surveys, 0 violations, 0 notices)
+  Scraping 2929839114: David Bartlett And Lynn Bartlett
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2861550527/report.html
+    ✓ Completed 2861550527 (10 surveys, 7 violations, 0 notices)
+  Scraping 2942855746: Daniel Goneth
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2829122986/report.html
+    ✓ Completed 2829122986 (6 surveys, 8 violations, 0 notices)
+  Scraping 2956463902: James Iii And Katie Roberts
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2872515962/report.html
+    ✓ Completed 2872515962 (5 surveys, 1 violations, 0 notices)
+  Scraping 2958609981: Misty Rochelle Holliday
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2908880883/report.html
+    ✓ Completed 2908880883 (3 surveys, 1 violations, 0 notices)
+  Scraping 2966460685: Joseph Ndirangu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2966460685/report.html
+    ✓ Completed 2966460685 (1 surveys, 0 violations, 0 notices)
+  Scraping 2975038627: Nicoleta Ioana Corbu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2942855746/report.html
+    ✓ Completed 2942855746 (4 surveys, 0 violations, 0 notices)
+  Scraping 2978227594: Pamela Teach
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2958609981/report.html
+    ✓ Completed 2958609981 (2 surveys, 1 violations, 0 notices)
+
+[Progress] 200/4400 (4.5%) - 1.5/sec - ETA: 47 min
+
+  Scraping 2980494216: Aberash W Assefa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2975038627/report.html
+    ✓ Completed 2975038627 (0 surveys, 1 violations, 0 notices)
+  Scraping 2984903771: Alaka Shiferaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2929839114/report.html
+    ✓ Completed 2929839114 (8 surveys, 5 violations, 0 notices)
+  Scraping 2985356712: Daniel Kamau Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2956463902/report.html
+    ✓ Completed 2956463902 (6 surveys, 2 violations, 0 notices)
+  Scraping 3003293346: Marci Cogdill
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2984903771/report.html
+    ✓ Completed 2984903771 (0 surveys, 0 violations, 0 notices)
+  Scraping 3012696847: Suzie Bullock
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3003293346/report.html
+    ✓ Completed 3003293346 (0 surveys, 1 violations, 0 notices)
+  Scraping 3024537281: Demeti Gelgelu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2978227594/report.html
+    ✓ Completed 2978227594 (1 surveys, 0 violations, 0 notices)
+  Scraping 3033142772: Daniel Nganga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2985356712/report.html
+    ✓ Completed 2985356712 (1 surveys, 0 violations, 0 notices)
+  Scraping 3038928878: Mary Ofori-Atta And Frederick Ofori-Atta
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/2980494216/report.html
+    ✓ Completed 2980494216 (10 surveys, 4 violations, 0 notices)
+  Scraping 3044246237: Thuy-An Nguyen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3033142772/report.html
+    ✓ Completed 3033142772 (1 surveys, 0 violations, 0 notices)
+  Scraping 3066310647: Mesay Keltu And Meaza Keltu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3024537281/report.html
+    ✓ Completed 3024537281 (8 surveys, 2 violations, 0 notices)
+
+[Progress] 210/4400 (4.8%) - 1.5/sec - ETA: 48 min
+
+  Scraping 3117800420: Rehema C Mlisho
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3038928878/report.html
+    ✓ Completed 3038928878 (5 surveys, 2 violations, 0 notices)
+  Scraping 3120122733: Janet Surban
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3012696847/report.html
+    ✓ Completed 3012696847 (10 surveys, 3 violations, 0 notices)
+  Scraping 3147939700: Susan Brown And Dennis Brown
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3147939700/report.html
+    ✓ Completed 3147939700 (0 surveys, 0 violations, 0 notices)
+  Scraping 3152696640: Natalya Balanetskaya And Maryanne Cassera
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3117800420/report.html
+    ✓ Completed 3117800420 (7 surveys, 1 violations, 0 notices)
+  Scraping 3153350110: Paulina Kareko
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3066310647/report.html
+    ✓ Completed 3066310647 (10 surveys, 9 violations, 1 notices)
+  Scraping 3160671262: Dureti Kurfessa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3044246237/report.html
+    ✓ Completed 3044246237 (6 surveys, 8 violations, 0 notices)
+  Scraping 3165036210: Megan Aburto
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3120122733/report.html
+    ✓ Completed 3120122733 (10 surveys, 5 violations, 1 notices)
+  Scraping 3170843489: Barite Berhanu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3152696640/report.html
+    ✓ Completed 3152696640 (6 surveys, 0 violations, 0 notices)
+  Scraping 3171744608: Meko A Tolola
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3153350110/report.html
+    ✓ Completed 3153350110 (4 surveys, 0 violations, 0 notices)
+  Scraping 3172589337: Jemimah Brooks
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3165036210/report.html
+    ✓ Completed 3165036210 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 220/4400 (5.0%) - 1.4/sec - ETA: 49 min
+
+  Scraping 3193968824: John Mesa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3193968824/report.html
+    ✓ Completed 3193968824 (2 surveys, 0 violations, 0 notices)
+  Scraping 3195004873: Ma Aurora Angela S Grenas
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3171744608/report.html
+    ✓ Completed 3171744608 (4 surveys, 3 violations, 0 notices)
+  Scraping 3200564709: Kherta Ismail
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3172589337/report.html
+    ✓ Completed 3172589337 (2 surveys, 0 violations, 0 notices)
+  Scraping 3212793802: Sandra G Hunter
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3212793802/report.html
+    ✓ Completed 3212793802 (0 surveys, 0 violations, 0 notices)
+  Scraping 3229931743: Al Fernandez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3200564709/report.html
+    ✓ Completed 3200564709 (3 surveys, 0 violations, 0 notices)
+  Scraping 3236176072: Glenn Martija
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3170843489/report.html
+    ✓ Completed 3170843489 (1 surveys, 0 violations, 0 notices)
+  Scraping 3238489199: Brenda Elliot
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3195004873/report.html
+    ✓ Completed 3195004873 (6 surveys, 2 violations, 0 notices)
+  Scraping 3252335838: Denise Torj
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3160671262/report.html
+    ✓ Completed 3160671262 (10 surveys, 10 violations, 0 notices)
+  Scraping 3256499502: Samuel Ngaruiya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3238489199/report.html
+    ✓ Completed 3238489199 (0 surveys, 0 violations, 0 notices)
+  Scraping 3256574074: Jessica Norfleet-Woolman
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3229931743/report.html
+    ✓ Completed 3229931743 (1 surveys, 0 violations, 0 notices)
+
+[Progress] 230/4400 (5.2%) - 1.4/sec - ETA: 51 min
+
+  Scraping 3269390780: John Thompson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3256574074/report.html
+    ✓ Completed 3256574074 (0 surveys, 1 violations, 0 notices)
+  Scraping 3293261318: Biftu Gemeda
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3236176072/report.html
+    ✓ Completed 3236176072 (1 surveys, 1 violations, 0 notices)
+  Scraping 3293349701: Hafte Ejeta And Gemta Tessema
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3269390780/report.html
+    ✓ Completed 3269390780 (0 surveys, 0 violations, 0 notices)
+  Scraping 3309657624: Abraham Begeje
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3252335838/report.html
+    ✓ Completed 3252335838 (4 surveys, 2 violations, 0 notices)
+  Scraping 3322214436: Richard Kiarie
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3293349701/report.html
+    ✓ Completed 3293349701 (0 surveys, 0 violations, 0 notices)
+  Scraping 3325137896: Delene M Arnold
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3256499502/report.html
+    ✓ Completed 3256499502 (3 surveys, 10 violations, 0 notices)
+  Scraping 3331833868: Linda Mabelle Moffo Epse Bello
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3322214436/report.html
+    ✓ Completed 3322214436 (5 surveys, 1 violations, 0 notices)
+  Scraping 3331849722: Marimea Bodunov
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3293261318/report.html
+    ✓ Completed 3293261318 (7 surveys, 2 violations, 0 notices)
+  Scraping 3340278177: Elkhan Babayev And Dexter ALFonso
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3325137896/report.html
+    ✓ Completed 3325137896 (4 surveys, 0 violations, 0 notices)
+  Scraping 3348310584: Carolyne Muteti
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3331849722/report.html
+    ✓ Completed 3331849722 (0 surveys, 1 violations, 0 notices)
+
+[Progress] 240/4400 (5.5%) - 1.3/sec - ETA: 52 min
+
+  Scraping 3358164030: Anna Kitchin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3309657624/report.html
+    ✓ Completed 3309657624 (10 surveys, 5 violations, 0 notices)
+  Scraping 3362037431: Anne G Kimani
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3348310584/report.html
+    ✓ Completed 3348310584 (9 surveys, 0 violations, 0 notices)
+  Scraping 3392542355: Maria Ana Christina Trujillo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3358164030/report.html
+    ✓ Completed 3358164030 (5 surveys, 0 violations, 0 notices)
+  Scraping 3395490932: Adugna Mehare
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3340278177/report.html
+    ✓ Completed 3340278177 (10 surveys, 10 violations, 0 notices)
+  Scraping 3396869302: Cameron Scott
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3362037431/report.html
+    ✓ Completed 3362037431 (2 surveys, 2 violations, 0 notices)
+  Scraping 3402709901: Tiffany Morton
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3331833868/report.html
+    ✓ Completed 3331833868 (6 surveys, 1 violations, 0 notices)
+  Scraping 3410401246: Cristian Dan Morariu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3392542355/report.html
+    ✓ Completed 3392542355 (3 surveys, 1 violations, 0 notices)
+  Scraping 3418449775: Jhoanna Tanguan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3410401246/report.html
+    ✓ Completed 3410401246 (0 surveys, 0 violations, 0 notices)
+  Scraping 3422553539: Mekdes Taye
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3395490932/report.html
+    ✓ Completed 3395490932 (5 surveys, 0 violations, 0 notices)
+  Scraping 3431726881: Bau Brown
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3396869302/report.html
+    ✓ Completed 3396869302 (5 surveys, 0 violations, 0 notices)
+
+[Progress] 250/4400 (5.7%) - 1.3/sec - ETA: 53 min
+
+  Scraping 3434829713: Unique Adult Care Home LLC
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3418449775/report.html
+    ✓ Completed 3418449775 (8 surveys, 5 violations, 0 notices)
+  Scraping 3438329934: Mischele Tiessen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3402709901/report.html
+    ✓ Completed 3402709901 (10 surveys, 5 violations, 0 notices)
+  Scraping 3446748283: Ann W Njagi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3431726881/report.html
+    ✓ Completed 3431726881 (1 surveys, 0 violations, 0 notices)
+  Scraping 3456287778: Solomon D Basore
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3422553539/report.html
+    ✓ Completed 3422553539 (4 surveys, 1 violations, 0 notices)
+  Scraping 3461860115: Jolynn Best And Cobus Best
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3456287778/report.html
+    ✓ Completed 3456287778 (0 surveys, 0 violations, 0 notices)
+  Scraping 3472633578: Eric Kariuki
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3434829713/report.html
+    ✓ Completed 3434829713 (6 surveys, 1 violations, 0 notices)
+  Scraping 3475213742: Teresa White
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3446748283/report.html
+    ✓ Completed 3446748283 (2 surveys, 0 violations, 0 notices)
+  Scraping 3506079643: Vanessa Cristurean
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3461860115/report.html
+    ✓ Completed 3461860115 (10 surveys, 0 violations, 0 notices)
+  Scraping 3509747063: Aster Birri
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3472633578/report.html
+    ✓ Completed 3472633578 (4 surveys, 1 violations, 0 notices)
+  Scraping 3515111583: Andrea Zaragoza
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3506079643/report.html
+    ✓ Completed 3506079643 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 260/4400 (5.9%) - 1.3/sec - ETA: 54 min
+
+  Scraping 3522866102: Gamachis Achamyeleh
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3522866102/report.html
+    ✓ Completed 3522866102 (2 surveys, 2 violations, 0 notices)
+  Scraping 3534405158: Catherine Hingson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3509747063/report.html
+    ✓ Completed 3509747063 (2 surveys, 1 violations, 0 notices)
+  Scraping 3537543945: Daniela Lucescu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3515111583/report.html
+    ✓ Completed 3515111583 (5 surveys, 0 violations, 0 notices)
+  Scraping 3539207808: Seblewongel Asmare Gebre
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3475213742/report.html
+    ✓ Completed 3475213742 (10 surveys, 9 violations, 0 notices)
+  Scraping 3545935854: Brittany Poole
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3438329934/report.html
+    ✓ Completed 3438329934 (10 surveys, 2 violations, 0 notices)
+  Scraping 3551369582: Samuel Kihuga
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3534405158/report.html
+    ✓ Completed 3534405158 (1 surveys, 8 violations, 0 notices)
+  Scraping 3569992054: Cynthia Shoffitt
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3537543945/report.html
+    ✓ Completed 3537543945 (4 surveys, 0 violations, 0 notices)
+  Scraping 3581010746: Crystal Jensen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3545935854/report.html
+    ✓ Completed 3545935854 (9 surveys, 4 violations, 1 notices)
+  Scraping 3606775135: Joseph Kiere
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3569992054/report.html
+    ✓ Completed 3569992054 (1 surveys, 0 violations, 0 notices)
+  Scraping 3608033357: Mahlet H Argaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3539207808/report.html
+    ✓ Completed 3539207808 (3 surveys, 0 violations, 0 notices)
+
+[Progress] 270/4400 (6.1%) - 1.0/sec - ETA: 72 min
+
+  Scraping 3614961052: Caroline Njagi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3551369582/report.html
+    ✓ Completed 3551369582 (5 surveys, 1 violations, 0 notices)
+  Scraping 3615425413: Obsitu Beyan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3606775135/report.html
+    ✓ Completed 3606775135 (2 surveys, 1 violations, 0 notices)
+  Scraping 3621520498: Jacob Strava
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3581010746/report.html
+    ✓ Completed 3581010746 (10 surveys, 0 violations, 0 notices)
+  Scraping 3622120289: Hiriety Berhe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3608033357/report.html
+    ✓ Completed 3608033357 (6 surveys, 1 violations, 0 notices)
+  Scraping 3634000555: Alice Freeman
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3634000555/report.html
+    ✓ Completed 3634000555 (0 surveys, 2 violations, 0 notices)
+  Scraping 3652494802: Fracia Kamau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3615425413/report.html
+    ✓ Completed 3615425413 (3 surveys, 1 violations, 0 notices)
+  Scraping 3653283386: Steven Welch
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3653283386/report.html
+    ✓ Completed 3653283386 (0 surveys, 0 violations, 0 notices)
+  Scraping 3662856025: Caroline Mureithi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3621520498/report.html
+    ✓ Completed 3621520498 (4 surveys, 2 violations, 0 notices)
+  Scraping 3684764014: Mccoy Jackie Gooden
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3622120289/report.html
+    ✓ Completed 3622120289 (5 surveys, 0 violations, 0 notices)
+  Scraping 3687072250: Kerry Betz
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3614961052/report.html
+    ✓ Completed 3614961052 (8 surveys, 3 violations, 0 notices)
+
+[Progress] 280/4400 (6.4%) - 1.0/sec - ETA: 72 min
+
+  Scraping 3727081761: Kristina Ciurar
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3684764014/report.html
+    ✓ Completed 3684764014 (0 surveys, 2 violations, 1 notices)
+  Scraping 3741309124: Miriam Smith
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3652494802/report.html
+    ✓ Completed 3652494802 (4 surveys, 1 violations, 0 notices)
+  Scraping 3743529010: Meko Tolola
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3727081761/report.html
+    ✓ Completed 3727081761 (4 surveys, 0 violations, 0 notices)
+  Scraping 3758530798: Gilbert Escobal
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3662856025/report.html
+    ✓ Completed 3662856025 (4 surveys, 0 violations, 1 notices)
+  Scraping 3769787595: Linda Crabill
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3741309124/report.html
+    ✓ Completed 3741309124 (3 surveys, 1 violations, 0 notices)
+  Scraping 3772510097: Jessica Braughton
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3687072250/report.html
+    ✓ Completed 3687072250 (6 surveys, 2 violations, 1 notices)
+  Scraping 3781135852: David Bartlett And Lynn Bartlett
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3758530798/report.html
+    ✓ Completed 3758530798 (0 surveys, 1 violations, 0 notices)
+  Scraping 3783326651: Andra Cinpean
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3769787595/report.html
+    ✓ Completed 3769787595 (0 surveys, 0 violations, 0 notices)
+  Scraping 3803389824: New Beginning Compassionate Foster Care LLC
+  Error scraping violations for 3743529010: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472508836,
+    socket: 1765472508836,
+    lookup: 1765472508837,
+    connect: 1765472509099,
+    secureConnect: 1765472509366,
+    upload: 1765472509366,
+    response: 1765472509639,
+    end: 1765472509640,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 262,
+      tls: 267,
+      request: 0,
+      firstByte: 273,
+      download: 1,
+      total: 804
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3783326651/report.html
+    ✓ Completed 3783326651 (4 surveys, 2 violations, 0 notices)
+  Scraping 3803590962: Carley Brause
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3781135852/report.html
+    ✓ Completed 3781135852 (6 surveys, 1 violations, 0 notices)
+
+[Progress] 290/4400 (6.6%) - 0.9/sec - ETA: 73 min
+
+  Scraping 3819025993: St. Bernhard Bendel Home, Inc
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3803389824/report.html
+    ✓ Completed 3803389824 (2 surveys, 0 violations, 0 notices)
+  Scraping 3824352251: Mahlet Wyohannes And Atatu Wasse
+  Error scraping notices for 3743529010: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472511944,
+    socket: 1765472511944,
+    lookup: 1765472511946,
+    connect: 1765472512207,
+    secureConnect: 1765472512473,
+    upload: 1765472512473,
+    response: 1765472512901,
+    end: 1765472512901,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 2,
+      tcp: 261,
+      tls: 266,
+      request: 0,
+      firstByte: 428,
+      download: 0,
+      total: 957
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3803590962/report.html
+    ✓ Completed 3803590962 (0 surveys, 0 violations, 0 notices)
+  Scraping 3849634946: Fallon Andrews And Daniel Andrews
+  Error scraping surveys for 3743529010: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765472513248,
+    socket: 1765472513248,
+    lookup: 1765472513248,
+    connect: 1765472513509,
+    secureConnect: 1765472513773,
+    upload: 1765472513773,
+    response: 1765472516253,
+    end: 1765472516254,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 0,
+      tcp: 261,
+      tls: 264,
+      request: 0,
+      firstByte: 2480,
+      download: 1,
+      total: 3006
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3743529010/report.html
+    ✓ Completed 3743529010 (0 surveys, 0 violations, 0 notices)
+  Scraping 385008: Presbyterian Community Care Ce
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3772510097/report.html
+    ✓ Completed 3772510097 (10 surveys, 15 violations, 0 notices)
+  Scraping 385010: Laurelhurst Village
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385008/report.html
+    ✓ Completed 385008 (0 surveys, 10 violations, 0 notices)
+  Scraping 385015: Regency Gresham Nursing and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3824352251/report.html
+    ✓ Completed 3824352251 (5 surveys, 3 violations, 0 notices)
+  Scraping 385018: Providence Benedictine Nursing Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3819025993/report.html
+    ✓ Completed 3819025993 (5 surveys, 4 violations, 0 notices)
+  Scraping 385024: Avamere Health Services of Rogue Valley
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3849634946/report.html
+    ✓ Completed 3849634946 (8 surveys, 1 violations, 0 notices)
+  Scraping 385031: Avamere Crestview of Portland
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385015/report.html
+    ✓ Completed 385015 (10 surveys, 16 violations, 0 notices)
+  Scraping 385039: Baycrest Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385039/report.html
+    ✓ Completed 385039 (0 surveys, 10 violations, 1 notices)
+
+[Progress] 300/4400 (6.8%) - 0.9/sec - ETA: 75 min
+
+  Scraping 385044: Menlo Park Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385018/report.html
+    ✓ Completed 385018 (10 surveys, 17 violations, 0 notices)
+  Scraping 385045: Porthaven Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385010/report.html
+    ✓ Completed 385010 (10 surveys, 20 violations, 0 notices)
+  Scraping 385046: Hillside Heights Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385024/report.html
+    ✓ Completed 385024 (10 surveys, 20 violations, 1 notices)
+  Scraping 385049: Columbia Basin Care Facility
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385031/report.html
+    ✓ Completed 385031 (10 surveys, 20 violations, 1 notices)
+  Scraping 385053: Avamere Rehabilitation of Eugene
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385044/report.html
+    ✓ Completed 385044 (10 surveys, 20 violations, 0 notices)
+  Scraping 385055: Reedwood Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385045/report.html
+    ✓ Completed 385045 (10 surveys, 20 violations, 0 notices)
+  Scraping 385064: Regency Care of Rogue Valley
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385055/report.html
+    ✓ Completed 385055 (10 surveys, 10 violations, 0 notices)
+  Scraping 385068: Village Health Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385046/report.html
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385049/report.html
+    ✓ Completed 385049 (10 surveys, 20 violations, 0 notices)
+  Scraping 385072: Corvallis Manor
+    ✓ Completed 385046 (10 surveys, 20 violations, 0 notices)
+  Scraping 385077: Marquis Springfield
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385064/report.html
+    ✓ Completed 385064 (10 surveys, 17 violations, 0 notices)
+
+[Progress] 310/4400 (7.0%) - 0.9/sec - ETA: 78 min
+
+  Scraping 385091: Hearthstone Nursing and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385053/report.html
+    ✓ Completed 385053 (10 surveys, 20 violations, 0 notices)
+  Scraping 385094: Salem Hospital  Duerksen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385094/report.html
+    ✓ Completed 385094 (0 surveys, 0 violations, 0 notices)
+  Scraping 385104: Hood River Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385077/report.html
+    ✓ Completed 385077 (10 surveys, 20 violations, 0 notices)
+  Scraping 385107: Timberline Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385068/report.html
+    ✓ Completed 385068 (10 surveys, 10 violations, 0 notices)
+  Scraping 385112: West Hills Health and Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385072/report.html
+    ✓ Completed 385072 (10 surveys, 20 violations, 0 notices)
+  Scraping 385115: Lakeview Gardens
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385104/report.html
+    ✓ Completed 385104 (10 surveys, 10 violations, 1 notices)
+  Scraping 385117: French Prairie Nursing and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385107/report.html
+    ✓ Completed 385107 (10 surveys, 19 violations, 0 notices)
+  Scraping 385120: Valley West Health Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385091/report.html
+    ✓ Completed 385091 (10 surveys, 20 violations, 3 notices)
+  Scraping 385121: Friendship Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385112/report.html
+    ✓ Completed 385112 (10 surveys, 20 violations, 0 notices)
+  Scraping 385125: Avamere Rehabilitation of Oregon City
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385115/report.html
+    ✓ Completed 385115 (10 surveys, 20 violations, 0 notices)
+
+[Progress] 320/4400 (7.3%) - 0.9/sec - ETA: 80 min
+
+  Scraping 385126: Avamere at Three Fountains
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385120/report.html
+    ✓ Completed 385120 (10 surveys, 20 violations, 1 notices)
+  Scraping 385132: Avamere Rehabilitation of King City
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385126/report.html
+    ✓ Completed 385126 (9 surveys, 20 violations, 0 notices)
+  Scraping 385133: Fairlawn Health and Rehab of Cascadia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385121/report.html
+    ✓ Completed 385121 (10 surveys, 10 violations, 2 notices)
+  Scraping 385136: Glisan Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385125/report.html
+    ✓ Completed 385125 (10 surveys, 20 violations, 1 notices)
+  Scraping 385137: Marquis Plum Ridge Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385133/report.html
+    ✓ Completed 385133 (10 surveys, 10 violations, 0 notices)
+  Scraping 385138: Pilot Butte Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385117/report.html
+    ✓ Completed 385117 (10 surveys, 19 violations, 2 notices)
+  Scraping 385141: Marquis Mt Tabor
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385132/report.html
+    ✓ Completed 385132 (10 surveys, 18 violations, 1 notices)
+  Scraping 385142: Regency Florence
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385138/report.html
+    ✓ Completed 385138 (10 surveys, 17 violations, 1 notices)
+  Scraping 385143: Umpqua Valley Nursing and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385142/report.html
+    ✓ Completed 385142 (10 surveys, 20 violations, 0 notices)
+  Scraping 385144: Clatsop Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385141/report.html
+    ✓ Completed 385141 (10 surveys, 18 violations, 0 notices)
+
+[Progress] 330/4400 (7.5%) - 0.8/sec - ETA: 88 min
+
+  Scraping 385145: Robison Jewish Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385136/report.html
+    ✓ Completed 385136 (10 surveys, 20 violations, 3 notices)
+  Scraping 385147: Creekside Health and Rehab of Cascadia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385137/report.html
+    ✓ Completed 385137 (10 surveys, 10 violations, 0 notices)
+  Scraping 385148: Royale Gardens Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385143/report.html
+    ✓ Completed 385143 (10 surveys, 20 violations, 0 notices)
+  Scraping 385149: Highland House Nursing and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385144/report.html
+    ✓ Completed 385144 (10 surveys, 10 violations, 0 notices)
+  Scraping 385150: Woodside Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385148/report.html
+    ✓ Completed 385148 (10 surveys, 20 violations, 1 notices)
+  Scraping 385151: Rose Haven Nursing Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385145/report.html
+    ✓ Completed 385145 (10 surveys, 20 violations, 0 notices)
+  Scraping 385152: Cottage Grove Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385150/report.html
+    ✓ Completed 385150 (10 surveys, 10 violations, 2 notices)
+  Scraping 385154: Corvallis Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385154/report.html
+    ✓ Completed 385154 (0 surveys, 0 violations, 0 notices)
+  Scraping 385155: Forest Grove Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385149/report.html
+    ✓ Completed 385149 (10 surveys, 20 violations, 0 notices)
+  Scraping 385156: Green Valley Rehabilitation Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385147/report.html
+    ✓ Completed 385147 (10 surveys, 10 violations, 0 notices)
+
+[Progress] 340/4400 (7.7%) - 0.7/sec - ETA: 94 min
+
+  Scraping 385157: Life Care Center of Coos Bay
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385151/report.html
+    ✓ Completed 385151 (10 surveys, 20 violations, 0 notices)
+  Scraping 385159: Tillamook Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385159/report.html
+    ✓ Completed 385159 (0 surveys, 0 violations, 0 notices)
+  Scraping 385161: Milton Freewater Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385155/report.html
+    ✓ Completed 385155 (10 surveys, 20 violations, 0 notices)
+  Scraping 385162: Avamere Rehabilitation of Newport
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385157/report.html
+    ✓ Completed 385157 (10 surveys, 20 violations, 0 notices)
+  Scraping 385164: Aidan Senior Living at Reedsport
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385162/report.html
+    ✓ Completed 385162 (7 surveys, 10 violations, 0 notices)
+  Scraping 385165: Curry Village Health and Rehab of Cascadia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385152/report.html
+    ✓ Completed 385152 (10 surveys, 20 violations, 0 notices)
+  Scraping 385166: Maryville
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385161/report.html
+    ✓ Completed 385161 (10 surveys, 20 violations, 1 notices)
+  Scraping 385167: South Hills Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385156/report.html
+    ✓ Completed 385156 (10 surveys, 20 violations, 0 notices)
+  Scraping 385168: Avamere Rehabilitation of Lebanon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385164/report.html
+    ✓ Completed 385164 (10 surveys, 18 violations, 0 notices)
+  Scraping 385171: Life Care Center of McMinnville
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385166/report.html
+    ✓ Completed 385166 (10 surveys, 10 violations, 1 notices)
+
+[Progress] 350/4400 (8.0%) - 0.7/sec - ETA: 104 min
+
+  Scraping 385172: The Dalles Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385165/report.html
+    ✓ Completed 385165 (10 surveys, 16 violations, 0 notices)
+  Scraping 385174: Klamath Regional Rehab Ct
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385174/report.html
+    ✓ Completed 385174 (0 surveys, 0 violations, 0 notices)
+  Scraping 385175: Providence Med. Ctr. Snf
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385175/report.html
+    ✓ Completed 385175 (0 surveys, 0 violations, 0 notices)
+  Scraping 385176: Terwilliger Plaza Care Ct
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385176/report.html
+    ✓ Completed 385176 (0 surveys, 0 violations, 0 notices)
+  Scraping 385177: Vista Specialty Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385177/report.html
+    ✓ Completed 385177 (0 surveys, 2 violations, 0 notices)
+  Scraping 385178: Pacific Gardens Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385171/report.html
+    ✓ Completed 385171 (10 surveys, 18 violations, 0 notices)
+  Scraping 385179: Tuality Community Hospital
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385178/report.html
+    ✓ Completed 385178 (0 surveys, 0 violations, 0 notices)
+  Scraping 385180: Marquis Newberg
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385179/report.html
+    ✓ Completed 385179 (0 surveys, 0 violations, 0 notices)
+  Scraping 385181: East Cascade Retirement Community
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385167/report.html
+    ✓ Completed 385167 (10 surveys, 20 violations, 2 notices)
+  Scraping 385182: Creswell Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385172/report.html
+    ✓ Completed 385172 (10 surveys, 13 violations, 0 notices)
+
+[Progress] 360/4400 (8.2%) - 0.6/sec - ETA: 105 min
+
+  Scraping 385183: Marquis Centennial Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385168/report.html
+    ✓ Completed 385168 (10 surveys, 20 violations, 0 notices)
+  Scraping 385185: Avamere Riverpark of Eugene
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385181/report.html
+    ✓ Completed 385181 (10 surveys, 13 violations, 0 notices)
+  Scraping 385187: Cascade Terrace Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385180/report.html
+    ✓ Completed 385180 (10 surveys, 12 violations, 0 notices)
+  Scraping 385188: Independence Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385183/report.html
+    ✓ Completed 385183 (10 surveys, 14 violations, 0 notices)
+  Scraping 385189: Avamere Transitional Care at Sunnyside
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385182/report.html
+    ✓ Completed 385182 (10 surveys, 10 violations, 1 notices)
+  Scraping 385190: Gresham Post Acute Care and Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385189/report.html
+    ✓ Completed 385189 (10 surveys, 10 violations, 2 notices)
+  Scraping 385193: Legacy Emanuel Hospital
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385187/report.html
+    ✓ Completed 385187 (10 surveys, 10 violations, 1 notices)
+  Scraping 385194: Marquis Care at Hawthorne
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385193/report.html
+    ✓ Completed 385193 (0 surveys, 0 violations, 0 notices)
+  Scraping 385195: Avamere Rehabilitation of Beaverton
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385194/report.html
+    ✓ Completed 385194 (0 surveys, 0 violations, 0 notices)
+  Scraping 385197: Ashland Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385185/report.html
+    ✓ Completed 385185 (10 surveys, 20 violations, 1 notices)
+
+[Progress] 370/4400 (8.4%) - 0.6/sec - ETA: 119 min
+
+  Scraping 385198: Oak Crest Rehab and Hlth Sv
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385198/report.html
+    ✓ Completed 385198 (0 surveys, 0 violations, 0 notices)
+  Scraping 385199: Chehalem Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385188/report.html
+    ✓ Completed 385188 (10 surveys, 20 violations, 0 notices)
+  Scraping 385200: Willamette View Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385195/report.html
+    ✓ Completed 385195 (10 surveys, 19 violations, 1 notices)
+  Scraping 385201: Willowbrook Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385190/report.html
+    ✓ Completed 385190 (10 surveys, 20 violations, 1 notices)
+  Scraping 385202: Grande Ronde Trans Care Unit
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385202/report.html
+    ✓ Completed 385202 (0 surveys, 0 violations, 0 notices)
+  Scraping 385203: Avamere Rehabilitation of Clackamas
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385200/report.html
+    ✓ Completed 385200 (6 surveys, 3 violations, 0 notices)
+  Scraping 385204: Marquis Forest Grove Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385197/report.html
+    ✓ Completed 385197 (10 surveys, 20 violations, 0 notices)
+  Scraping 385205: Avamere Heart of The Valley Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385205/report.html
+    ✓ Completed 385205 (0 surveys, 0 violations, 0 notices)
+  Scraping 385206: Mennonite Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385203/report.html
+    ✓ Completed 385203 (9 surveys, 20 violations, 1 notices)
+  Scraping 385207: Dallas Retirement Village Health Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385199/report.html
+    ✓ Completed 385199 (10 surveys, 20 violations, 0 notices)
+
+[Progress] 380/4400 (8.6%) - 0.6/sec - ETA: 120 min
+
+  Scraping 385208: Marquis Piedmont Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385201/report.html
+    ✓ Completed 385201 (10 surveys, 20 violations, 0 notices)
+  Scraping 385210: Grandview Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385204/report.html
+    ✓ Completed 385204 (10 surveys, 10 violations, 0 notices)
+  Scraping 385211: La Grande Post Acute Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385210/report.html
+    ✓ Completed 385210 (0 surveys, 0 violations, 0 notices)
+  Scraping 385212: Lincoln City Rehab Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385207/report.html
+    ✓ Completed 385207 (10 surveys, 20 violations, 0 notices)
+  Scraping 385213: Gladstone Living and Rehab.
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385212/report.html
+    ✓ Completed 385212 (0 surveys, 4 violations, 0 notices)
+  Scraping 385214: Marquis Mill Park
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385213/report.html
+    ✓ Completed 385213 (0 surveys, 0 violations, 0 notices)
+  Scraping 385216: Hermiston Good Sam. Ctr
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385216/report.html
+    ✓ Completed 385216 (0 surveys, 0 violations, 0 notices)
+  Scraping 385217: Hillsboro Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385208/report.html
+    ✓ Completed 385208 (10 surveys, 17 violations, 0 notices)
+  Scraping 385218: Marquis Vermont Hills
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385206/report.html
+    ✓ Completed 385206 (7 surveys, 7 violations, 1 notices)
+  Scraping 385219: Care Center East Health and Specialty Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385219/report.html
+    ✓ Completed 385219 (0 surveys, 20 violations, 1 notices)
+
+[Progress] 390/4400 (8.9%) - 0.6/sec - ETA: 120 min
+
+  Scraping 385220: Regency Albany
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385211/report.html
+    ✓ Completed 385211 (10 surveys, 10 violations, 0 notices)
+  Scraping 385221: Marquis Oregon City Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385214/report.html
+    ✓ Completed 385214 (10 surveys, 15 violations, 1 notices)
+  Scraping 385222: Meadow Park Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385218/report.html
+    ✓ Completed 385218 (10 surveys, 4 violations, 0 notices)
+  Scraping 385223: Clatsop Bridges Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385217/report.html
+    ✓ Completed 385217 (10 surveys, 17 violations, 0 notices)
+  Scraping 385224: Windsor Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385223/report.html
+    ✓ Completed 385223 (0 surveys, 0 violations, 0 notices)
+  Scraping 385225: Evan Terrace Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385220/report.html
+    ✓ Completed 385220 (10 surveys, 10 violations, 1 notices)
+  Scraping 385228: Portland Health and Rehabilitation Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385221/report.html
+    ✓ Completed 385221 (9 surveys, 16 violations, 0 notices)
+  Scraping 385229: Avamere Rehabilitation of Junction City
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385224/report.html
+    ✓ Completed 385224 (10 surveys, 20 violations, 3 notices)
+  Scraping 385230: Regency Redmond Rehabilitation and Nursing Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385222/report.html
+    ✓ Completed 385222 (10 surveys, 20 violations, 3 notices)
+  Scraping 385231: Legacy Good Samaritan Hos
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385229/report.html
+    ✓ Completed 385229 (10 surveys, 20 violations, 1 notices)
+
+[Progress] 400/4400 (9.1%) - 0.5/sec - ETA: 123 min
+
+  Scraping 385232: Laurel Hill Nursing Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385225/report.html
+    ✓ Completed 385225 (10 surveys, 20 violations, 1 notices)
+  Scraping 385233: Avamere Court at Keizer
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385231/report.html
+    ✓ Completed 385231 (0 surveys, 0 violations, 0 notices)
+  Scraping 385234: Salem Transitional Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385228/report.html
+    ✓ Completed 385228 (10 surveys, 20 violations, 1 notices)
+  Scraping 385236: Town Center Village
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385230/report.html
+    ✓ Completed 385230 (10 surveys, 20 violations, 0 notices)
+  Scraping 385237: Fernhill Rehabilitation and Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385236/report.html
+    ✓ Completed 385236 (0 surveys, 10 violations, 0 notices)
+  Scraping 385238: Perception Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385238/report.html
+    ✓ Completed 385238 (0 surveys, 0 violations, 0 notices)
+  Scraping 385239: Avamere Rehabilitation of Coos Bay
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385232/report.html
+    ✓ Completed 385232 (10 surveys, 10 violations, 0 notices)
+  Scraping 385240: Marquis Marian Estates
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385234/report.html
+    ✓ Completed 385234 (10 surveys, 20 violations, 0 notices)
+  Scraping 385241: Keizer Nursing and Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385233/report.html
+    ✓ Completed 385233 (10 surveys, 20 violations, 0 notices)
+  Scraping 385242: Avamere Twin Oaks of Sweet Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385240/report.html
+    ✓ Completed 385240 (9 surveys, 20 violations, 0 notices)
+
+[Progress] 410/4400 (9.3%) - 0.5/sec - ETA: 124 min
+
+  Scraping 385243: Saint Alphonsus Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385242/report.html
+    ✓ Completed 385242 (0 surveys, 7 violations, 0 notices)
+  Scraping 385244: Nehalem Valley Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385243/report.html
+    ✓ Completed 385243 (0 surveys, 10 violations, 0 notices)
+  Scraping 385245: Rivercrest Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385239/report.html
+    ✓ Completed 385239 (10 surveys, 20 violations, 0 notices)
+  Scraping 385246: Scenic Pointe Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385246/report.html
+    ✓ Completed 385246 (0 surveys, 0 violations, 0 notices)
+  Scraping 385248: Cottage Grove Hospital
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385241/report.html
+    ✓ Completed 385241 (10 surveys, 16 violations, 0 notices)
+  Scraping 385249: Rogue Valley Medical Ctr
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385249/report.html
+    ✓ Completed 385249 (0 surveys, 0 violations, 0 notices)
+  Scraping 385250: Rogue Valley Manor
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385248/report.html
+    ✓ Completed 385248 (0 surveys, 0 violations, 0 notices)
+  Scraping 385251: Avamere Rehabilitation of Hillsboro
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385245/report.html
+    ✓ Completed 385245 (10 surveys, 20 violations, 0 notices)
+  Scraping 385253: Bend Transitional Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385244/report.html
+    ✓ Completed 385244 (10 surveys, 20 violations, 0 notices)
+  Scraping 385263: Regency Hermiston Nursing and Rehab Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385237/report.html
+    ✓ Completed 385237 (10 surveys, 18 violations, 0 notices)
+
+[Progress] 420/4400 (9.5%) - 0.5/sec - ETA: 125 min
+
+  Scraping 385266: Marquis Wilsonville Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385251/report.html
+    ✓ Completed 385251 (10 surveys, 10 violations, 0 notices)
+  Scraping 3857693188: Dinah Anyango Noyst
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385263/report.html
+    ✓ Completed 385263 (10 surveys, 20 violations, 0 notices)
+  Scraping 3864765773: Shallom Valley Foster Home LLC
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385266/report.html
+    ✓ Completed 385266 (10 surveys, 10 violations, 1 notices)
+  Scraping 3866482137: Lucy Kangoro
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3857693188/report.html
+    ✓ Completed 3857693188 (5 surveys, 0 violations, 0 notices)
+  Scraping 3868678675: Suzanne Lange
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385253/report.html
+    ✓ Completed 385253 (10 surveys, 10 violations, 0 notices)
+  Scraping 3877336039: Balolwa Georgette Lugano
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3864765773/report.html
+    ✓ Completed 3864765773 (2 surveys, 0 violations, 0 notices)
+  Scraping 3878823159: Shane Holly
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3868678675/report.html
+    ✓ Completed 3868678675 (0 surveys, 0 violations, 0 notices)
+  Scraping 3884660367: Cherie L Bray
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/385250/report.html
+    ✓ Completed 385250 (8 surveys, 14 violations, 0 notices)
+  Scraping 3885257232: Stephen Wetmore And Nick Stine
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3877336039/report.html
+    ✓ Completed 3877336039 (0 surveys, 0 violations, 0 notices)
+  Scraping 3888526265: Dureti Tusse
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3866482137/report.html
+    ✓ Completed 3866482137 (2 surveys, 1 violations, 0 notices)
+
+[Progress] 430/4400 (9.8%) - 0.5/sec - ETA: 125 min
+
+  Scraping 3897184182: George Mwangi
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3888526265/report.html
+    ✓ Completed 3888526265 (0 surveys, 2 violations, 0 notices)
+  Scraping 38A001: Providence Child Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3878823159/report.html
+    ✓ Completed 3878823159 (1 surveys, 2 violations, 0 notices)
+  Scraping 38A025: Secora Rehabilitation of Cascadia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3885257232/report.html
+    ✓ Completed 3885257232 (2 surveys, 0 violations, 0 notices)
+  Scraping 38A026: Marquis Autumn Hills Memory Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3884660367/report.html
+    ✓ Completed 3884660367 (9 surveys, 1 violations, 0 notices)
+  Scraping 38A029: Mary's Woods at Marylhurst
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3897184182/report.html
+    ✓ Completed 3897184182 (3 surveys, 0 violations, 0 notices)
+  Scraping 38E004: Marquis Hope Village
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38A029/report.html
+    ✓ Completed 38A029 (0 surveys, 5 violations, 0 notices)
+  Scraping 38E008: Golden Age Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38A001/report.html
+    ✓ Completed 38A001 (10 surveys, 13 violations, 0 notices)
+  Scraping 38E018: Rose Linn Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E008/report.html
+    ✓ Completed 38E008 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E024: Avalon Care Center - Scappoose
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38A025/report.html
+    ✓ Completed 38A025 (10 surveys, 20 violations, 1 notices)
+  Scraping 38E026: Ocean View Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38A026/report.html
+    ✓ Completed 38A026 (10 surveys, 15 violations, 0 notices)
+
+[Progress] 440/4400 (10.0%) - 0.5/sec - ETA: 124 min
+
+  Scraping 38E028: Myrtle Point Rehabilitation and Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E004/report.html
+    ✓ Completed 38E004 (10 surveys, 10 violations, 0 notices)
+  Scraping 38E030: Regency Prineville Rehabilitation and Nursing Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E026/report.html
+    ✓ Completed 38E026 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E032: Regency Care of Central Oregon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E018/report.html
+    ✓ Completed 38E018 (10 surveys, 20 violations, 0 notices)
+  Scraping 38E040: Blue Mountain Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E024/report.html
+    ✓ Completed 38E024 (10 surveys, 10 violations, 0 notices)
+  Scraping 38E041: Burns Health Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E041/report.html
+    ✓ Completed 38E041 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E064: Twilight Acres Nursing
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E064/report.html
+    ✓ Completed 38E064 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E075: Tierra Rose Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E040/report.html
+    ✓ Completed 38E040 (10 surveys, 14 violations, 0 notices)
+  Scraping 38E076: Magnolia Manor
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E076/report.html
+    ✓ Completed 38E076 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E082: Marquis Silver Gardens
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E082/report.html
+    ✓ Completed 38E082 (0 surveys, 7 violations, 0 notices)
+  Scraping 38E083: Riverview Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E083/report.html
+    ✓ Completed 38E083 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 450/4400 (10.2%) - 0.5/sec - ETA: 125 min
+
+  Scraping 38E088: Pioneer Memorial Nursing Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E088/report.html
+    ✓ Completed 38E088 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E089: Amberwood Terrace
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E089/report.html
+    ✓ Completed 38E089 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E100: Tualatin Valley Health
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E100/report.html
+    ✓ Completed 38E100 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E104: Lou Del Health Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E104/report.html
+    ✓ Completed 38E104 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E113: Rivers Edge Rehabilitation and Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E028/report.html
+    ✓ Completed 38E028 (10 surveys, 20 violations, 0 notices)
+  Scraping 38E119: Gateway Care and Retirement
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E075/report.html
+    ✓ Completed 38E075 (10 surveys, 20 violations, 3 notices)
+  Scraping 38E126: Healthcare at Foster Creek
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E032/report.html
+    ✓ Completed 38E032 (10 surveys, 20 violations, 0 notices)
+  Scraping 38E135: Baptist Manor
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E126/report.html
+    ✓ Completed 38E126 (0 surveys, 20 violations, 1 notices)
+  Scraping 38E142: Evergreen Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E135/report.html
+    ✓ Completed 38E135 (0 surveys, 0 violations, 0 notices)
+  Scraping 38E150: Stanley Post Acute
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E030/report.html
+    ✓ Completed 38E030 (10 surveys, 13 violations, 0 notices)
+
+[Progress] 460/4400 (10.5%) - 0.5/sec - ETA: 124 min
+
+  Scraping 38E156: Wallowa Valley Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E156/report.html
+    ✓ Completed 38E156 (0 surveys, 5 violations, 0 notices)
+  Scraping 38E157: East Portland Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E119/report.html
+    ✓ Completed 38E119 (10 surveys, 17 violations, 0 notices)
+  Scraping 38E173: Avalon Care Center - Portland
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E113/report.html
+    ✓ Completed 38E113 (10 surveys, 20 violations, 1 notices)
+  Scraping 38E174: Village Manor of Cascadia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E142/report.html
+    ✓ Completed 38E142 (10 surveys, 20 violations, 0 notices)
+  Scraping 38E188: Gracelen Care Center
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E157/report.html
+    ✓ Completed 38E157 (10 surveys, 20 violations, 1 notices)
+  Scraping 38E195: Pioneer Nursing Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E174/report.html
+    ✓ Completed 38E174 (10 surveys, 20 violations, 0 notices)
+  Scraping 38E196: Belmont Care and Rehabilitation
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E173/report.html
+    ✓ Completed 38E173 (10 surveys, 16 violations, 1 notices)
+  Scraping 38E211: Providence Milwaukie Extended
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E211/report.html
+    ✓ Completed 38E211 (0 surveys, 0 violations, 0 notices)
+  Scraping 38L180: Cedar Crossings
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E196/report.html
+    ✓ Completed 38E196 (10 surveys, 20 violations, 1 notices)
+  Scraping 38L277: Holladay Park Plaza
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E195/report.html
+    ✓ Completed 38E195 (7 surveys, 6 violations, 0 notices)
+
+[Progress] 470/4400 (10.7%) - 0.5/sec - ETA: 139 min
+
+  Scraping 38L300: Marquis Tualatin Post Acute Rehab
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E188/report.html
+    ✓ Completed 38E188 (10 surveys, 20 violations, 2 notices)
+  Scraping 38L400: Mirabella Portland
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38E150/report.html
+    ✓ Completed 38E150 (10 surveys, 20 violations, 0 notices)
+  Scraping 38L429: Masonic and Eastern Star Ho
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L180/report.html
+    ✓ Completed 38L180 (10 surveys, 15 violations, 0 notices)
+  Scraping 38L501: Village at Hillside
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L429/report.html
+    ✓ Completed 38L429 (0 surveys, 0 violations, 0 notices)
+  Scraping 38L502: The Pearl at Kruse Way
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L300/report.html
+    ✓ Completed 38L300 (10 surveys, 13 violations, 0 notices)
+  Scraping 38L503: Lebanon Veterans Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L400/report.html
+    ✓ Completed 38L400 (7 surveys, 15 violations, 0 notices)
+  Scraping 38L544: Fernwood Supportive Living at Madrona Grove
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L277/report.html
+    ✓ Completed 38L277 (10 surveys, 7 violations, 0 notices)
+  Scraping 38L600: Tigard Rehabilitation and Care
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L502/report.html
+    ✓ Completed 38L502 (10 surveys, 10 violations, 0 notices)
+  Scraping 38L756: Cascade Manor
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L501/report.html
+    ✓ Completed 38L501 (7 surveys, 16 violations, 0 notices)
+  Scraping 38L847: Providence Seaside Hospital
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L847/report.html
+    ✓ Completed 38L847 (0 surveys, 1 violations, 0 notices)
+
+[Progress] 480/4400 (10.9%) - 0.5/sec - ETA: 139 min
+
+  Scraping 38L938: Oregon Veterans Home
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L544/report.html
+    ✓ Completed 38L544 (10 surveys, 20 violations, 1 notices)
+  Scraping 3902230968: Sara Musachia
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L600/report.html
+    ✓ Completed 38L600 (10 surveys, 20 violations, 1 notices)
+  Scraping 3905901260: Yilma Gemeda
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3902230968/report.html
+    ✓ Completed 3902230968 (0 surveys, 0 violations, 0 notices)
+  Scraping 3914153158: Leah Nkomo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L503/report.html
+    ✓ Completed 38L503 (10 surveys, 20 violations, 0 notices)
+  Scraping 3915311342: Alexandra Baldwin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L756/report.html
+    ✓ Completed 38L756 (10 surveys, 10 violations, 0 notices)
+  Scraping 3927813651: Dannette Weathers
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3927813651/report.html
+    ✓ Completed 3927813651 (0 surveys, 0 violations, 0 notices)
+  Scraping 3933080769: Liban Satu And Fatuma Ali
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/38L938/report.html
+    ✓ Completed 38L938 (10 surveys, 20 violations, 0 notices)
+  Scraping 3933488207: Chistina Ragsdale
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3915311342/report.html
+    ✓ Completed 3915311342 (3 surveys, 1 violations, 0 notices)
+  Scraping 3936603720: Coca Carter And Gabrielle Webster
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3905901260/report.html
+    ✓ Completed 3905901260 (3 surveys, 0 violations, 0 notices)
+  Scraping 3938725883: Precy Ann Rael
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3914153158/report.html
+    ✓ Completed 3914153158 (5 surveys, 1 violations, 0 notices)
+
+[Progress] 490/4400 (11.1%) - 0.5/sec - ETA: 137 min
+
+  Scraping 3949818256: Rafael Leahu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3936603720/report.html
+    ✓ Completed 3936603720 (0 surveys, 0 violations, 0 notices)
+  Scraping 3959453811: Eyob Legesse
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3933488207/report.html
+    ✓ Completed 3933488207 (5 surveys, 0 violations, 0 notices)
+  Scraping 3968926426: Cecile Mukandekwe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3938725883/report.html
+    ✓ Completed 3938725883 (4 surveys, 0 violations, 0 notices)
+  Scraping 3979468594: Damaris Kamau
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3949818256/report.html
+    ✓ Completed 3949818256 (1 surveys, 0 violations, 0 notices)
+  Scraping 3990589578: Clara R Baker
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3959453811/report.html
+    ✓ Completed 3959453811 (2 surveys, 0 violations, 0 notices)
+  Scraping 4004852689: Maria Soto
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4004852689/report.html
+    ✓ Completed 4004852689 (0 surveys, 2 violations, 0 notices)
+  Scraping 4007510970: Roger Aburto
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3979468594/report.html
+    ✓ Completed 3979468594 (2 surveys, 0 violations, 0 notices)
+  Scraping 4011871881: Andrea Bantigue
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3968926426/report.html
+    ✓ Completed 3968926426 (7 surveys, 3 violations, 0 notices)
+  Scraping 4028034100: Anne Maina
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3933080769/report.html
+    ✓ Completed 3933080769 (7 surveys, 3 violations, 0 notices)
+  Scraping 4029023944: Erick Warria
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/3990589578/report.html
+    ✓ Completed 3990589578 (9 surveys, 2 violations, 0 notices)
+
+[Progress] 500/4400 (11.4%) - 0.5/sec - ETA: 136 min
+
+  Scraping 4046944085: Wagari Iticha
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4046944085/report.html
+    ✓ Completed 4046944085 (0 surveys, 0 violations, 0 notices)
+  Scraping 4059939958: Amanuel Sima And Abebaye Wakweya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4028034100/report.html
+    ✓ Completed 4028034100 (2 surveys, 0 violations, 0 notices)
+  Scraping 4061429835: Andrew Sessions
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4011871881/report.html
+    ✓ Completed 4011871881 (8 surveys, 1 violations, 0 notices)
+  Scraping 4070200957: Tyler Kennon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4061429835/report.html
+    ✓ Completed 4061429835 (0 surveys, 4 violations, 1 notices)
+  Scraping 4087640522: Homeward Bound Rehabilitation Inc
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4029023944/report.html
+    ✓ Completed 4029023944 (5 surveys, 2 violations, 0 notices)
+  Scraping 4094153830: Derra Gibler
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4007510970/report.html
+    ✓ Completed 4007510970 (10 surveys, 7 violations, 0 notices)
+  Scraping 4097189682: Kuliti Shiferaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4097189682/report.html
+    ✓ Completed 4097189682 (0 surveys, 1 violations, 0 notices)
+  Scraping 4106771079: Sodetou M Nzie
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4059939958/report.html
+    ✓ Completed 4059939958 (4 surveys, 2 violations, 0 notices)
+  Scraping 4124464048: Carol Biegler And Cheryl Newsom
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4087640522/report.html
+    ✓ Completed 4087640522 (2 surveys, 1 violations, 0 notices)
+  Scraping 4126909514: Abel Zerihun Legesse
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4094153830/report.html
+    ✓ Completed 4094153830 (1 surveys, 0 violations, 0 notices)
+
+[Progress] 510/4400 (11.6%) - 0.5/sec - ETA: 134 min
+
+  Scraping 4139752021: Erica Colton
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4126909514/report.html
+    ✓ Completed 4126909514 (2 surveys, 0 violations, 0 notices)
+  Scraping 4148023653: Paul Kiarie
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4070200957/report.html
+    ✓ Completed 4070200957 (7 surveys, 3 violations, 0 notices)
+  Scraping 4165212975: Marjorie Morgan
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4124464048/report.html
+    ✓ Completed 4124464048 (2 surveys, 2 violations, 0 notices)
+  Scraping 4170824202: Ang Li And Fengzhi Shao
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4139752021/report.html
+    ✓ Completed 4139752021 (10 surveys, 2 violations, 1 notices)
+  Scraping 4171211555: Ruby Del Angel
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4106771079/report.html
+    ✓ Completed 4106771079 (6 surveys, 0 violations, 0 notices)
+  Scraping 4207050643: Dereje Tessema
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4148023653/report.html
+    ✓ Completed 4148023653 (7 surveys, 0 violations, 0 notices)
+  Scraping 4208911780: Jacqueline Buring
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4165212975/report.html
+    ✓ Completed 4165212975 (4 surveys, 0 violations, 0 notices)
+  Scraping 4230894955: Magdalena Pisica
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4208911780/report.html
+    ✓ Completed 4208911780 (0 surveys, 0 violations, 0 notices)
+  Scraping 4246563133: Desu Tefera Yirdaw
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4230894955/report.html
+    ✓ Completed 4230894955 (0 surveys, 0 violations, 0 notices)
+  Scraping 4255173817: Lydia M Nazziwa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4171211555/report.html
+    ✓ Completed 4171211555 (7 surveys, 4 violations, 0 notices)
+
+[Progress] 520/4400 (11.8%) - 0.5/sec - ETA: 133 min
+
+  Scraping 4286139195: Cody May
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4255173817/report.html
+    ✓ Completed 4255173817 (0 surveys, 0 violations, 0 notices)
+  Scraping 4290751476: Vicky Shiveley And Aileen Sombilon
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4207050643/report.html
+    ✓ Completed 4207050643 (7 surveys, 6 violations, 0 notices)
+  Scraping 4290762693: Rosemary Waithaka
+  Error scraping violations for 4170824202: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765473267316,
+    socket: 1765473267316,
+    lookup: 1765473267317,
+    connect: 1765473267566,
+    secureConnect: 1765473267828,
+    upload: 1765473267828,
+    response: 1765473268213,
+    end: 1765473268213,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 1,
+      tcp: 249,
+      tls: 262,
+      request: 0,
+      firstByte: 385,
+      download: 0,
+      total: 897
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4286139195/report.html
+    ✓ Completed 4286139195 (0 surveys, 0 violations, 0 notices)
+  Scraping 4318440786: Adams N Kinyanjui
+  Error scraping notices for 4170824202: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765473267431,
+    socket: 1765473267431,
+    lookup: 1765473267434,
+    connect: 1765473267696,
+    secureConnect: 1765473267958,
+    upload: 1765473267958,
+    response: 1765473268628,
+    end: 1765473268628,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 3,
+      tcp: 262,
+      tls: 262,
+      request: 0,
+      firstByte: 670,
+      download: 0,
+      total: 1197
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4246563133/report.html
+    ✓ Completed 4246563133 (7 surveys, 2 violations, 1 notices)
+  Scraping 4322322851: Gerald Mcintosh
+  Error scraping surveys for 4170824202: HTTPError: Response code 500 (Internal Server Error)
+    at Request.<anonymous> (/Users/facundo/projects/jobs/state-scrapping/OR/node_modules/got/dist/source/as-promise/index.js:118:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_NON_2XX_3XX_RESPONSE',
+  timings: {
+    start: 1765473270156,
+    socket: 1765473270156,
+    lookup: 1765473270156,
+    connect: 1765473270409,
+    secureConnect: 1765473271269,
+    upload: 1765473271269,
+    response: 1765473272686,
+    end: 1765473272686,
+    error: undefined,
+    abort: undefined,
+    phases: {
+      wait: 0,
+      dns: 0,
+      tcp: 253,
+      tls: 860,
+      request: 0,
+      firstByte: 1417,
+      download: 0,
+      total: 2530
+    }
+  }
+}
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4170824202/report.html
+    ✓ Completed 4170824202 (0 surveys, 0 violations, 0 notices)
+  Scraping 4335505422: Etsegenet Liben
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4290762693/report.html
+    ✓ Completed 4290762693 (8 surveys, 1 violations, 0 notices)
+  Scraping 4353666375: Jennifer Bustamante
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4290751476/report.html
+    ✓ Completed 4290751476 (9 surveys, 2 violations, 0 notices)
+  Scraping 4357116031: Desiree Gallina-Hartung
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4322322851/report.html
+    ✓ Completed 4322322851 (2 surveys, 1 violations, 1 notices)
+  Scraping 4357160314: Frederica Gunn
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4318440786/report.html
+    ✓ Completed 4318440786 (6 surveys, 3 violations, 0 notices)
+  Scraping 4366097811: Woinshet Moges
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4357160314/report.html
+    ✓ Completed 4357160314 (0 surveys, 0 violations, 0 notices)
+
+[Progress] 530/4400 (12.0%) - 0.5/sec - ETA: 131 min
+
+  Scraping 4367626887: Corrine Surban And Jeffrey Surban
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4335505422/report.html
+    ✓ Completed 4335505422 (2 surveys, 0 violations, 0 notices)
+  Scraping 4370384819: Rehema C Mlisho
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4357116031/report.html
+    ✓ Completed 4357116031 (4 surveys, 0 violations, 0 notices)
+  Scraping 4373728310: Howard Dunkley And Misael Camacho-Perez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4353666375/report.html
+    ✓ Completed 4353666375 (3 surveys, 5 violations, 0 notices)
+  Scraping 4380228315: Denise Dyer
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4366097811/report.html
+    ✓ Completed 4366097811 (4 surveys, 2 violations, 0 notices)
+  Scraping 4380638438: Audrey Giltner
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4380228315/report.html
+    ✓ Completed 4380228315 (0 surveys, 0 violations, 0 notices)
+  Scraping 4381438156: Jenna Miner
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4370384819/report.html
+    ✓ Completed 4370384819 (4 surveys, 3 violations, 0 notices)
+  Scraping 4381773090: Allegiance Senior Care LLC
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4367626887/report.html
+    ✓ Completed 4367626887 (3 surveys, 1 violations, 0 notices)
+  Scraping 4385411796: Emily Mcmanama Sumalinog And Rory Mcmanama
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4380638438/report.html
+    ✓ Completed 4380638438 (0 surveys, 0 violations, 0 notices)
+  Scraping 4396246305: Lorrie Amaya And Dave Amaya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4381438156/report.html
+    ✓ Completed 4381438156 (0 surveys, 1 violations, 0 notices)
+  Scraping 4410074720: Brandy Hallmark
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4373728310/report.html
+    ✓ Completed 4373728310 (2 surveys, 3 violations, 0 notices)
+
+[Progress] 540/4400 (12.3%) - 0.5/sec - ETA: 129 min
+
+  Scraping 4419210637: Karey K Perkins
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4419210637/report.html
+    ✓ Completed 4419210637 (0 surveys, 0 violations, 0 notices)
+  Scraping 4421512464: Natalya Balanetskaya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4381773090/report.html
+    ✓ Completed 4381773090 (4 surveys, 0 violations, 0 notices)
+  Scraping 4421541359: Lori Owen
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4396246305/report.html
+    ✓ Completed 4396246305 (6 surveys, 0 violations, 0 notices)
+  Scraping 4423412088: Mesay Keltu And Meaza Keltu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4410074720/report.html
+    ✓ Completed 4410074720 (4 surveys, 0 violations, 0 notices)
+  Scraping 4426260842: Abigail Rybachuk
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4385411796/report.html
+    ✓ Completed 4385411796 (7 surveys, 10 violations, 0 notices)
+  Scraping 4429343461: Jared Nyamongo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4421541359/report.html
+    ✓ Completed 4421541359 (1 surveys, 0 violations, 0 notices)
+  Scraping 4430909317: Neisapeong Rosokow
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4421512464/report.html
+    ✓ Completed 4421512464 (7 surveys, 2 violations, 0 notices)
+  Scraping 4431251562: Josphat Gathage
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4426260842/report.html
+    ✓ Completed 4426260842 (6 surveys, 3 violations, 0 notices)
+  Scraping 4452977127: Elizabeth Njeru-Gibbons
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4430909317/report.html
+    ✓ Completed 4430909317 (2 surveys, 0 violations, 0 notices)
+  Scraping 4455883625: June Purtle
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4431251562/report.html
+    ✓ Completed 4431251562 (4 surveys, 0 violations, 0 notices)
+
+[Progress] 550/4400 (12.5%) - 0.5/sec - ETA: 128 min
+
+  Scraping 4464120732: Judith Clipp
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4423412088/report.html
+    ✓ Completed 4423412088 (10 surveys, 8 violations, 1 notices)
+  Scraping 4468839487: Jeffrey Surban And Corrine Surban
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4464120732/report.html
+    ✓ Completed 4464120732 (0 surveys, 0 violations, 0 notices)
+  Scraping 4476713176: Abi Afework
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4455883625/report.html
+    ✓ Completed 4455883625 (2 surveys, 0 violations, 0 notices)
+  Scraping 4493045861: Yulia Pleshakova
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4452977127/report.html
+    ✓ Completed 4452977127 (3 surveys, 1 violations, 0 notices)
+  Scraping 4498619060: Gentry Amwira And Jared Nambwenya
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4429343461/report.html
+    ✓ Completed 4429343461 (10 surveys, 2 violations, 0 notices)
+  Scraping 4504631617: Daniel Mack And Alaura Mack
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4493045861/report.html
+    ✓ Completed 4493045861 (0 surveys, 1 violations, 0 notices)
+  Scraping 4508985696: Madina Kibe
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4468839487/report.html
+    ✓ Completed 4468839487 (5 surveys, 1 violations, 0 notices)
+  Scraping 4514607905: Rafael Leahu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4498619060/report.html
+    ✓ Completed 4498619060 (1 surveys, 0 violations, 0 notices)
+  Scraping 4520475596: Deborah Giberson and David Giberson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4508985696/report.html
+    ✓ Completed 4508985696 (3 surveys, 0 violations, 0 notices)
+  Scraping 4525669258: Holly Fjermestad And Tiffany Zimmerman
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4476713176/report.html
+    ✓ Completed 4476713176 (6 surveys, 2 violations, 0 notices)
+
+[Progress] 560/4400 (12.7%) - 0.5/sec - ETA: 127 min
+
+  Scraping 4531944788: Danny Lewitzke
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4504631617/report.html
+    ✓ Completed 4504631617 (8 surveys, 4 violations, 0 notices)
+  Scraping 4535855033: Olivia Kinser And Casian Romonti
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4520475596/report.html
+    ✓ Completed 4520475596 (0 surveys, 0 violations, 0 notices)
+  Scraping 4547417753: Highland Adult Care Home LLC
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4514607905/report.html
+    ✓ Completed 4514607905 (4 surveys, 0 violations, 0 notices)
+  Scraping 4554689178: Girley Serdar
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4535855033/report.html
+    ✓ Completed 4535855033 (4 surveys, 1 violations, 0 notices)
+  Scraping 4571433827: Margaret Wambugu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4525669258/report.html
+    ✓ Completed 4525669258 (8 surveys, 5 violations, 0 notices)
+  Scraping 4576271775: Yvonne Magee
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4554689178/report.html
+    ✓ Completed 4554689178 (5 surveys, 1 violations, 0 notices)
+  Scraping 4583091993: Tamre Reece
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4547417753/report.html
+    ✓ Completed 4547417753 (3 surveys, 7 violations, 0 notices)
+  Scraping 4588099666: Dagmawt Negash
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4531944788/report.html
+    ✓ Completed 4531944788 (2 surveys, 2 violations, 0 notices)
+  Scraping 4620862925: Laureen Connors
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4576271775/report.html
+    ✓ Completed 4576271775 (0 surveys, 0 violations, 0 notices)
+  Scraping 4625563830: Jamie Clayton
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4583091993/report.html
+    ✓ Completed 4583091993 (0 surveys, 2 violations, 0 notices)
+
+[Progress] 570/4400 (13.0%) - 0.5/sec - ETA: 125 min
+
+  Scraping 4664044729: Blandina Mwarabu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4571433827/report.html
+    ✓ Completed 4571433827 (6 surveys, 1 violations, 0 notices)
+  Scraping 467275981: Iosif Vesa
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4620862925/report.html
+    ✓ Completed 4620862925 (1 surveys, 0 violations, 0 notices)
+  Scraping 4713309098: Jennifer Davis
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4625563830/report.html
+    ✓ Completed 4625563830 (5 surveys, 0 violations, 0 notices)
+  Scraping 4716204062: Maria Teresa Salcedo
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4713309098/report.html
+    ✓ Completed 4713309098 (1 surveys, 0 violations, 0 notices)
+  Scraping 4717996084: Carrie Miller
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4716204062/report.html
+    ✓ Completed 4716204062 (3 surveys, 1 violations, 0 notices)
+  Scraping 4724167837: Tanis Linn
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4588099666/report.html
+    ✓ Completed 4588099666 (4 surveys, 0 violations, 0 notices)
+  Scraping 4738102590: Beatrice Radulescu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4664044729/report.html
+    ✓ Completed 4664044729 (3 surveys, 0 violations, 1 notices)
+  Scraping 4769415052: Rebecca Sandu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/467275981/report.html
+    ✓ Completed 467275981 (5 surveys, 2 violations, 0 notices)
+  Scraping 4769601619: Elienor Bulanhagui Katigbak
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4769601619/report.html
+    ✓ Completed 4769601619 (0 surveys, 0 violations, 0 notices)
+  Scraping 4770436687: Debra Chavez
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4738102590/report.html
+    ✓ Completed 4738102590 (1 surveys, 0 violations, 0 notices)
+
+[Progress] 580/4400 (13.2%) - 0.5/sec - ETA: 124 min
+
+  Scraping 4776071503: Margaret Short
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4717996084/report.html
+    ✓ Completed 4717996084 (5 surveys, 1 violations, 0 notices)
+  Scraping 4780583284: Guenet Afework And Abi Afework
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4769415052/report.html
+    ✓ Completed 4769415052 (1 surveys, 0 violations, 0 notices)
+  Scraping 4785401766: Aaron Cain
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4776071503/report.html
+    ✓ Completed 4776071503 (0 surveys, 0 violations, 0 notices)
+  Scraping 4808153458: Amada Horner
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4770436687/report.html
+    ✓ Completed 4770436687 (2 surveys, 0 violations, 0 notices)
+  Scraping 4822427992: Jazzel Saulog
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4808153458/report.html
+    ✓ Completed 4808153458 (1 surveys, 2 violations, 0 notices)
+  Scraping 4829809819: Tiffany M Hall
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4785401766/report.html
+    ✓ Completed 4785401766 (1 surveys, 0 violations, 0 notices)
+  Scraping 4842236991: Melissa Fowler
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4724167837/report.html
+    ✓ Completed 4724167837 (5 surveys, 3 violations, 0 notices)
+  Scraping 4844186772: Precious Amukamara
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4829809819/report.html
+    ✓ Completed 4829809819 (0 surveys, 1 violations, 0 notices)
+  Scraping 4849770779: Robert Collins
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4822427992/report.html
+    ✓ Completed 4822427992 (5 surveys, 2 violations, 0 notices)
+  Scraping 4857622470: Golden Gate Adult Care Home Company
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4780583284/report.html
+    ✓ Completed 4780583284 (5 surveys, 3 violations, 0 notices)
+
+[Progress] 590/4400 (13.4%) - 0.5/sec - ETA: 123 min
+
+  Scraping 4868503733: Lavinia Georgiana Carson
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4842236991/report.html
+    ✓ Completed 4842236991 (3 surveys, 0 violations, 0 notices)
+  Scraping 4907779750: Robert M Nyakwara
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4907779750/report.html
+    ✓ Completed 4907779750 (0 surveys, 0 violations, 0 notices)
+  Scraping 4915202231: Joyce Gitanyu
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4849770779/report.html
+    ✓ Completed 4849770779 (2 surveys, 0 violations, 0 notices)
+  Scraping 4918379052: Cynthia Barr
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4857622470/report.html
+    ✓ Completed 4857622470 (3 surveys, 0 violations, 0 notices)
+  Scraping 4918954547: Joshua Lattin
+    Saved report: /Users/facundo/projects/jobs/state-scrapping/OR/reports/4844186772/report.html
+    ✓ Completed 4844186772 (7 surveys, 1 violations, 0 notices)
+  Scraping 4920777844: Teresa Woods
