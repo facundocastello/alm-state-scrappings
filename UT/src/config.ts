@@ -12,6 +12,20 @@ export const CHECKLIST_URL = (id: number) => `${BASE_URL}/checklist/${id}`;
 // Pagination
 export const PAGE_SIZE = 100;
 
+// Adult-related facility license type IDs (filter out childcare/youth programs)
+export const ADULT_LICENSE_TYPE_IDS = new Set([
+  3550,  // Assisted Living Facility - Type II (179)
+  3555,  // Assisted Living Facility - Type I (49)
+  3556,  // Nursing Care Facility (101)
+  3315,  // Adult Day Care Program (6)
+  3369,  // Residential Support (92)
+  3553,  // Personal Care Agency (128)
+  3509,  // Home Health Agency (112)
+  3561,  // Hospice (85)
+  3429,  // Recovery Residence (151)
+  3590,  // DSPD Community Based Day Support (131)
+]);
+
 // User Agent
 export const USER_AGENT =
   process.env.UT_USER_AGENT ??

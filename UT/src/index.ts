@@ -7,7 +7,7 @@ import { scrapeFacility } from "./scrapeFacility.js";
 import { downloadChecklists } from "./reportDownloader.js";
 import { writeFacilitiesCsv } from "./csv.js";
 import { ProgressTracker } from "./progressTracker.js";
-import { CONCURRENCY_FACILITIES, RAW_FACILITIES_PATH } from "./config.js";
+import { CONCURRENCY_FACILITIES, RAW_FACILITIES_PATH, ADULT_LICENSE_TYPE_IDS } from "./config.js";
 import type { FacilitySummary, FacilityRecord } from "./types.js";
 
 const main = async (): Promise<void> => {
@@ -18,16 +18,19 @@ const main = async (): Promise<void> => {
   await tracker.init();
 
   // Step 1: Get facility list (crawl or load from cache)
-  let summaries: FacilitySummary[];
+  let allSummaries: FacilitySummary[];
   if (fs.existsSync(RAW_FACILITIES_PATH)) {
     console.log("Loading cached facility list...");
     const raw = await readFile(RAW_FACILITIES_PATH, "utf8");
-    summaries = JSON.parse(raw) as FacilitySummary[];
-    console.log(`Loaded ${summaries.length} facilities from cache\n`);
+    allSummaries = JSON.parse(raw) as FacilitySummary[];
+    console.log(`Loaded ${allSummaries.length} facilities from cache`);
   } else {
-    summaries = await crawlAllFacilities();
-    console.log();
+    allSummaries = await crawlAllFacilities();
   }
+
+  // Filter for adult-related facilities only (exclude childcare/youth)
+  const summaries = allSummaries.filter((s) => ADULT_LICENSE_TYPE_IDS.has(s.licenseTypeId));
+  console.log(`Filtered to ${summaries.length} adult-related facilities (from ${allSummaries.length} total)\n`);
 
   // Step 2: Filter out already completed facilities
   const finishedFids = await tracker.loadFinishedFids();
