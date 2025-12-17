@@ -15,7 +15,7 @@ export const config = {
   outputDir: path.join(projectRoot, 'output'),
   reportsDir: path.join(projectRoot, 'reports'),
 
-  // Input files
+  // Input files (NH/Hospice only - assisted housing is scraped via Playwright)
   assistedHousingFile: path.join(projectRoot, 'input', 'assisted-housing.html'),
   nursingHomeFile: path.join(projectRoot, 'input', 'nh.html'),
   hospiceFile: path.join(projectRoot, 'input', 'hospice.html'),
@@ -24,10 +24,10 @@ export const config = {
   assistedHousingBaseUrl: 'https://www.pfr.maine.gov/ALMSOnline/ALMSQuery',
   nursingHomeBaseUrl: 'https://gateway.maine.gov/dhhs-apps/aspen',
 
-  // Concurrency
+  // Concurrency (for HTTP-based operations)
   detailConcurrency: parseInt(process.env.ME_DETAIL_CONCURRENCY || '3', 10),
   downloadConcurrency: parseInt(process.env.ME_DOWNLOAD_CONCURRENCY || '2', 10),
-  requestDelayMs: parseInt(process.env.ME_REQUEST_DELAY_MS || '500', 10),
+  requestDelayMs: parseInt(process.env.ME_REQUEST_DELAY_MS || '1000', 10),
 
   // HTTP
   userAgent: process.env.ME_USER_AGENT ||
@@ -36,4 +36,9 @@ export const config = {
   // Timeouts
   requestTimeoutMs: 30000,
   downloadTimeoutMs: 60000,
+
+  // Playwright settings
+  playwrightHeadless: process.env.ME_PLAYWRIGHT_HEADLESS !== 'false',
+  playwrightTimeout: parseInt(process.env.ME_PLAYWRIGHT_TIMEOUT || '60000', 10),
+  playwrightNavTimeout: parseInt(process.env.ME_PLAYWRIGHT_NAV_TIMEOUT || '30000', 10),
 };

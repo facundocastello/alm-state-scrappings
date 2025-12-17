@@ -1,22 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import PQueue from 'p-queue';
 import { config } from './config.js';
-import { delay } from './http.js';
-import {
-  parseAssistedHousingListing,
-  getListingStats,
-} from './parseAssistedHousing.js';
 import { parseNursingHomes, parseHospiceFacilities, getNursingHomeStats } from './parseNursingHome.js';
-import { scrapeAssistedHousingDetail } from './scrapeAssistedDetail.js';
-import { downloadAllReports, getDownloadStats } from './reportDownloader.js';
+import { scrapeAssistedHousingWithPlaywright } from './scrapeAssistedDetailPlaywright.js';
 import { writeAssistedHousingCsv, writeNursingHomeCsv, writeHospiceCsv } from './csv.js';
-import {
-  getAssistedHousingCompletedSet,
-  markAssistedHousingCompleted,
-  markAssistedHousingFailed,
-} from './progressTracker.js';
-import type { AssistedHousingListing, AssistedHousingFacility } from './types.js';
+import type { AssistedHousingFacility } from './types.js';
 
 // Ensure directories exist
 function ensureDirs(): void {
@@ -45,106 +33,33 @@ function loadRawData<T>(filename: string): T | null {
 
 async function processAssistedHousing(): Promise<AssistedHousingFacility[]> {
   console.log('\n' + '='.repeat(60));
-  console.log('Processing Assisted Housing Facilities');
+  console.log('Processing Assisted Housing Facilities (Playwright)');
   console.log('='.repeat(60));
 
-  // Step 1: Parse listings
-  console.log('\nParsing assisted-housing.html...');
-  const allListings = parseAssistedHousingListing();
-  const stats = getListingStats(allListings);
-
-  console.log(`\nTotal listings: ${stats.total}`);
-  console.log('By status:');
-  Object.entries(stats.byStatus).forEach(([status, count]) => {
-    console.log(`  ${status}: ${count}`);
-  });
-
-  // Include ALL facilities (not just active) as requested
-  console.log(`\nTotal facilities to scrape: ${allListings.length}`);
-
-  // Check what's already done
-  const completedSet = getAssistedHousingCompletedSet();
-  const pendingListings = allListings.filter(l => !completedSet.has(l.licenseNumber));
-
-  console.log(`Already completed: ${completedSet.size}`);
-  console.log(`Pending: ${pendingListings.length}`);
-
-  if (pendingListings.length === 0) {
-    console.log('\nAll assisted housing facilities already scraped!');
-
-    // Load from saved data
-    const savedFacilities = loadRawData<AssistedHousingFacility[]>('assisted-housing-scraped.json');
-    if (savedFacilities) {
-      return savedFacilities;
-    }
-    return [];
-  }
-
-  // Step 2: Scrape detail pages
-  console.log(`\nScraping detail pages (concurrency: ${config.detailConcurrency})...`);
-  console.log('-'.repeat(60));
-
-  const queue = new PQueue({ concurrency: config.detailConcurrency });
-  const scrapedFacilities: AssistedHousingFacility[] = [];
-  const failedListings: AssistedHousingListing[] = [];
-
-  let processed = 0;
-
-  const tasks = pendingListings.map(listing =>
-    queue.add(async () => {
-      try {
-        const facility = await scrapeAssistedHousingDetail(listing);
-        scrapedFacilities.push(facility);
-        markAssistedHousingCompleted(listing.licenseNumber);
-        processed++;
-
-        if (processed % 25 === 0) {
-          console.log(`  Progress: ${processed}/${pendingListings.length} scraped`);
-        }
-      } catch (error) {
-        console.error(`  Error scraping ${listing.licenseNumber}: ${error instanceof Error ? error.message : error}`);
-        failedListings.push(listing);
-        markAssistedHousingFailed(listing.licenseNumber);
+  // Use Playwright-based scraper (handles session tokens properly)
+  const result = await scrapeAssistedHousingWithPlaywright(
+    (completed, total, current) => {
+      if (completed % 25 === 0 || completed === total) {
+        console.log(`  Progress: ${completed}/${total} - ${current}`);
       }
-
-      await delay(config.requestDelayMs);
-    })
+    },
+    true // download reports
   );
 
-  await Promise.all(tasks);
-
-  console.log(`\nScraping complete: ${scrapedFacilities.length} succeeded, ${failedListings.length} failed`);
+  console.log(`\nScraping complete: ${result.facilities.length} succeeded, ${result.failed.length} failed`);
+  console.log(`Documents downloaded: ${result.documentsDownloaded}`);
 
   // Save scraped data
-  saveRawData('assisted-housing-scraped.json', scrapedFacilities);
+  saveRawData('assisted-housing-scraped.json', result.facilities);
 
-  // Step 3: Write CSV BEFORE downloading reports (so we have data even if downloads fail)
+  // Write CSV
   console.log('\nWriting assisted housing CSV...');
-  await writeAssistedHousingCsv(scrapedFacilities);
+  await writeAssistedHousingCsv(result.facilities);
 
-  // Step 4: Download reports ONLY for ACTIVE facilities
-  const activeFacilities = scrapedFacilities.filter(f => f.status === 'ACTIVE');
-  console.log(`\nDownloading inspection reports for ${activeFacilities.length} ACTIVE facilities...`);
-  const facilitiesWithReports = await downloadAllReports(
-    activeFacilities,
-    (completed, total, current) => {
-      if (completed % 50 === 0) {
-        console.log(`  Downloading: ${completed}/${total} - ${current.licenseNumber}`);
-      }
-    }
-  );
+  // Save final data
+  saveRawData('assisted-housing-final.json', result.facilities);
 
-  const downloadStats = getDownloadStats(facilitiesWithReports);
-  console.log(`\nDownload stats:`);
-  console.log(`  Facilities with documents: ${downloadStats.facilitiesWithDocs}`);
-  console.log(`  Total documents: ${downloadStats.totalDocuments}`);
-  console.log(`  Downloaded: ${downloadStats.downloadedDocuments}`);
-
-  // Save final data with report paths (active facilities only)
-  saveRawData('assisted-housing-final.json', facilitiesWithReports);
-
-  // Return all scraped facilities (including inactive)
-  return scrapedFacilities;
+  return result.facilities;
 }
 
 async function processNursingHomes(): Promise<void> {
@@ -187,10 +102,9 @@ async function processHospice(): Promise<void> {
 
 async function main(): Promise<void> {
   console.log('='.repeat(60));
-  console.log('Maine Healthcare Facility Scraper');
+  console.log('Maine Healthcare Facility Scraper (Playwright)');
   console.log('='.repeat(60));
   console.log();
-  console.log(`Input directory: ${config.inputDir}`);
   console.log(`Output directory: ${config.outputDir}`);
   console.log(`Reports directory: ${config.reportsDir}`);
   console.log();
@@ -198,28 +112,34 @@ async function main(): Promise<void> {
   // Ensure directories exist
   ensureDirs();
 
-  // Check input files exist
-  const inputFiles = [config.assistedHousingFile, config.nursingHomeFile, config.hospiceFile];
+  // Check NH/hospice input files exist (assisted housing is now scraped via Playwright)
+  const inputFiles = [config.nursingHomeFile, config.hospiceFile];
   for (const file of inputFiles) {
     if (!fs.existsSync(file)) {
-      console.error(`ERROR: Input file not found: ${file}`);
-      process.exit(1);
+      console.warn(`Warning: Input file not found: ${file}`);
     }
   }
-  console.log('All input files found.');
 
-  // Process each type (CSV is written inside processAssistedHousing before report downloads)
+  // Process assisted housing (via Playwright - no input file needed)
   await processAssistedHousing();
 
   // Skip nursing homes and hospice if already processed
   if (!fs.existsSync(path.join(config.outputDir, 'nursing-homes.csv'))) {
-    await processNursingHomes();
+    if (fs.existsSync(config.nursingHomeFile)) {
+      await processNursingHomes();
+    } else {
+      console.log('\nSkipping nursing homes (input file not found)');
+    }
   } else {
     console.log('\nSkipping nursing homes (already processed)');
   }
 
   if (!fs.existsSync(path.join(config.outputDir, 'hospice.csv'))) {
-    await processHospice();
+    if (fs.existsSync(config.hospiceFile)) {
+      await processHospice();
+    } else {
+      console.log('\nSkipping hospice (input file not found)');
+    }
   } else {
     console.log('Skipping hospice (already processed)');
   }
@@ -232,7 +152,7 @@ async function main(): Promise<void> {
   console.log(`  - ${path.join(config.outputDir, 'nursing-homes.csv')}`);
   console.log(`  - ${path.join(config.outputDir, 'hospice.csv')}`);
   console.log(`\nReports saved to: ${config.reportsDir}`);
-  console.log('\nNote: Nursing home and hospice survey reports require Playwright.');
+  console.log('\nNote: Nursing home and hospice survey reports require additional step.');
   console.log('Run surveyFetcher.ts separately to download those.');
 }
 
